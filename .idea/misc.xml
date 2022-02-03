@@ -3,12 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Ayush/StudioProjects/CharitAble/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ayush/StudioProjects/CharitAble/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
         <entry key="app/src/main/res/drawable/swich_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_tumbs.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2731796264648438" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
       </map>
     </option>
   </component>
@@ -17,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2731796264648438" />
+      </ProjectState>
+    </option>
   </component>
 </project>
