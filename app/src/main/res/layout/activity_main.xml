@@ -11,9 +11,9 @@
     tools:context=".MainActivity">
 
   <TextView
-      android:text="        Let's get started!"
-      android:layout_gravity="center"
-      android:textSize="40sp"
+      android:text="Let's get started!"
+      android:gravity="center_horizontal"
+      android:textSize="35sp"
       android:layout_marginTop="45dp"
       android:textStyle="bold|normal|italic"
       android:textColor="@color/black"
