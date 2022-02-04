@@ -29,7 +29,7 @@ class login : AppCompatActivity() {
             logInLayout.visibility= View.VISIBLE
             logIn.setTextColor(resources.getColor(R.color. textColor,null))
         }
-        signupLayout.setOnClickListener {
+        signIn.setOnClickListener {
             startActivity(Intent(this@login,splash2::class.java))
         }
         }
