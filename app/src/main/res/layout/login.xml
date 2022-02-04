@@ -94,7 +94,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Email or User Name"
+                    android:hint="Email or Username"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:shapeAppearanceOverlay="@style/Button4">

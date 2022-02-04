@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble">
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".splash2"
             android:exported="false" />
         <activity
