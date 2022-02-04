@@ -94,7 +94,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Email or Username"
+                    android:hint="Email"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:shapeAppearanceOverlay="@style/Button4">
@@ -163,7 +163,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="5dp"
-                    android:hint="Email or User Name"
+                    android:hint="Email"
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:shapeAppearanceOverlay="@style/Button4">
@@ -275,11 +275,6 @@
                 android:src="@drawable/ic_icons8_google" />
 
 
-            <ImageView
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/ic_icons8_facebook" />
 
 
         </LinearLayout>

@@ -11,4 +11,5 @@
     <color name="pinkcolor">#FF003B</color>
     <color name="bluecolor">#62AACA</color>
     <color name="transparentColor">#00FFFFFF</color>
+    <color name= "snackbar_error_color">#F72400</color>
 </resources>

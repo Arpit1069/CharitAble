@@ -3,5 +3,5 @@
     <string name="log_in">Log In</string>
     <string name="sign_up">Sign Up</string>
     <string name="please_wait">please_wait</string>
-    <string name="please_click_back_again_to_exit">please_click_back_again_to_exit</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.charitable
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.charitable.R
 
 class splash2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
