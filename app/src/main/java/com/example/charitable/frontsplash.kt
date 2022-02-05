@@ -13,19 +13,14 @@ class frontsplash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_frontsplash)
 
-        Handler()postDelayed({
+        Handler().postDelayed(
+                {
 
-              startActivity(Intent(this, frontsplash::class.java)
-            finish()
-
-        }, frontsplashtimeout())
+              startActivity(Intent(this, frontsplash::class.java))
+       finish()
+        }, frontsplashtimeout)
     }
 }
-
-private infix fun Any.finish(unit: Unit): Intent? {
-
-}
-
 
 
 

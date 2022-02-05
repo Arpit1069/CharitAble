@@ -20,6 +20,8 @@ class login : BaseActivity() {
             logIn.background=null
             signupLayout.visibility= View.VISIBLE
             logInLayout.visibility= View.GONE
+            btnsignup.visibility= View.VISIBLE
+            btnlogin.visibility= View.GONE
             logIn.setTextColor(resources.getColor(R.color.bluecolor,null))
         }
         logIn.setOnClickListener {
@@ -28,13 +30,18 @@ class login : BaseActivity() {
             logIn.background=resources.getDrawable(R.drawable.switch_trcks,null)
             signupLayout.visibility= View.GONE
             logInLayout.visibility= View.VISIBLE
+            btnsignup.visibility= View.GONE
+            btnlogin.visibility= View.VISIBLE
             logIn.setTextColor(resources.getColor(R.color.textColor,null))
         }
-        signIn.setOnClickListener {
+        btnlogin.setOnClickListener {
             startActivity(Intent(this@login, splash2::class.java))
-        }
+            btnsignup.setOnClickListener {
+                startActivity(Intent(this@login, splash2::class.java))
+            }}}}
+/*
 // TODO "add signUp button here"
-        btn_sign_up.setOnClickListener{
+       btnsignup.setOnClickListener{
             registerUser()
         }
 
@@ -71,5 +78,5 @@ class login : BaseActivity() {
         }
     }
 
-    }
-
+    }}
+*/

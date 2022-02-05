@@ -231,7 +231,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/signIn"
+                android:id="@+id/btnlogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -243,7 +243,24 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17dp"
-                app:backgroundTint="@color/bluecolor"
+                app:backgroundTint="@color/teal_200"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+            <Button
+                android:id="@+id/btnsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17dp"
+                android:visibility="gone"
+                app:backgroundTint="@color/teal_200"
                 app:shapeAppearanceOverlay="@style/Button5" />
 
             <TextView
