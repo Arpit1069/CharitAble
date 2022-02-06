@@ -1,6 +1,6 @@
 package com.example.charitable
 
-import android.content.ContentValues.TAG
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -9,7 +9,8 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.google.firebase.auth.AuthResult
+import com.example.charitable.firebase.FirestoreClass
+import com.example.charitable.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.login.*
@@ -19,6 +20,7 @@ class login : BaseActivity() {
 
     private lateinit var auth: FirebaseAuth
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,15 +46,17 @@ class login : BaseActivity() {
             btnlogin.visibility= View.VISIBLE
             logIn.setTextColor(resources.getColor(R.color.textColor,null))
         }
-        btnlogin.setOnClickListener {
-            startActivity(Intent(this@login, splash2::class.java))
-            btnsignup.setOnClickListener {
-                startActivity(Intent(this@login, splash2::class.java))
-            }
+        btnlogin.setOnClickListener{
             signInRegisteredUser()
-
         }
+//       btnlogin.setOnClickListener {
+//           startActivity(Intent(this@login, splash2::class.java))
+//          }
 
+
+//        btnsignup.setOnClickListener {
+//               startActivity(Intent(this@login, splash2::class.java))
+//           }
 
        btnsignup.setOnClickListener{
             registerUser()
@@ -60,36 +64,60 @@ class login : BaseActivity() {
 
         }
 
+    fun userRegisteredSuccess(){
+        Toast.makeText(
+            this,
+            "you have successfully registered.",
+            Toast.LENGTH_LONG
+        ).show()
+        hideProgressDialog()
+        FirebaseAuth.getInstance().signOut()
+        finish()
+    }
+
     private fun registerUser() {
         // Here we get the text from editText and trim the space
         val name: String = user_name.text.toString().trim { it <= ' ' }
         val email: String = eMail2.text.toString().trim { it <= ' ' }
         val password: String = Passwords2.text.toString().trim { it <= ' ' }
-
-        if (validateForm(name, email, password)) {
+        val password2: String = Passwords3.text.toString().trim{ it<= ' '}
+        if (Passwords2.text.toString() != Passwords3.text.toString()){
+            Toast.makeText(this,"confirm password does not match with the password", Toast.LENGTH_SHORT).show()
+        }else{
+        if (validateForm(name, email, password, password2)) {
             showProgressDialog(resources.getString(R.string.please_wait))
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,password).addOnCompleteListener { task ->
-                hideProgressDialog()
+
                 if (task.isSuccessful) {
                     val firebaseUser: FirebaseUser = task.result!!.user!!
                     val registeredEmail = firebaseUser.email!!
-                    Toast.makeText(
-                        this,
-                        "$name you have successfully registered the email address $registeredEmail. ",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    FirebaseAuth.getInstance().signOut()
-                    finish()
+                    val user= User(firebaseUser.uid, name,registeredEmail)
+                    FirestoreClass().registerUser(this, user)
+                    startActivity(Intent(this@login, splash2::class.java))
+
+//                    Toast.makeText(
+//                        this,
+//                        "$name you have successfully registered the email address $registeredEmail. ",
+//                        Toast.LENGTH_LONG
+//                    ).show()
+//                    FirebaseAuth.getInstance().signOut()
+//                    finish()
                 } else {
                     Toast.makeText(this, "Registration failed", Toast.LENGTH_SHORT).show()
-                }
+                }}
+
 
             }
         }
     }
 
+    fun signInSuccess(user: com.google.firebase.firestore.auth.User){
+        hideProgressDialog()
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
 
-    private fun validateForm(name : String, email: String, password: String): Boolean {
+    private fun validateForm(name : String, email: String, password: String, password2: String): Boolean {
         return when {
             TextUtils.isEmpty(name) -> {
                 showErrorSnackBar("Please enter name.")
@@ -101,6 +129,10 @@ class login : BaseActivity() {
             }
             TextUtils.isEmpty(password) -> {
                 showErrorSnackBar("Please enter password.")
+                false
+            }
+            TextUtils.isEmpty(password2) -> {
+                showErrorSnackBar("Please confirm the password.")
                 false
             }
             else -> {
@@ -122,7 +154,8 @@ class login : BaseActivity() {
                          // Sign in success, update UI with the signed-in user's information
                          Log.d("sign in", "signInWithEmail:success")
                          val user = auth.currentUser
-                         startActivity(Intent(this, MainActivity::class.java))
+                        // startActivity(Intent(this, MainActivity::class.java))
+                         startActivity(Intent(this@login, splash2::class.java))
                      } else {
                          // If sign in fails, display a message to the user.
                          Log.w("sign in", "signInWithEmail:failure", task.exception)
@@ -152,4 +185,5 @@ class login : BaseActivity() {
 
     }
     }
+
 
