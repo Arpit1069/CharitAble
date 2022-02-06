@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".splash2"
-            android:exported="false">
+            android:exported="true">
         </activity>
 
     </application>
