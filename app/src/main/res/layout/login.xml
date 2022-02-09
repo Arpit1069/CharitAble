@@ -320,16 +320,20 @@
             <!--                android:src="@drawable/ic_icons8_google" />-->
             <Button
                 android:id="@+id/googleautologin"
-                android:layout_width="252dp"
+                android:layout_width="177dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginStart="36dp"
                 android:layout_marginEnd="36dp"
+                android:background="@drawable/switch_tumbs"
                 android:elevation="15dp"
+                android:foreground="@drawable/img_2"
                 android:gravity="center"
-                android:foreground="@drawable/img_1"
                 android:onClick="GoogleSignIn"
-                android:text="Continue with Google"
-                app:shapeAppearanceOverlay="@style/Button5" /> />
+                app:backgroundTint="@color/teal_200"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+
 
 
         </LinearLayout>
