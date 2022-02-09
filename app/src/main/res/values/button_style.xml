@@ -10,5 +10,11 @@
 
     </style>
 
+    <style name="Button6">
+        <item name="cornerSize">60%</item>
 
-</resources>
+    </style>
+
+
+
+    </resources>

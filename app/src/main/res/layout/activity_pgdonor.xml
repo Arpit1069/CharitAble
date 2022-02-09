@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolebg"
+    android:backgroundTint="#F4E8E8"
+    android:orientation="vertical"
+    tools:context=".pgdonor">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Well done!  You've initiated for a good cause"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="90dp"
+        android:textStyle="bold|normal"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like to donate?" />
+    <ImageView
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="146dp"
+        android:layout_height="160dp"
+        android:src="@drawable/books"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/figmablue"
+        android:text="Books"
+        android:textSize="15sp" />
+    <ImageView
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="35dp"
+        android:layout_width="146dp"
+        android:layout_height="160dp"
+        android:src="@drawable/clothes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/figmablue"
+        android:text="Clothes"
+        android:textSize="15sp"/>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

@@ -7,18 +7,19 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/loginbackground"
+    android:background="@drawable/rolebg"
     tools:context=".login">
 
   <TextView
-      android:text="Let's get started!"
+      android:text="Welcome Onboard!"
       android:gravity="center_horizontal"
-      android:textSize="35sp"
+      android:textSize="20sp"
       android:layout_marginTop="45dp"
-      android:textStyle="bold|normal|italic"
+      android:textStyle="bold|normal"
       android:textColor="@color/black"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"/>
+      android:layout_marginStart="20dp"
+      android:layout_width="270dp"
+      android:layout_height="30dp"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
@@ -52,7 +53,7 @@
                     android:layout_width="183dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/switch_trcks"
+                    android:background="@color/figmablue"
                     android:paddingLeft="15dp"
                     android:paddingTop="5dp"
                     android:paddingRight="15dp"
@@ -266,7 +267,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17dp"
-                app:backgroundTint="@color/teal_200"
+                app:backgroundTint="@color/figmablue"
                 app:shapeAppearanceOverlay="@style/Button5" />
 
             <Button
@@ -310,11 +311,9 @@
 
             <ImageView
                 android:layout_width="280dp"
-                android:layout_height="35dp"
+                android:layout_height="58dp"
                 android:layout_margin="10dp"
                 android:src="@drawable/ic_icons8_google" />
-
-
 
 
         </LinearLayout>
