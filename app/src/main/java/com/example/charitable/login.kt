@@ -120,7 +120,7 @@ class login : BaseActivity() {
                     val registeredEmail = firebaseUser.email!!
                     val user= User(firebaseUser.uid, name,registeredEmail)
                     FirestoreClass().registerUser(this, user)
-                    startActivity(Intent(this@login, splash2::class.java))
+                    startActivity(Intent(this@login, pgdonor::class.java))
 
 //                    Toast.makeText(
 //                        this,
@@ -182,7 +182,7 @@ class login : BaseActivity() {
                          Log.d("sign in", "signInWithEmail:success")
                          val user = auth.currentUser
                         // startActivity(Intent(this, MainActivity::class.java))
-                         startActivity(Intent(this@login, splash2::class.java))
+                         startActivity(Intent(this@login, pgdonor::class.java))
                      } else {
                          // If sign in fails, display a message to the user.
                          Log.w("sign in", "signInWithEmail:failure", task.exception)
@@ -243,7 +243,7 @@ class login : BaseActivity() {
                     Log.d("error 90", "signInWithCredential:success")
                     val user = auth.currentUser
 
-                    startActivity(Intent(this, splash2::class.java))
+                    startActivity(Intent(this, pgdonor::class.java))
                     Log.d("error 90","firebaseAuthWithGoogle: ${user?.displayName}")
                 } else {
                     // If sign in fails, display a message to the user.

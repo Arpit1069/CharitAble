@@ -43,7 +43,7 @@
         android:layout_height="160dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="35dp"
-        android:src="@drawable/roleB" />
+        android:src="@drawable/roleb" />
 
     <Button
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:layout_height="140dp"
         android:layout_marginStart="120dp"
         android:layout_marginTop="35dp"
-        android:src="@drawable/roleC" />
+        android:src="@drawable/rolec" />
 
     <Button
         android:layout_width="match_parent"

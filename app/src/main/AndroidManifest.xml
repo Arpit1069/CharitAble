@@ -12,32 +12,36 @@
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
         <activity
-            android:name=".pgdonor"
-            android:exported="false" />
-        <activity
-            android:name=".donorpg"
-            android:exported="false" />
-        <activity
-            android:name=".choose"
-            android:exported="false" />
-        <activity
-            android:name=".frontsplash"
+            android:name=".splash1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity -->
-        <!-- android:name=".BaseActivity" -->
-        <!-- android:exported="true"> -->
-        <!-- </activity> -->
+        </activity>
+
+        <!--        <activity-->
+        <!--            android:name=".BaseActivity"-->
+        <!--            android:exported="true">-->
+        <!--        </activity>-->
         <activity
             android:name=".login"
-            android:exported="false" />
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".pgdonor"
+            android:exported="true">
+        </activity>
+
         <activity
             android:name=".splash2"
-            android:exported="false" />
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".nav_drawer"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
