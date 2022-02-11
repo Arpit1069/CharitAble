@@ -146,13 +146,14 @@
                     android:id="@+id/btnforgotpassword"
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
-                    android:text="Forget Password?"
+                    android:text="Forgot Password?"
+                    android:background="#00FFFFFF"
                     android:textAlignment="textEnd"
                     android:textColor="#616161"
                     android:textSize="11sp"
-                    android:textStyle="normal">
+                    android:textStyle="normal"/>
 
-                </Button>
+
             </LinearLayout>
 
             <LinearLayout
@@ -299,8 +300,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:gravity="center"
                 android:text="Or"
                 android:textAlignment="center"
@@ -330,7 +331,7 @@
                 android:layout_marginStart="36dp"
                 android:layout_marginEnd="36dp"
                 android:background="@drawable/switch_tumbs"
-                android:elevation="15dp"
+                android:elevation="5dp"
                 android:foreground="@drawable/img_2"
                 android:gravity="center"
                 android:onClick="GoogleSignIn"
