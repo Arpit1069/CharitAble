@@ -1,5 +1,7 @@
 package com.example.charitable.firebase
 
+import android.app.Activity
+import com.example.charitable.MainActivity
 import com.example.charitable.login
 import com.example.charitable.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
@@ -17,13 +19,24 @@ class FirestoreClass {
         }
     }
 
-    fun signInUser(activity: login){
+    fun signInUser(activity: Activity){
         mFireStore.collection(Constants.USERS)
             .document(getCurrentUserId()).get()
             .addOnSuccessListener {document->
-               val loggedInUser = document.toObject(User::class.java)!!
-               if(loggedInUser!=null)
-                activity.signInSuccess(loggedInUser)
+
+             val loggedInUser = document.toObject(User::class.java)!!
+
+                when(activity){
+                    is login -> {
+                        if(loggedInUser!=null)
+                            activity.signInSuccess(loggedInUser)
+                    }
+                    is MainActivity->{
+                        activity.NavDrawer(loggedInUser)
+                    }
+                }
+
+
             }
     }
 

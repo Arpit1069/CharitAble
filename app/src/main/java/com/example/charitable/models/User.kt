@@ -2,6 +2,10 @@ package com.example.charitable.models
 
 import android.os.Parcel
 import android.os.Parcelable
+import com.bumptech.glide.Glide
+import com.example.charitable.R
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
 
 data class User (
     val id: String = "",
@@ -11,6 +15,7 @@ data class User (
     val mobile: Long = 0,
     val address: String = "",
     val fcmtoken: String ="",
+    val role: String = "",
 
         ): Parcelable {
     constructor(parcel: Parcel) : this(
@@ -19,6 +24,7 @@ data class User (
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readLong(),
+        parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!
     ) {
@@ -32,6 +38,7 @@ data class User (
         writeLong(mobile)
         writeString(address)
         writeString(fcmtoken)
+        writeString(role)
     }
 
     override fun describeContents() = 0
@@ -45,4 +52,7 @@ data class User (
             return arrayOfNulls(size)
         }
     }
+
+
+
 }

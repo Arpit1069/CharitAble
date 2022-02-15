@@ -12,8 +12,12 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.charitable.databinding.ActivityNavDrawerBinding
+import com.example.charitable.models.User
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
 
-class nav_drawer : BaseActivity() {
+class NavDrawer : BaseActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityNavDrawerBinding
@@ -42,12 +46,25 @@ class nav_drawer : BaseActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.nav_drawer, menu)
+
+
+        val auth= FirebaseAuth.getInstance()
+        val currentUser = auth.currentUser
+
+        // id_txt.text = currentUser?.uid
+        user_menu.text = currentUser?.displayName
+        email_menu.text = currentUser?.email
         return true
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
