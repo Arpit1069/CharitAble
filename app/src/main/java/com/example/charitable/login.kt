@@ -138,7 +138,7 @@ class login : BaseActivity() {
         }
     }
 
-    fun signInSuccess(user: com.google.firebase.firestore.auth.User){
+    fun signInSuccess(user: User){
         hideProgressDialog()
         startActivity(Intent(this, MainActivity::class.java))
         finish()
