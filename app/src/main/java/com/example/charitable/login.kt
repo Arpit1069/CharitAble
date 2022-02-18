@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import com.bumptech.glide.Glide
 import com.example.charitable.firebase.FirestoreClass
 import com.example.charitable.models.User
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -22,6 +23,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.login.*
+import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
 
 class login : BaseActivity() {
     private val RC_SIGN_IN = 89
@@ -87,6 +89,7 @@ class login : BaseActivity() {
             .build()
 
          googleSignInClient = GoogleSignIn.getClient(this, gso)
+
 
         }
 
@@ -252,6 +255,9 @@ class login : BaseActivity() {
                 }
             }
     }
+
+
+
 }
 
 

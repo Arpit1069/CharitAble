@@ -20,18 +20,5 @@ class MainActivity : BaseActivity() {
         FirestoreClass().signInUser(this)
     }
 
-   fun updateNavigationUserDetails(user: com.example.charitable.models.User){
-       Glide
-           .with(this)
-           .load(user.image)
-           .centerCrop()
-           .placeholder(R.drawable.ic_user_place_holder)
-           .into(profile_pic)
-       user_menu.text = user.name
-   }
-
-
-
-
 
 }
