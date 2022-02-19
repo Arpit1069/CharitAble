@@ -336,7 +336,8 @@
                 android:gravity="center"
                 android:onClick="GoogleSignIn"
                 app:backgroundTint="@color/teal_200"
-                app:shapeAppearanceOverlay="@style/Button5" />
+                app:shapeAppearanceOverlay="@style/Button5"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
 

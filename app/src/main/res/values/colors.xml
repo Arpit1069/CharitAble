@@ -13,6 +13,7 @@
     <color name="transparentColor">#00FFFFFF</color>
     <color name= "snackbar_error_color">#F72400</color>
     <color name="lightPurple">#AD93DA</color>
-    <color name="figmablue">#A6D2FA</color>
+    <color name="figmablue">#79CBF7</color>
+
 
 </resources>
