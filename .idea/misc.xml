@@ -50,6 +50,14 @@
         <entry key="app/src/main/res/drawable/switch_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_tumbs.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/content_nav_drawer.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_logout.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.19202898550724637" />
       </map>
     </option>
   </component>
