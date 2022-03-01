@@ -1,10 +1,8 @@
 package com.example.charitable.firebase
 
 import android.app.Activity
-import com.example.charitable.MainActivity
 import com.example.charitable.login
 import com.example.charitable.models.User
-import com.example.charitable.nav_drawer
 import com.example.charitable.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
