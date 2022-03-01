@@ -7,7 +7,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/rolebg"
+    android:background="@drawable/logbg"
+
     tools:context=".login">
 
   <TextView
@@ -15,10 +16,10 @@
       android:gravity="center_horizontal"
       android:textSize="30sp"
       android:layout_marginTop="45dp"
-      android:layout_marginStart="2dp"
+      android:layout_marginStart="50dp"
       android:layout_marginEnd="90dp"
       android:textStyle="bold|normal"
-      android:textColor="@color/black"
+      android:textColor="@color/white"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="nav_profile" type="id" />
+    <item name="donorinfolayout" type="id" />
+    <item name="namedonor" type="id" />
+    <item name="mobiledonor" type="id" />
+    <item name="addressdonor" type="id" />
+    <item name="citydonor" type="id" />
+    <item name="btnsubmitdonor" type="id" />
 
 </resources>

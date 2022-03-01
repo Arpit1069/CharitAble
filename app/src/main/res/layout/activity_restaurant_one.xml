@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/rolebg"
+    android:background="@drawable/restrobg"
+    android:orientation="vertical"
     tools:context=".login">
-
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
-        android:layout_height="574dp"
+        android:layout_height="478dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="38dp"
+        app:cardBackgroundColor="#FDE4C0"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -37,13 +36,13 @@
                 android:background="@drawable/switch_tumbs"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:weightSum="2"/>
+                android:weightSum="2" />
 
             <LinearLayout
                 android:id="@+id/restaurantinfolayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="#FDE4C0"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="25dp">
@@ -65,6 +64,7 @@
                         android:id="@+id/nameres"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
+                        android:background="@color/white"
                         android:ems="10"
                         android:inputType="textPersonName|textEmailAddress"
                         android:textColor="@color/black"
@@ -89,12 +89,14 @@
                         android:id="@+id/mobileres"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
+                        android:background="@color/white"
                         android:ems="10"
                         android:inputType="textPersonName|textEmailAddress"
                         android:textColor="@color/black"
                         android:textSize="13sp"
                         android:textStyle="normal" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="243dp"
@@ -111,12 +113,14 @@
                         android:id="@+id/addressres"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
+                        android:background="@color/white"
                         android:ems="10"
                         android:inputType="textPersonName|textEmailAddress"
                         android:textColor="@color/black"
                         android:textSize="13sp"
                         android:textStyle="normal" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                     android:layout_width="243dp"
@@ -133,13 +137,13 @@
                         android:id="@+id/cityres"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
+                        android:background="@color/white"
                         android:ems="10"
                         android:inputType="textPersonName|textEmailAddress"
                         android:textColor="@color/black"
                         android:textSize="13sp"
                         android:textStyle="normal" />
                 </com.google.android.material.textfield.TextInputLayout>
-
 
 
             </LinearLayout>
@@ -157,8 +161,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17dp"
-                app:backgroundTint="@color/figmablue"/>
-
+                app:backgroundTint="#A3FBB6" />
 
 
             <LinearLayout
