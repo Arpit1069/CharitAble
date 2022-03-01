@@ -24,7 +24,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
-        android:layout_height="574dp"
+        android:layout_height="519dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
         android:layout_marginTop="50dp"
@@ -140,18 +140,18 @@
                         tools:ignore="TouchTargetSizeCheck" />
 
 
-                     </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:id="@+id/btnforgotpassword"
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
-                    android:text="Forgot Password?"
                     android:background="#00FFFFFF"
+                    android:text="Forgot Password?"
                     android:textAlignment="textEnd"
                     android:textColor="#616161"
                     android:textSize="11sp"
-                    android:textStyle="normal"/>
+                    android:textStyle="normal" />
 
 
             </LinearLayout>
@@ -277,7 +277,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17dp"
-                app:backgroundTint="@color/figmablue"/>
+                app:backgroundTint="@color/figmablue" />
 
             <Button
                 android:id="@+id/btnsignup"
@@ -338,8 +338,6 @@
                 app:backgroundTint="@color/teal_200"
                 app:shapeAppearanceOverlay="@style/Button5"
                 tools:ignore="SpeakableTextPresentCheck" />
-
-
 
 
         </LinearLayout>

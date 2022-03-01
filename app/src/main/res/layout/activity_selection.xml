@@ -5,58 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rolebg"
-    android:backgroundTint="#F4E8E8"
-    android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".choose">
+    android:layout_gravity="center"
+    tools:context=".donor_one">
 
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="70dp"
-        android:textSize="30sp"
+        android:id="@+id/textView11"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textSize="27sp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Let's get started !" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_marginTop="25dp"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
+        android:id="@+id/textView4"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:textColor="@color/black"
-        android:textAlignment="center"
-        android:layout_marginStart="60dp"
-        android:text="Choose your role" />
+        android:layout_marginStart="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your Role " />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="154dp"
-        android:layout_height="117dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="278dp"
+        android:layout_height="519dp"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/donor" />
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="146dp"
-        android:layout_height="113dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="35dp"
-        app:srcCompat="@drawable/restaurant" />
 
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="149dp"
-        android:layout_height="139dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/ngo" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/donor" />
 
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="200dp"
+            app:srcCompat="@drawable/restaurant" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="340dp"
+            app:srcCompat="@drawable/ngo" />
+
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
+
+
