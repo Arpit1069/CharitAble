@@ -23,7 +23,7 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.login.*
-import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
+
 
 class login : BaseActivity() {
     private val RC_SIGN_IN = 89
