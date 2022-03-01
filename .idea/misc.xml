@@ -11,6 +11,17 @@
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_splash2.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble/app/src/main/res/layout/dialog_progress.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble/app/src/main/res/layout/login.xml" value="0.3828571428571429" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.175" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/drawable/ic_launcher_background.xml" value="0.175" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/activity_base.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/activity_choose.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/activity_main.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/activity_nav_drawer.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/content_nav_drawer.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/fragment_home.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/login.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1102/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/Ayush/AndroidStudioProjects/CharitAble/app/src/main/res/drawable/ic_black_color_back_24dp.xml" value="0.1925" />
         <entry key="..\:/Users/Ayush/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_base.xml" value="0.14427083333333332" />
         <entry key="..\:/Users/Ayush/AndroidStudioProjects/CharitAble/app/src/main/res/layout/dialog_progress.xml" value="0.14427083333333332" />
@@ -18,7 +29,6 @@
         <entry key="..\:/Users/Ayush/StudioProjects/CharitAble/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/drawable/switch_trcks.xml" value="0.2055" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_base.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_bottom.xml" value="0.2234375" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_choose.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_frontsplash.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
@@ -27,26 +37,31 @@
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_splash.xml" value="0.2234375" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_splash1.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/activity_splash2.xml" value="0.1" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.2" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/content_nav_drawer.xml" value="0.176" />
+        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.4" />
+        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/content_nav_drawer.xml" value="0.1" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/dialog_progress.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_dashboard.xml" value="0.2234375" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_gallery.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_home.xml" value="0.2234375" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_logout.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_notifications.xml" value="0.2234375" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_profile.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/fragment_slideshow.xml" value="0.2234375" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/login.xml" value="0.1" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.2234375" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/menu/activity_main_drawer.xml" value="0.2234375" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2234375" />
         <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/menu/nav_drawer.xml" value="0.2234375" />
-        <entry key="..\:/Users/rutuz/AndroidStudioProjects/CharitAble/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.215" />
         <entry key="app/src/main/res/drawable/swich_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_tumbs.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_choose.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/activity_donor_one.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_selection.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/content_nav_drawer.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_logout.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19202898550724637" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/login.xml" value="0.20740782825659354" />
+        <entry key="app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.19202898550724637" />
       </map>
     </option>
   </component>

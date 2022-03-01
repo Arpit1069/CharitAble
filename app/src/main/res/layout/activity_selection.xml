@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolebg"
+    android:backgroundTint="#F4E8E8"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".choose">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="70dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's get started !" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginStart="60dp"
+        android:text="Choose your role" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="154dp"
+        android:layout_height="117dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/donor" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="146dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/restaurant" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="149dp"
+        android:layout_height="139dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ngo" />
+
+</LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.charitable" >
+    package="com.example.charitable">
 
     <application
         android:allowBackup="true"
@@ -10,11 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
-        tools:ignore="ExtraText" >
-        
+        tools:ignore="ExtraText">
+        <activity
+            android:name=".ngo_one"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant_one"
+            android:exported="false" />
+        <activity
+            android:name=".donor_one"
+            android:exported="false" />
         <activity
             android:name=".splash1"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,20 +34,16 @@
         <!-- </activity> -->
         <activity
             android:name=".login"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".pgdonor"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".splash2"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".nav_drawer"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
