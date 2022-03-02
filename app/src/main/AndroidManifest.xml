@@ -11,33 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
-        <activity
-            android:name=".rough"
-            android:exported="false" />
-        <activity
-            android:name=".splash3"
-            android:exported="false" />
-        <activity
-            android:name=".ngo_one"
-            android:exported="false" />
-        <activity
-            android:name=".restaurant_one"
-            android:exported="false" />
-        <activity
-            android:name=".donor_one"
-            android:exported="false" />
-        <activity
-            android:name=".ngo"
-            android:exported="false"
-            android:label="@string/title_activity_ngo" />
-        <activity
-            android:name=".restaurant"
-            android:exported="false"
-            android:label="@string/title_activity_restaurant" />
-        <activity
-            android:name=".donor"
-            android:exported="false"
-            android:label="@string/title_activity_donor1" />
+
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -46,16 +20,44 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity -->
-        <!-- android:name=".BaseActivity" -->
-        <!-- android:exported="true"> -->
-        <!-- </activity> -->
+        </activity>
+
         <activity
             android:name=".login"
             android:exported="true" />
         <activity
             android:name=".splash2"
             android:exported="true" />
+
+        <activity
+            android:name=".splash3"
+            android:exported="true" />
+        <activity
+            android:name=".ngo_one"
+            android:exported="true" />
+        <activity
+            android:name=".restaurant_one"
+            android:exported="true" />
+        <activity
+            android:name=".donor_one"
+            android:exported="true" />
+        <activity
+            android:name=".ngo"
+            android:exported="true"
+            android:label="@string/title_activity_ngo" />
+        <activity
+            android:name=".restaurant"
+            android:exported="true"
+            android:label="@string/title_activity_restaurant" />
+        <activity
+            android:name=".donor"
+            android:exported="true"
+            android:label="@string/title_activity_donor1" />
+        <!-- <activity -->
+        <!-- android:name=".BaseActivity" -->
+        <!-- android:exported="true"> -->
+        <!-- </activity> -->
+
     </application>
 
 </manifest>
