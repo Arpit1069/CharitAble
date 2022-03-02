@@ -7,16 +7,16 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.charitable.databinding.ActivityDonor1Binding
+import com.example.charitable.databinding.ActivityDonorBinding
 
-class donor : AppCompatActivity() {
+class donor : BaseActivity() {
 
-    private lateinit var binding: ActivityDonor1Binding
+    private lateinit var binding: ActivityDonorBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityDonor1Binding.inflate(layoutInflater)
+        binding = ActivityDonorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView

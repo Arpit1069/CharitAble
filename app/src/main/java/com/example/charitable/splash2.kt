@@ -12,9 +12,12 @@ class splash2 : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash2)
         val time : Long = 2500
-         val intent = Intent(this@splash2,nav_drawer::class.java)
+        Handler().postDelayed(Runnable
+        {
+
+         val intent = Intent(this@splash2,donor::class.java)
             startActivity(intent)
             finish()
-        }, time)
+        },time)
     }
 }

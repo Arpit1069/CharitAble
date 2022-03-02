@@ -35,6 +35,7 @@
             android:name=".donor"
             android:exported="false"
             android:label="@string/title_activity_donor1" />
+        //yaha pe donor1 jo hai wo hi actual mein donor
         <activity
             android:name=".splash1"
             android:exported="true">

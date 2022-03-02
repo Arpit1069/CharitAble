@@ -9,7 +9,6 @@ import com.example.charitable.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
-import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
 
 class MainActivity : BaseActivity() {
 

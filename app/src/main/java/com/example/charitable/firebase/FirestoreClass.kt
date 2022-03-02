@@ -30,8 +30,8 @@ class FirestoreClass {
                     is login -> {
                         activity.signInSuccess(loggedInUser)
                     }
-                    is nav_drawer ->{
-                        activity.updateNavigationUserDetails(loggedInUser)
+                 is nav_drawer ->{
+                     activity.updateNavigationUserDetails(loggedInUser)
                     }
                 }
 
@@ -47,4 +47,4 @@ class FirestoreClass {
         }
         return currentUserID
     }
-}
+

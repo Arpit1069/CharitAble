@@ -5,7 +5,7 @@ import android.os.Parcelable
 import com.bumptech.glide.Glide
 import com.example.charitable.R
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
+//import kotlinx.android.synthetic.main.nav_header_nav_drawer.*
 
 data class User (
     val id: String = "",

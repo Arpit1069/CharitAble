@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.charitable.databinding.ActivityRestaurantBinding
 
-class restaurant : AppCompatActivity() {
+class restaurant : BaseActivity() {
 
     private lateinit var binding: ActivityRestaurantBinding
 

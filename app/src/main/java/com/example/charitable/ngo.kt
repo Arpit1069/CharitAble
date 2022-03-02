@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.charitable.databinding.ActivityNgoBinding
 
-class ngo : AppCompatActivity() {
+class ngo : BaseActivity() {
 
     private lateinit var binding: ActivityNgoBinding
 
