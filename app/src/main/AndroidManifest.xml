@@ -26,6 +26,9 @@
             android:name=".login"
             android:exported="true" />
         <activity
+            android:name=".choose"
+            android:exported="true" />
+        <activity
             android:name=".splash2"
             android:exported="true" />
 
@@ -41,18 +44,7 @@
         <activity
             android:name=".donor_one"
             android:exported="true" />
-        <activity
-            android:name=".ngo"
-            android:exported="true"
-            android:label="@string/title_activity_ngo" />
-        <activity
-            android:name=".restaurant"
-            android:exported="true"
-            android:label="@string/title_activity_restaurant" />
-        <activity
-            android:name=".donor"
-            android:exported="true"
-            android:label="@string/title_activity_donor1" />
+
         <!-- <activity -->
         <!-- android:name=".BaseActivity" -->
         <!-- android:exported="true"> -->
