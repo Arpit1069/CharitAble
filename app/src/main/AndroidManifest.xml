@@ -12,6 +12,9 @@
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
         <activity
+            android:name=".rough"
+            android:exported="false" />
+        <activity
             android:name=".splash3"
             android:exported="false" />
         <activity
@@ -35,7 +38,6 @@
             android:name=".donor"
             android:exported="false"
             android:label="@string/title_activity_donor1" />
-        //yaha pe donor1 jo hai wo hi actual mein donor
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -50,10 +52,10 @@
         <!-- </activity> -->
         <activity
             android:name=".login"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".splash2"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
