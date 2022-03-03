@@ -11,13 +11,13 @@ class splash2 : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash2)
-//        val time : Long = 2500
-//        Handler().postDelayed(Runnable
-//        {
-//
-//         val intent = Intent(this@splash2,donor::class.java)
-//            startActivity(intent)
-//            finish()
-//        },time)
+        val time : Long = 2500
+        Handler().postDelayed(Runnable
+        {
+
+         val intent = Intent(this@splash2,donor_two::class.java)
+            startActivity(intent)
+            finish()
+        },time)
     }
 }

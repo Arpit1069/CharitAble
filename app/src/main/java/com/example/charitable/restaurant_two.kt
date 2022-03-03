@@ -7,21 +7,21 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.charitable.databinding.ActivityDonorTwoBinding
+import com.example.charitable.databinding.ActivityRestaurantTwoBinding
 
-class donor_two : BaseActivity() {
+class restaurant_two : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDonorTwoBinding
+    private lateinit var binding: ActivityRestaurantTwoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityDonorTwoBinding.inflate(layoutInflater)
+        binding = ActivityRestaurantTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_donor_two)
+        val navController = findNavController(R.id.nav_host_fragment_activity_restaurant_two)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
