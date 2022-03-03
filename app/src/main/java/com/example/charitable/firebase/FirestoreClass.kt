@@ -1,6 +1,9 @@
 package com.example.charitable.firebase
 
 import android.app.Activity
+import android.util.Log
+import android.widget.Toast
+import com.example.charitable.donor_one
 import com.example.charitable.login
 import com.example.charitable.models.User
 import com.example.charitable.utils.Constants
@@ -19,7 +22,24 @@ class FirestoreClass {
         }
     }
 
-    fun signInUser(activity: Activity){
+   fun updateUserProfileData(activity: donor_one, userHashMap: HashMap<String,Any>){
+       mFireStore.collection(Constants.USERS)
+           .document(getCurrentUserId())
+           .update(userHashMap)
+           .addOnSuccessListener {
+               Log.i(activity.javaClass.simpleName,"Profile data updated successfully")
+               Toast.makeText(activity,"Profile updated successfully",Toast.LENGTH_SHORT).show()
+               activity.profileUpdateSuccess()
+           }.addOnFailureListener{
+               e ->
+               activity.hideProgressDialog()
+               Log.e(activity.javaClass.simpleName,"Error while creating aboard",e)
+               Toast.makeText(activity,"Error while updating profile",Toast.LENGTH_SHORT).show()
+           }
+
+   }
+
+    fun loadUserData(activity: Activity){
         mFireStore.collection(Constants.USERS)
             .document(getCurrentUserId()).get()
             .addOnSuccessListener {document->
@@ -29,6 +49,9 @@ class FirestoreClass {
                 when(activity){
                     is login -> {
                         activity.signInSuccess(loggedInUser)
+                    }
+                    is donor_one ->{
+                        activity.setUserDataInUI(loggedInUser)
                     }
                 // is nav_drawer ->{
                    //  activity.updateNavigationUserDetails(loggedInUser)

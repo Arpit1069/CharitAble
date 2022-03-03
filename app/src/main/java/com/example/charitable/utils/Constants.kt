@@ -2,4 +2,9 @@ package com.example.charitable.utils
 
 object Constants {
     const val USERS: String= "users"
+    const val NAME: String= "name"
+    const val MOBILE: String= "mobile"
+    const val ADDRESS: String= "address"
+    const val CITY: String= "city"
+
 }

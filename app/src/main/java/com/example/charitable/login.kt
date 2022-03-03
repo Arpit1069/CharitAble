@@ -123,7 +123,7 @@ class login : BaseActivity() {
                     val registeredEmail = firebaseUser.email!!
                     val user= User(firebaseUser.uid, name,registeredEmail)
                     FirestoreClass().registerUser(this, user)
-                    startActivity(Intent(this@login, choose::class.java))
+                    startActivity(Intent(this@login, login::class.java))
 
 //                    Toast.makeText(
 //                        this,
