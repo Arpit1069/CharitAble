@@ -31,6 +31,7 @@ class donor_one :  BaseActivity() {
      private fun updateUserProfileData(){
         val userHashMap = HashMap<String,Any>()
 
+
         if(namedonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.NAME] = namedonor.text.toString()
 
@@ -41,7 +42,7 @@ class donor_one :  BaseActivity() {
         }
         if(addressdonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.ADDRESS] = addressdonor.text.toString()
-
+            userHashMap[Constants.ROLE] = "donor"
         }
         if(citydonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.CITY] = citydonor.text.toString()
@@ -60,6 +61,12 @@ class donor_one :  BaseActivity() {
         namedonor.setText(user.name)
         if(user.mobile != 0L){
             mobiledonor.setText(user.mobile.toString())
+        }
+        if(user.address != ""){
+            addressdonor.setText(user.address.toString())
+        }
+        if(user.city != ""){
+            citydonor.setText(user.city.toString())
         }
     }
     fun profileUpdateSuccess(){

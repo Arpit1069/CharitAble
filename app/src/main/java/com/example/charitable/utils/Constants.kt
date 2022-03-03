@@ -6,5 +6,6 @@ object Constants {
     const val MOBILE: String= "mobile"
     const val ADDRESS: String= "address"
     const val CITY: String= "city"
+    const val ROLE: String= "role"
 
 }

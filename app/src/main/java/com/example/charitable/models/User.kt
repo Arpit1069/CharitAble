@@ -16,6 +16,7 @@ data class User (
     val address: String = "",
     val fcmtoken: String ="",
     val role: String = "",
+    val city: String = "",
 
         ): Parcelable {
     constructor(parcel: Parcel) : this(
@@ -24,6 +25,7 @@ data class User (
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readLong(),
+        parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!
@@ -39,6 +41,7 @@ data class User (
         writeString(address)
         writeString(fcmtoken)
         writeString(role)
+        writeString(city)
     }
 
     override fun describeContents() = 0
