@@ -3,6 +3,7 @@ package com.example.charitable
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_restaurant_one.*
 import kotlinx.android.synthetic.main.activity_selection.*
 
 class choose : BaseActivity() {

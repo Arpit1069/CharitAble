@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
-
+        <activity
+            android:name=".donor_two"
+            android:exported="false"
+            android:label="@string/title_activity_donor_two" />
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -21,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".login"
             android:exported="true" />
@@ -31,7 +33,6 @@
         <activity
             android:name=".splash2"
             android:exported="true" />
-
         <activity
             android:name=".splash3"
             android:exported="true" />
@@ -44,12 +45,6 @@
         <activity
             android:name=".donor_one"
             android:exported="true" />
-
-        <!-- <activity -->
-        <!-- android:name=".BaseActivity" -->
-        <!-- android:exported="true"> -->
-        <!-- </activity> -->
-
     </application>
 
 </manifest>
