@@ -14,6 +14,7 @@
     <color name= "snackbar_error_color">#F72400</color>
     <color name="lightPurple">#AD93DA</color>
     <color name="figmablue">#79CBF7</color>
+    <color name="shadowcolor">#ff212121</color>
 
 
 </resources>

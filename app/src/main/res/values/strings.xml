@@ -38,4 +38,6 @@
     <string name="title_activity_donor_two">donor_two</string>
     <string name="title_activity_restaurant_two">restaurant_two</string>
     <string name="title_activity_ngo_two">ngo_two</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
