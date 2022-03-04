@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rolebg"
+    android:background="@drawable/threeimage"
     android:orientation="vertical"
     tools:context=".splash2">
     <ImageView
@@ -32,7 +32,7 @@
     <ImageView
         android:layout_width="75dp"
         android:layout_height="70dp"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="185dp"
         android:src="@drawable/logo" />
 

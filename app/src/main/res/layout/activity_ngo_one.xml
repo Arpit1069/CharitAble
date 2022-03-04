@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="415dp"
+    android:layout_height="735dp"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/white"
+    android:background="@drawable/imageimage"
     tools:context=".login">
 
 
@@ -25,7 +25,7 @@
         <LinearLayout
             android:layout_width="303dp"
             android:layout_height="427dp"
-            android:background="#71490D"
+            android:background="#EAB76C"
             android:orientation="vertical">
 
             <LinearLayout
@@ -43,7 +43,7 @@
                 android:id="@+id/ngoinfolayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#C8892A"
+                android:background="#FFEAB76C"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="25dp">
