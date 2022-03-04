@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.charitable.databinding.ActivityDonorTwoBinding
 
-class donor_two : BaseActivity() {
+class donor_two : AppCompatActivity() {
 
     private lateinit var binding: ActivityDonorTwoBinding
 
