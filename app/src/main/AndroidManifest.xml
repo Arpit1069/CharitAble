@@ -12,12 +12,17 @@
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
         <activity
-            android:name=".restaurant_two"
-            android:exported="false" />
-        <activity
             android:name=".donor_two"
             android:exported="false"
-            android:label="donor_two" />
+            android:label="@string/title_activity_donor_two" />
+        <activity
+            android:name=".ngo_two"
+            android:exported="false"
+            android:label="@string/title_activity_ngo_two" />
+        <activity
+            android:name=".restaurant_two"
+            android:exported="false"
+            android:label="@string/title_activity_restaurant_two" />
         <activity
             android:name=".splash4"
             android:exported="false" />
