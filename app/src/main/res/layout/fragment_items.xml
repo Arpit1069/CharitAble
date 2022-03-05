@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ItemFragment">
+    tools:context=".ItemFragment_res">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:tint="@color/black"
         android:src="@drawable/ic_info"/>
     <TextView
         android:layout_width="match_parent"

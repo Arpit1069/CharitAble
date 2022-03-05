@@ -6,22 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-
-class ItemFragment : Fragment() {
+class ProfileFragment_donor : Fragment() {
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_items, container, false)
+        return inflater.inflate(R.layout.fragment_profile_donor, container, false)
     }
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            ItemFragment().apply {
+            ProfileFragment_donor().apply {
                 arguments = Bundle().apply {}
+
+                }
             }
     }
-}

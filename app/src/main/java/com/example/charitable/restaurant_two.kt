@@ -1,18 +1,14 @@
 package com.example.charitable
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import kotlinx.android.synthetic.main.activity_restaurant_two.*
-//import meow.bottomnavigation.MeowBottomNavigation
-//import meow.bottomnavigation.MeowBottomNavigationCell
 
 class restaurant_two : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        addFragment(HomeFragment.newInstance())
+        addFragment(HomeFragment_res.newInstance())
         setContentView(R.layout.activity_restaurant_two)
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
@@ -22,22 +18,22 @@ class restaurant_two : BaseActivity() {
         restaurant_bottom_nav.setOnClickMenuListener {
             when(it.id){
                 0 -> {
-                    replaceFragment(HomeFragment.newInstance())
+                    replaceFragment(HomeFragment_res.newInstance())
                 }
                 1 -> {
-                    replaceFragment(HistoryFragment.newInstance())
+                    replaceFragment(HistoryFragment_res.newInstance())
 
                 }
                 2 -> {
-                    replaceFragment(ItemFragment.newInstance())
+                    replaceFragment(ItemFragment_res.newInstance())
 
                 }
                 3 -> {
-                    replaceFragment(ProfileFragment.newInstance())
+                    replaceFragment(ProfileFragment_res.newInstance())
 
                 }
                 else -> {
-                    replaceFragment(HomeFragment.newInstance(),)
+                    replaceFragment(HomeFragment_res.newInstance(),)
 
 
                 }

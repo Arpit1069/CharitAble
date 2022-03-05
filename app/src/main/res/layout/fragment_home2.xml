@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment_res">
 
     <ImageView
         android:layout_width="100dp"
