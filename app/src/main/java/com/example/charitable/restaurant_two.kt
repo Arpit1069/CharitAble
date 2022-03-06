@@ -3,7 +3,6 @@ package com.example.charitable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
-import kotlinx.android.synthetic.main.activity_donor_two.*
 import kotlinx.android.synthetic.main.activity_restaurant_two.*
 
 
@@ -12,12 +11,13 @@ class restaurant_two : BaseActivity() {
         super.onCreate(savedInstanceState)
         addFragment(HomeFragment_res.newInstance())
         setContentView(R.layout.activity_restaurant_two)
+
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(3,R.drawable.ic_person))
 
-        donor_bottom_nav.setOnClickMenuListener {
+        restaurant_bottom_nav.setOnClickMenuListener {
             when(it.id){
                 0 -> {
                     replaceFragment(HomeFragment_res.newInstance())
@@ -27,7 +27,7 @@ class restaurant_two : BaseActivity() {
 
                 }
                 2 -> {
-                    replaceFragment(ItemFragment_res.newInstance())
+                    replaceFragment(InfoFragment_res.newInstance())
 
                 }
                 3 -> {
