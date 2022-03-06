@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-
 class HomeFragment_res : Fragment() {
 
 
@@ -22,6 +20,7 @@ class HomeFragment_res : Fragment() {
         fun newInstance() =
             HomeFragment_res().apply {
                 arguments = Bundle().apply {}
+
+                }
             }
-    }
 }

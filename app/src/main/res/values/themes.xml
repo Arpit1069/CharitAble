@@ -22,4 +22,7 @@
     <style name="Theme.CharitAble.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.CharitAble.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

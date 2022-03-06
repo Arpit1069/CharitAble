@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import kotlinx.android.synthetic.main.activity_donor_two.*
 
+
 class donor_two : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +41,7 @@ class donor_two : BaseActivity() {
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.replace(R.id.FragmentContainer,fragment).addToBackStack(Fragment::class.java.simpleName).commit()
     }
-    private fun addFragment(fragment:Fragment) {
+    private fun addFragment(fragment: Fragment) {
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.add(R.id.FragmentContainer,fragment).addToBackStack(Fragment::class.java.simpleName).commit()
 

@@ -7,11 +7,9 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".HomeFragment_res">
-
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-
         android:src="@drawable/ic_home_"/>
     <TextView
         android:layout_width="match_parent"
@@ -20,6 +18,9 @@
         android:gravity="center"
         android:textColor="@color/black"
         android:textAlignment="center"
-        android:text="Home Fragment" />
+        android:text="Home Fragmentt" />
+
+
+
 
 </LinearLayout>

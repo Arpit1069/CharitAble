@@ -6,7 +6,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CharitAble"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
@@ -14,7 +14,7 @@
         <activity
             android:name=".donor_two"
             android:exported="false"
-            android:label="@string/title_activity_donor_two" />
+            android:label="donor_two" />
 <!--        <activity-->
 <!--            android:name=".ngo_two"-->
 <!--            android:exported="false"-->
@@ -22,7 +22,7 @@
         <activity
             android:name=".restaurant_two"
             android:exported="false"
-            android:label="@string/title_activity_restaurant_two" />
+            android:label="restaurant_two" />
         <activity
             android:name=".splash4"
             android:exported="false" />
