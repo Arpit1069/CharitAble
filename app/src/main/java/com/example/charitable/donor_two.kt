@@ -11,9 +11,11 @@ class donor_two : BaseActivity() {
         super.onCreate(savedInstanceState)
         addFragment(HomeFragment_donor.newInstance())
         setContentView(R.layout.activity_donor_two)
+
         donor_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         donor_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
-        donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_person))
+        donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
+        donor_bottom_nav.add(MeowBottomNavigation.Model(3,R.drawable.ic_person))
 
         donor_bottom_nav.setOnClickMenuListener {
             when(it.id){
@@ -24,8 +26,12 @@ class donor_two : BaseActivity() {
                     replaceFragment(HistoryFragment_donor.newInstance())
 
                 }
-
                 2 -> {
+                    replaceFragment(ProfileFragment_donor.newInstance())
+                }
+
+
+                3-> {
                     replaceFragment(ProfileFragment_donor.newInstance())
 
                 }

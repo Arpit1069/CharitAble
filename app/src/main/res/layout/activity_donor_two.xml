@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/donor_bottom_nav"
-        android:id="@+id/fragmentcontainer"/>
+        android:id="@+id/FragmentContainer"/>
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
         android:layout_width="match_parent"

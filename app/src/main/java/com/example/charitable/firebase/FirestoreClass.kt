@@ -71,3 +71,11 @@ class FirestoreClass {
         return currentUserID
     }}
 
+private fun donor_one.setUserDataInUI(loggedInUser: User) {
+
+}
+
+private fun donor_one.profileUpdateSuccess() {
+    TODO("Not yet implemented")
+}
+
