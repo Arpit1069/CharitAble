@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import kotlinx.android.synthetic.main.activity_restaurant_two.*
 
-
 class restaurant_two : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +15,7 @@ class restaurant_two : BaseActivity() {
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(3,R.drawable.ic_person))
+        restaurant_bottom_nav.add(MeowBottomNavigation.Model(4,R.drawable.ic_dishes))
 
         restaurant_bottom_nav.setOnClickMenuListener {
             when(it.id){
@@ -34,7 +34,11 @@ class restaurant_two : BaseActivity() {
                     replaceFragment(ProfileFragment_res.newInstance())
 
                 }
-                else -> {
+                3 -> {
+                    replaceFragment(ProfileFragment_res.newInstance())
+
+                }
+                    else -> {
                     replaceFragment(HomeFragment_res.newInstance(),)
 
 
