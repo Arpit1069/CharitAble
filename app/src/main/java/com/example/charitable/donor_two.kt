@@ -14,8 +14,8 @@ class donor_two : BaseActivity() {
 
         donor_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         donor_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
-        donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
-        donor_bottom_nav.add(MeowBottomNavigation.Model(3,R.drawable.ic_person))
+      //  donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
+        donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_person))
 
         donor_bottom_nav.setOnClickMenuListener {
             when(it.id){
@@ -30,11 +30,11 @@ class donor_two : BaseActivity() {
                     replaceFragment(ProfileFragment_donor.newInstance())
                 }
 
+//
+//                3-> {
+//                    replaceFragment(ProfileFragment_donor.newInstance())
 
-                3-> {
-                    replaceFragment(ProfileFragment_donor.newInstance())
-
-                }
+             //   }
                 else -> {
                     replaceFragment(HomeFragment_donor.newInstance(),)
 

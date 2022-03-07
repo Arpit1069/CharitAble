@@ -6,17 +6,18 @@ import com.example.charitable.firebase.FirestoreClass
 import com.example.charitable.models.User
 import android.os.Bundle
 import com.example.charitable.utils.Constants
-import kotlinx.android.synthetic.main.activity_restaurant_one.*
+import kotlinx.android.synthetic.main.activity_donor_one.*
 import kotlinx.android.synthetic.main.activity_selection.*
 
 class donor_one : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurant_one)
-        btnsubmitres.setOnClickListener {
+        btnsubmitdonor.setOnClickListener {
             val intent = Intent(this@donor_one,splash2::class.java)
             startActivity(intent)
             finish()
+
         }
     }
 }
