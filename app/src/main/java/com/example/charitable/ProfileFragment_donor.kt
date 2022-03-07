@@ -24,4 +24,10 @@ class ProfileFragment_donor : Fragment() {
 
                 }
             }
+
+    fun updateProfile(){
+
+    }
+
+
     }
