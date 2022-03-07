@@ -86,13 +86,14 @@
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+
     <com.google.android.material.imageview.ShapeableImageView
-        android:src="@drawable/ic_person"
-        app:shapeAppearanceOverlay="@style/Circular"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
         android:elevation="15dp"
         android:padding="5dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="98dp"
-        android:layout_height="98dp"/>
+        android:src="@drawable/ic_person"
+        app:shapeAppearanceOverlay="@style/Circular" />
 
 </RelativeLayout>
