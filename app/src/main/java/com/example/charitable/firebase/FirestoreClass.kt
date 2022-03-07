@@ -6,6 +6,7 @@ import android.widget.Toast
 import com.example.charitable.donor_one
 import com.example.charitable.login
 import com.example.charitable.models.User
+import com.example.charitable.restaurant_one
 import com.example.charitable.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -22,14 +23,14 @@ class FirestoreClass {
         }
     }
 
-   fun updateUserProfileData(activity: donor_one, userHashMap: HashMap<String,Any>){
+   fun updateUserProfileData(activity: restaurant_one, userHashMap: HashMap<String,Any>){
        mFireStore.collection(Constants.USERS)
            .document(getCurrentUserId())
            .update(userHashMap)
            .addOnSuccessListener {
                Log.i(activity.javaClass.simpleName,"Profile data updated successfully")
                Toast.makeText(activity,"Profile updated successfully",Toast.LENGTH_SHORT).show()
-               activity.profileUpdateSuccess()
+               //activity.profileUpdateSuccess()
            }.addOnFailureListener{
                e ->
                activity.hideProgressDialog()

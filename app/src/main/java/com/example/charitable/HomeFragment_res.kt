@@ -34,13 +34,13 @@ class HomeFragment_res : Fragment() {
 }
 
 
-    //override fun onCreateView(
-       // inflater: LayoutInflater, container: ViewGroup?,
-        //savedInstanceState: Bundle?
-  //  ): View? {
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View? {
 //        setContentView(R.layout.fragment_home2)
- //    return inflater.inflate(R.layout.fragment_home2, container, false)
- //   }
+//     return inflater.inflate(R.layout.fragment_home2, container, false)
+//    }
 //}
 //    private fun setContentView(fragmentHome2: Int) {
 //        pick_btn.setOnClickListener {

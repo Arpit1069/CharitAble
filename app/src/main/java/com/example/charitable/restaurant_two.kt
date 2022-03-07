@@ -34,7 +34,7 @@ class restaurant_two : BaseActivity() {
                     replaceFragment(ProfileFragment_res.newInstance())
 
                 }
-                3 -> {
+                4 -> {
                     replaceFragment(ProfileFragment_res.newInstance())
 
                 }
