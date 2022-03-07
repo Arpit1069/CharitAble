@@ -7,44 +7,44 @@
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp"
     app:cardUseCompatPadding="true">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:padding="3dp"
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:padding="2dp"
-                android:src="@drawable/ic_email"
-                android:layout_marginStart="5dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"/>
-            <TextView
-                android:text="Email"
-                android:gravity="center"
-                android:layout_marginStart="10dp"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:textColor="#605E5E"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="3dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:padding="2dp"-->
+<!--                android:src="@drawable/ic_email"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"/>-->
+<!--            <TextView-->
+<!--                android:text="Email"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="#605E5E"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
 
-        </LinearLayout>
-        <TextView
-            android:text="myname@gmail.com"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:text="myname@gmail.com"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="17sp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 </androidx.cardview.widget.CardView>
