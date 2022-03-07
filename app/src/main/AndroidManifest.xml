@@ -13,21 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
-        <activity
-            android:name=".donor_two"
-            android:exported="false"
-            android:label="donor_two" />
+
 <!--        <activity-->
 <!--            android:name=".ngo_two"-->
 <!--            android:exported="false"-->
 <!--            android:label="@string/title_activity_ngo_two" />-->
-        <activity
-            android:name=".restaurant_two"
-            android:exported="false"
-            android:label="restaurant_two" />
-        <activity
-            android:name=".splash4"
-            android:exported="false" />
+
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -57,6 +48,17 @@
             android:exported="true" />
         <activity
             android:name=".donor_one"
+            android:exported="true" />
+        <activity
+            android:name=".donor_two"
+            android:exported="true"
+            android:label="donor_two" />
+        <activity
+            android:name=".restaurant_two"
+            android:exported="true"
+            android:label="restaurant_two" />
+        <activity
+            android:name=".splash4"
             android:exported="true" />
     </application>
 
