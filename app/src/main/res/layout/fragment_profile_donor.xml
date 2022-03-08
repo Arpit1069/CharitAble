@@ -87,6 +87,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="260dp">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
@@ -94,66 +95,75 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
+
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_marginTop="25dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:text="My Name"
-                            android:textStyle="bold"
                             android:gravity="center"
+                            android:text="My Name"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:textStyle="bold" />
+
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
-                            android:text="kuch toh bhi"
-                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
+                            android:text="kuch toh bhi"
                             android:textColor="@color/black"
                             android:textSize="15sp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:textStyle="bold" />
+
                         <View
-                            android:background="#79D6D1D1"
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"/>
+                            android:layout_height="1dp"
+                            android:background="#79D6D1D1" />
+
                         <LinearLayout
-                            android:orientation="horizontal"
-                            android:weightSum="3"
-                            android:gravity="center"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
                             <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="Personal Info"
-                                android:gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
                                 android:textColor="@color/black"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
                             <View
-                                android:background="#79D6D1D1"
                                 android:layout_width="1dp"
-                                android:layout_height="match_parent"/>
+                                android:layout_height="match_parent"
+                                android:background="#79D6D1D1" />
+
                             <TextView
-                                android:layout_weight="1"
-                                android:text="Your Status"
-                                android:gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
-                                android:textColor="@color/black"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"/>
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Your Status"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
                             <View
-                                android:background="#79D6D1D1"
                                 android:layout_width="1dp"
-                                android:layout_height="match_parent"/>
+                                android:layout_height="match_parent"
+                                android:background="#79D6D1D1" />
 
 
                         </LinearLayout>
