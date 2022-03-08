@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".restaurant_two"
     android:layout_gravity="center"
-    android:background="@drawable/profilebg"
+    android:background="@drawable/bgdonor"
     android:id="@+id/profile"
     android:orientation="vertical">
     <LinearLayout

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +14,7 @@
         android:layout_height="200dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="120dp"
-        app:cardBackgroundColor="#E1B5B5"
+        app:cardBackgroundColor="#F3DCDC"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -40,7 +40,7 @@
         android:layout_height="200dp"
         android:layout_marginStart="210dp"
         android:layout_marginTop="120dp"
-        app:cardBackgroundColor="#FFFFFF"
+        app:cardBackgroundColor="#B5DBEC"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -92,7 +92,7 @@
         android:layout_height="200dp"
         android:layout_marginStart="210dp"
         android:layout_marginTop="320dp"
-        app:cardBackgroundColor="#D66890"
+        app:cardBackgroundColor="#F4C4B5"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -118,7 +118,7 @@
             android:layout_height="200dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="320dp"
-            app:cardBackgroundColor="#C8537D"
+            app:cardBackgroundColor="#DBCCF4"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true">
@@ -147,8 +147,9 @@
         android:clickable="true"
         android:layout_marginTop="600dp"
         android:layout_marginStart="175dp"
-        android:src="@drawable/ic_add" />
+        android:src="@drawable/ic_add"
+            android:focusable="true" />
 
 
 
-</FrameLayout>
+</RelativeLayout>
