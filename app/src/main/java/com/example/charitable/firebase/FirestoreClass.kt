@@ -3,6 +3,8 @@ package com.example.charitable.firebase
 import android.app.Activity
 import android.util.Log
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.example.charitable.ProfileFragment_donor
 import com.example.charitable.donor_one
 import com.example.charitable.donor_two
 import com.example.charitable.login
@@ -11,7 +13,6 @@ import com.example.charitable.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
-import kotlinx.android.synthetic.main.activity_donor_two.*
 
 //import com.google.firebase.firestore.auth.User
 
@@ -48,22 +49,30 @@ class FirestoreClass {
             .document(getCurrentUserId()).get()
             .addOnSuccessListener {document->
 
-                val loggedInUser = document.toObject(User::class.java)!!
+                val loggedInUser = document.toObject(User::class.java)
 
 //                activity is donor_two{activity.updateNavigationUserDetails(loggedInUser)}
 
+
                 when(activity){
                     is login -> {
-                        activity.signInSuccess(loggedInUser)
+                        if (loggedInUser != null) {
+                            activity.signInSuccess(loggedInUser)
+                        }
                     }
                     is donor_one ->{
-                        activity.setUserDataInUI(loggedInUser)
+                        if (loggedInUser != null) {
+                            activity.setUserDataInUI(loggedInUser)
+                        }
                     }
-                     is donor_two ->{
-
-                      activity.updateNavigationUserDetails(loggedInUser)
-                     }
+//                     is donor_two ->{
+//
+//                         if (loggedInUser != null) {
+//                             activity.updateNavigationUserDetails(loggedInUser)
+//                         }
+//                     }
                 }
+
 
 
             }.addOnFailureListener{
@@ -83,6 +92,28 @@ class FirestoreClass {
             }
 
     }
+
+    fun loadUserData2(fragment: Fragment) {
+        mFireStore.collection(Constants.USERS)
+            .document(getCurrentUserId()).get()
+            .addOnSuccessListener { document ->
+
+                val loggedInUser = document.toObject(User::class.java)
+
+//                activity is donor_two{activity.updateNavigationUserDetails(loggedInUser)}
+
+
+                when (fragment) {
+                    is ProfileFragment_donor -> {
+                        if (loggedInUser != null) {
+                            fragment.updateNavigationUserDetails(loggedInUser)
+                        }
+                    }
+                }
+            }
+    }
+
+
 
     fun getCurrentUserId(): String{
         var currentUser = FirebaseAuth.getInstance().currentUser
