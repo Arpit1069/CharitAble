@@ -36,8 +36,8 @@ class ProfileFragment_donor : Fragment() {
             .load(user.image)
             .centerCrop()
             .placeholder(R.drawable.ic_person)
-//            .into(profile_image);
-//        profile_name.text = user.name
+           .into(profile_image);
+       profile_name.text = user.name
         address_donor.text = user.address
         number_donor.text = user.mobile.toString()
         email_donor.text = user.email
