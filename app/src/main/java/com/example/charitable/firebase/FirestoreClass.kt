@@ -123,7 +123,22 @@ class FirestoreClass {
                 }
             }
     }
+    fun loadUserData3(fragment: Fragment) {
+        mFireStore.collection(Constants.USERS)
+            .document(getCurrentUserId()).get()
+            .addOnSuccessListener { document ->
 
+                val loggedInUser = document.toObject(User::class.java)
+
+                when (fragment) {
+                    is ProfileFragment_res -> {
+                        if (loggedInUser != null) {
+                            fragment.updateNavigationUserDetails2(loggedInUser)
+                        }
+                    }
+                }
+            }
+    }
 
     fun getCurrentUserId(): String {
         var currentUser = FirebaseAuth.getInstance().currentUser
