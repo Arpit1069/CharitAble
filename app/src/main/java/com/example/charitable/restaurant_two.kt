@@ -3,6 +3,7 @@ package com.example.charitable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
+import com.example.charitable.firebase.FirestoreClass
 import kotlinx.android.synthetic.main.activity_restaurant_two.*
 
 class restaurant_two : BaseActivity() {
@@ -10,6 +11,8 @@ class restaurant_two : BaseActivity() {
         super.onCreate(savedInstanceState)
         addFragment(HomeFragment_res.newInstance())
         setContentView(R.layout.activity_restaurant_two)
+
+        FirestoreClass().loadUserData(this)
 
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         restaurant_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))

@@ -11,8 +11,8 @@ class splash3 : BaseActivity() {
         setContentView(R.layout.activity_splash3)
         val time : Long = 2500
         Handler().postDelayed(Runnable {
-        val intent = Intent(this@splash3,restaurant_two::class.java)
-        startActivity(intent)
+//        val intent = Intent(this@splash3,restaurant_two::class.java)
+        startActivity(Intent(this@splash3,restaurant_two::class.java))
         finish()
     },time)
 
