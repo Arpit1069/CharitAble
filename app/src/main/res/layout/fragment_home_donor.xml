@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/chiku"
     android:gravity="center"
     tools:context=".HistoryFragment_res">
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="620dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageButton
+                android:id="@+id/books_button"
+                android:src="@drawable/books"
+                android:layout_width="120dp"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="170dp"
+            android:layout_height="160dp">
+            <ImageButton
+                android:id="@+id/clothes_button"
+                android:src="@drawable/clothes"
+                android:layout_width="120dp"
+                android:layout_height="100dp"/>
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_homed"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:text="Home Fragment" />
+        </LinearLayout>
 
-</LinearLayout>
+            <!--    <androidx.cardview.widget.CardView-->
+<!--        app:cardCornerRadius="50dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        app:cardBackgroundColor="#D64072"-->
+<!--        android:layout_marginTop="320dp"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="60dp">-->
+<!--        <TextView-->
+<!--            android:text="BOOKS"-->
+<!--            android:gravity="center"-->
+<!--            android:textSize="23sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="60dp"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_marginTop="620dp"-->
+<!--        app:cardBackgroundColor="#F1B8CB"-->
+<!--        app:cardCornerRadius="50dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="60dp"/>-->
+<!--   <androidx.cardview.widget.CardView-->
+<!--        app:cardCornerRadius="40dp"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:cardBackgroundColor="#B2D7E8"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginTop="80dp">-->
+<!--       <ImageView-->
+<!--           android:layout_gravity="center"-->
+<!--           android:src="@drawable/books"-->
+<!--           android:layout_width="140dp"-->
+<!--           android:layout_height="150dp"/>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_marginTop="620dp"-->
+<!--        app:cardBackgroundColor="#F1B8CB"-->
+<!--        app:cardCornerRadius="50dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="60dp">-->
+<!--        <TextView-->
+<!--            android:text="CLOTHES"-->
+<!--            android:textSize="23sp"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="60dp"/>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        app:cardCornerRadius="40dp"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:cardBackgroundColor="#B2D7E8"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginTop="400dp">-->
+<!--        <ImageView-->
+<!--            android:src="@drawable/clothes"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="150dp"/>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="3dp">-->
+
+
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</FrameLayout>

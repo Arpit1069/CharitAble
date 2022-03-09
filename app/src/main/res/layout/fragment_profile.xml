@@ -87,7 +87,6 @@
                 android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="260dp">
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
@@ -95,76 +94,67 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
-
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:orientation="vertical"
                         android:layout_marginTop="25dp"
-                        android:orientation="vertical">
-
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                         <TextView
-                            android:id="@+id/profile_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:gravity="center"
                             android:text="My Name"
+                            android:id="@+id/profile_name"
+                            android:textStyle="bold"
+                            android:gravity="center"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
                             android:layout_marginTop="15dp"
-                            android:layout_marginBottom="10dp"
+                            android:text="kuch toh bhi"
+                            android:textStyle="bold"
                             android:gravity="center"
-                            android:text="role"
                             android:textColor="@color/black"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
-
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
                         <View
+                            android:background="#79D6D1D1"
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#79D6D1D1" />
-
+                            android:layout_height="1dp"/>
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
                             android:orientation="horizontal"
-                            android:weightSum="3">
-
+                            android:weightSum="3"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:gravity="center"
                                 android:text="Personal Info"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <View
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#79D6D1D1" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="Your Status"
-                                android:textColor="@color/black"
+                                android:textStyle="bold"
                                 android:textSize="16sp"
-                                android:textStyle="bold" />
-
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
                             <View
+                                android:background="#79D6D1D1"
                                 android:layout_width="1dp"
-                                android:layout_height="match_parent"
-                                android:background="#79D6D1D1" />
+                                android:layout_height="match_parent"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:text="Your Status"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <View
+                                android:background="#79D6D1D1"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"/>
 
 
                         </LinearLayout>
@@ -177,9 +167,9 @@
             </RelativeLayout>
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/profile_image"
                 android:layout_width="98dp"
                 android:layout_height="98dp"
+                android:id="@+id/profile_image"
                 android:layout_centerHorizontal="true"
                 android:elevation="15dp"
                 android:padding="5dp"
