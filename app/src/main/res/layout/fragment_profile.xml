@@ -167,9 +167,9 @@
             </RelativeLayout>
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
                 android:layout_width="98dp"
                 android:layout_height="98dp"
-                android:id="@+id/profile_image"
                 android:layout_centerHorizontal="true"
                 android:elevation="15dp"
                 android:padding="5dp"

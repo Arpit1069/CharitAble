@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 class donor_two : BaseActivity() {
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         addFragment(HomeFragment_donor.newInstance())
@@ -46,18 +47,6 @@ class donor_two : BaseActivity() {
             }
         }
     }
-
-//    fun updateNavigationUserDetails(user: com.example.charitable.models.User){
-//
-//        Glide
-//            .with(this)
-//            .load(user.image)
-//            .centerCrop()
-//            .placeholder(R.drawable.ic_person)
-//            .into(profile_image);
-//        profile_name.text = user.name
-//
-//    }
 
     private fun replaceFragment(fragment: Fragment) {
         val fragmentTransition = supportFragmentManager.beginTransaction()

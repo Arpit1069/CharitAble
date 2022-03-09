@@ -27,6 +27,8 @@ class ProfileFragment_donor : Fragment() {
                 FirestoreClass().loadUserData2(this)
 
                 }
+//        private const val READ_STORAGE_PERMISSION_CODE = 1
+//        private const val PICK_IMAGE_REQUEST_CODE = 2
             }
 
     fun updateNavigationUserDetails(user: com.example.charitable.models.User){
@@ -37,6 +39,7 @@ class ProfileFragment_donor : Fragment() {
             .centerCrop()
             .placeholder(R.drawable.ic_person)
            .into(profile_image);
+
        profile_name.text = user.name
         address_donor.text = user.address
         number_donor.text = user.mobile.toString()
