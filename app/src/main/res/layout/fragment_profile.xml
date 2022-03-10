@@ -390,7 +390,7 @@
             android:textAllCaps="false"
             android:textColor="@color/textColor"
             android:textSize="17sp"
-            app:backgroundTint="#5D91ED" />
+            app:backgroundTint="#8BC34A" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

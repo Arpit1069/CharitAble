@@ -72,20 +72,7 @@
                     app:shapeAppearanceOverlay="@style/Button4">
 
 
-                    <!--                    <RelativeLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="119dp"-->
-                    <!--                        android:gravity="center">-->
 
-                    <!--&lt;!&ndash;                        <RelativeLayout&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            android:layout_height="260dp"&ndash;&gt;-->
-                    <!--&lt;!&ndash;&lt;!&ndash;                            android:layout_alignBottom="@+id/profile_image"&ndash;&gt;<![CDATA[&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            android:layout_centerHorizontal="true"&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            android:layout_marginBottom="-21dp">&ndash;&gt;-->
-
-                    <!--&lt;!&ndash;                        ]]>&ndash;&gt;-->
-                    <!--                    </RelativeLayout>-->
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/namedonor"
