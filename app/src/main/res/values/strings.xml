@@ -40,4 +40,6 @@
     <string name="title_activity_ngo_two">ngo_two</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
+    <string name="update_profile">Update Profile</string>
 </resources>

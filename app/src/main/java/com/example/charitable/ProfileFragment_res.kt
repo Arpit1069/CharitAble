@@ -1,10 +1,12 @@
 package com.example.charitable
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.bumptech.glide.Glide
 import com.example.charitable.firebase.FirestoreClass
 import kotlinx.android.synthetic.main.fragment_profile.*
@@ -16,7 +18,16 @@ class ProfileFragment_res : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val v = inflater.inflate(R.layout.fragment_profile,container,false)
+        val btnUpdateProfile = v.findViewById<Button>(R.id.updatedonorprofile)
+
+        btnUpdateProfile.setOnClickListener{
+            val intent = Intent(this@ProfileFragment_res.requireContext(),restaurant_one::class.java)
+            startActivity(intent)
+
+        }
+
+        return v
 
     }
 

@@ -371,6 +371,51 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/updatedonorprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:elevation="15dp"
+            android:gravity="center"
+            android:text="@string/update_profile"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            app:backgroundTint="#5D91ED" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                </LinearLayout>
+
+
+
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
