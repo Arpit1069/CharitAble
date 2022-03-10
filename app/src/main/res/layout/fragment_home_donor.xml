@@ -31,11 +31,13 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="2">
+
             <ImageButton
                 android:id="@+id/books_button"
-                android:src="@drawable/books"
                 android:layout_width="120dp"
-                android:layout_height="100dp"/>
+                android:layout_height="100dp"
+                android:src="@drawable/books"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -50,11 +52,13 @@
             android:weightSum="2"
             android:layout_width="170dp"
             android:layout_height="160dp">
+
             <ImageButton
                 android:id="@+id/clothes_button"
-                android:src="@drawable/clothes"
                 android:layout_width="120dp"
-                android:layout_height="100dp"/>
+                android:layout_height="100dp"
+                android:src="@drawable/clothes"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 

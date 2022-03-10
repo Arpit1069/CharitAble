@@ -15,18 +15,19 @@ class HomeFragment_donor : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
-        books_button.setOnClickListener {
-            val intent = Intent (this@HomeFragment_donor.requireContext(),books_one::class.java)
-            startActivity(intent)
-        }
-        clothes_button.setOnClickListener {
-            val intent = Intent (this@HomeFragment_donor.requireContext(),clothes_one::class.java)
-            startActivity(intent)
-        }
+//        books_button.setOnClickListener {
+////            val intent = Intent (getActivity(),books_one::class.java)
+////            getActivity().startActivity(intent)
+//            val intent = Intent (getActivity(), books_one::class.java)
+//            getActivity()?.startActivity(intent)
+//
+//        }
+//        clothes_button.setOnClickListener {
+//            val intent = Intent (donor_two(),clothes_one::class.java)
+//            donor_two().startActivity(intent)
+//        }
         return inflater.inflate(R.layout.fragment_home_donor, container, false)
-
     }
 
     companion object {
@@ -36,6 +37,5 @@ class HomeFragment_donor : Fragment() {
                 arguments = Bundle().apply {}
 
                 }
-
             }
     }

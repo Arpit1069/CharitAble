@@ -2,11 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.charitable">
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -16,15 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
+
         <activity
-            android:name=".clothes_one"
-            android:exported="false" />
-        <activity
-            android:name=".books_one"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".ngo_two" -->
-        <!-- android:exported="false" -->
-        <!-- android:label="@string/title_activity_ngo_two" /> -->
+            android:name=".ngo_two"
+            android:exported="false"
+            android:label="ngo_two" />
+
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -59,6 +53,14 @@
             android:name=".donor_two"
             android:exported="true"
             android:label="donor_two" />
+<!--        <activity-->
+<!--            android:name=".books_one"-->
+<!--            android:exported="true"-->
+<!--            android:label="books_one" />-->
+<!--        <activity-->
+<!--            android:name=".clothes_one"-->
+<!--            android:exported="true"-->
+<!--            android:label="clothes_two" />-->
         <activity
             android:name=".restaurant_two"
             android:exported="true"

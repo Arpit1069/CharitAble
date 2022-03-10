@@ -21,6 +21,7 @@ class HomeFragment_res : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.fragment_home2, container, false)
     }
 
