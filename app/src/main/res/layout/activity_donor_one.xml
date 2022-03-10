@@ -13,7 +13,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
-        android:layout_height="470dp"
+        android:layout_height="534dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
         android:layout_marginTop="140dp"
@@ -24,9 +24,19 @@
 
         <LinearLayout
             android:layout_width="303dp"
-            android:layout_height="427dp"
+            android:layout_height="538dp"
             android:background="#B1DBF8"
             android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileUpdateImageDonor"
+                android:layout_gravity="center"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:elevation="10dp"
+                android:padding="1dp"
+                android:src="@drawable/ic_person"
+                app:shapeAppearanceOverlay="@style/Circular" />
 
             <LinearLayout
                 android:layout_width="260dp"
@@ -60,6 +70,22 @@
                     app:boxStrokeColor="#4E4A4A"
                     app:boxStrokeWidth="1dp"
                     app:shapeAppearanceOverlay="@style/Button4">
+
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="119dp"-->
+                    <!--                        android:gravity="center">-->
+
+                    <!--&lt;!&ndash;                        <RelativeLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_height="260dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;                            android:layout_alignBottom="@+id/profile_image"&ndash;&gt;<![CDATA[&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_centerHorizontal="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            android:layout_marginBottom="-21dp">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;                        ]]>&ndash;&gt;-->
+                    <!--                    </RelativeLayout>-->
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/namedonor"
