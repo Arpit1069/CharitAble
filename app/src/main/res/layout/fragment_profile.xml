@@ -16,33 +16,25 @@
         android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="horizontal"
-            android:padding="8dp"
+            android:padding="2dp"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="41dp"
-                    android:layout_marginBottom="5dp"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_arrow" />
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="64dp"
+                    android:layout_height="41dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:padding="5dp"
-                    android:src="@drawable/ic_notifications_black_24dp" />
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    />
 
 
             </RelativeLayout>
@@ -83,10 +75,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
             <RelativeLayout
-                android:layout_centerInParent="true"
                 android:layout_width="match_parent"
-                android:layout_height="260dp">
+                android:layout_height="260dp"
+                android:layout_centerInParent="true">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
@@ -94,67 +88,77 @@
                     app:cardCornerRadius="15dp"
                     app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
+
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_marginTop="25dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:layout_marginTop="20dp"
-                            android:text="My Name"
                             android:id="@+id/profile_name"
-                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
                             android:gravity="center"
+                            android:text="My Name"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:textStyle="bold" />
+
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
-                            android:text="kuch toh bhi"
-                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"
                             android:gravity="center"
+                            android:text="kuch toh bhi"
                             android:textColor="@color/black"
                             android:textSize="15sp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:textStyle="bold" />
+
                         <View
-                            android:background="#79D6D1D1"
                             android:layout_width="match_parent"
-                            android:layout_height="1dp"/>
+                            android:layout_height="1dp"
+                            android:background="#79D6D1D1" />
+
                         <LinearLayout
-                            android:orientation="horizontal"
-                            android:weightSum="3"
-                            android:gravity="center"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
                             <TextView
+                                android:layout_width="229dp"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:gravity="center"
                                 android:text="Personal Info"
-                                android:gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
                                 android:textColor="@color/black"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"/>
-                            <View
-                                android:background="#79D6D1D1"
-                                android:layout_width="1dp"
-                                android:layout_height="match_parent"/>
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
                             <TextView
+                                android:id="@+id/profile_role"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="Your Status"
                                 android:gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"
+                                android:text="Your Status"
                                 android:textColor="@color/black"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
                             <View
-                                android:background="#79D6D1D1"
                                 android:layout_width="1dp"
-                                android:layout_height="match_parent"/>
+                                android:layout_height="match_parent"
+                                android:background="#79D6D1D1" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#79D6D1D1" />
 
 
                         </LinearLayout>
@@ -171,6 +175,7 @@
                 android:layout_width="98dp"
                 android:layout_height="98dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
                 android:elevation="15dp"
                 android:padding="5dp"
                 android:src="@drawable/ic_person"
@@ -198,11 +203,14 @@
                         android:layout_alignParentStart="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:padding="5dp"
-                            android:src="@drawable/ic_profile"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"/>
+                            app:tint="#E85E5E5E"
+                            android:padding="2dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_home_"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
                         <TextView
                             android:text="Address"
                             android:textSize="15sp"
@@ -212,40 +220,35 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:padding="1dp"
-                        android:gravity="center"
-                        android:layout_alignParentEnd="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:padding="5dp"
-                            android:src="@drawable/ic_baseline_add_circle_24"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"/>
-                        <TextView
-                            android:text="Add"
-                            android:textSize="15sp"
-                            android:layout_margin="5dp"
-                            android:textStyle="bold|normal"
-                            android:textColor="#E85E5E5E"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
+<!--                    <LinearLayout-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:padding="1dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+<!--                        <ImageView-->
+<!--                            android:padding="5dp"-->
+<!--                            android:src="@drawable/ic_baseline_add_circle_24"-->
+<!--                            android:layout_width="35dp"-->
+<!--                            android:layout_height="35dp"/>-->
+<!--                        <TextView-->
+<!--                            android:text="Add"-->
+<!--                            android:textSize="15sp"-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            android:textStyle="bold|normal"-->
+<!--                            android:textColor="#E85E5E5E"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"/>-->
+<!--                    </LinearLayout>-->
 
                 </RelativeLayout>
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        app:tint="@color/black"
-                        android:padding="2dp"
-                        android:layout_marginStart="10dp"
-                        android:src="@drawable/ic_home_"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"/>
+
+
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
@@ -256,6 +259,7 @@
                             android:textSize="15sp"
                             android:textColor="@color/black"
                             android:textStyle="bold|normal"
+                            android:layout_marginStart="25dp"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
@@ -377,46 +381,30 @@
 
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:id="@+id/updatedonorprofile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="36dp"
-            android:elevation="15dp"
-            android:gravity="center"
-            android:text="@string/update_profile"
-            android:textAllCaps="false"
-            android:textColor="@color/textColor"
-            android:textSize="17sp"
-            app:backgroundTint="#8BC34A" />
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
-            app:cardElevation="10dp"
+            app:cardElevation="5dp"
             app:cardUseCompatPadding="true">
 
-            <LinearLayout
+            <Button
+                android:id="@+id/updatedonorprofile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:text="@string/update_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+                app:backgroundTint="#8BC34A" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="3dp">
-
-                </LinearLayout>
-
-
-
-
-            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 

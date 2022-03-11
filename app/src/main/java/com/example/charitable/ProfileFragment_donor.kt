@@ -58,6 +58,7 @@ class ProfileFragment_donor : Fragment() {
         address_donor.text = user.address
         number_donor.text = user.mobile.toString()
         email_donor.text = user.email
+        profile_role.text = user.role
 
     }
 

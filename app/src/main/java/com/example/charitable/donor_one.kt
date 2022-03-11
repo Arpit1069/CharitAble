@@ -191,7 +191,7 @@ class donor_one :  BaseActivity() {
         }
     }
     fun profileUpdateSuccessDonor(){
-//        hideProgressDialog()
+        hideProgressDialog()
         startActivity(Intent(this@donor_one,splash2::class.java))
         finish()
     }
