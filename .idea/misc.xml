@@ -158,10 +158,15 @@
         <entry key="app/src/main/res/drawable/switch_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_tumbs.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_books_one.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_books_two.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_clothes_one.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_clothes_two.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_donor_one.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_donor_two.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_donorbottomnavigation.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_food_one.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_food_three.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_food_two.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_ngo_one.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_ngo_two.xml" value="0.17844202898550723" />
