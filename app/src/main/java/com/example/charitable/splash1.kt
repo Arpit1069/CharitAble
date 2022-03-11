@@ -13,7 +13,7 @@ class splash1 : BaseActivity() {
        val time : Long = 2500
         Handler().postDelayed(Runnable {
 
-           // var currentUserID = FirestoreClass().getCurrentUserId()
+//            var currentUserID = FirestoreClass().getCurrentUserId()
 //            if(currentUserID.isNotEmpty()){
 //                startActivity(Intent(this@splash1,donor_two::class.java))
 //            }else{
