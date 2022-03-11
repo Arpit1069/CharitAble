@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager
 //import androidx.fragment.app.FragmentTransaction
 import com.bumptech.glide.Glide
 import com.example.charitable.firebase.FirestoreClass
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment_donor : Fragment() {
@@ -23,9 +24,16 @@ class ProfileFragment_donor : Fragment() {
     ): View? {
         val v = inflater.inflate(R.layout.fragment_profile,container,false)
         val btnUpdateProfile = v.findViewById<Button>(R.id.updatedonorprofile)
+        val btnlogOut = v.findViewById<Button>(R.id.Profile_logOut)
 
        btnUpdateProfile.setOnClickListener{
             val intent = Intent(this@ProfileFragment_donor.requireContext(),donor_one::class.java)
+            startActivity(intent)
+
+        }
+        btnlogOut.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            val intent = Intent(this@ProfileFragment_donor.requireContext(),login::class.java)
             startActivity(intent)
 
         }

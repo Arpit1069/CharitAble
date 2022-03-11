@@ -20,9 +20,14 @@ class ProfileFragment_res : Fragment() {
     ): View? {
         val v = inflater.inflate(R.layout.fragment_profile,container,false)
         val btnUpdateProfile = v.findViewById<Button>(R.id.updatedonorprofile)
-
+        val btnlogOut = v.findViewById<Button>(R.id.Profile_logOut)
         btnUpdateProfile.setOnClickListener{
             val intent = Intent(this@ProfileFragment_res.requireContext(),restaurant_one::class.java)
+            startActivity(intent)
+
+        }
+        btnlogOut.setOnClickListener{
+            val intent = Intent(this@ProfileFragment_res.requireContext(),login::class.java)
             startActivity(intent)
 
         }
@@ -52,6 +57,7 @@ class ProfileFragment_res : Fragment() {
         address_donor.text = user.address
         number_donor.text = user.mobile.toString()
         email_donor.text = user.email
+        profile_role.text = user.role
 
     }
 }
