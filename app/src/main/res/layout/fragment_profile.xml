@@ -96,23 +96,24 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/profile_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
                             android:gravity="center"
-                            android:text="My Name"
+                            android:text="My Profile"
                             android:textColor="@color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/profile_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textAllCaps="true"
                             android:layout_marginTop="15dp"
                             android:layout_marginBottom="10dp"
                             android:gravity="center"
-                            android:text="kuch toh bhi"
+                            android:text="@string/user_name"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -134,7 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="Personal Info"
+                                android:text="@string/personal_info"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -145,7 +146,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:text="Your Status"
+                                android:textAllCaps="true"
+                                android:text="@string/your_status"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -250,28 +252,28 @@
 
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_width="377dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/address_donor"
-                            android:text="ghar ka address"
-                            android:textSize="15sp"
-                            android:textColor="@color/black"
-                            android:textStyle="bold|normal"
-                            android:layout_marginStart="25dp"
-                            android:gravity="center"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-<!--                        <TextView-->
-<!--                            android:text="Detailed Address,\nStreet name,\nCity ,\n Pincode"-->
-<!--                            android:textSize="13sp"-->
-<!--                            android:textColor="#ED5E5E5E"-->
-<!--                            android:textStyle="normal"-->
-<!--                            android:gravity="center"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"/>-->
-
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:gravity="start"
+                            android:text="ghar ka address"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold|normal" />
+                        <!--                        <TextView-->
+                        <!--                            android:text="Detailed Address,\nStreet name,\nCity ,\n Pincode"-->
+                        <!--                            android:textSize="13sp"-->
+                        <!--                            android:textColor="#ED5E5E5E"-->
+                        <!--                            android:textStyle="normal"-->
+                        <!--                            android:gravity="center"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"/>-->
 
 
                     </LinearLayout>
@@ -315,16 +317,37 @@
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
-                <TextView
-                    android:id="@+id/number_donor"
-                    android:text="+91-"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/_91"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/number_donor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/_000_0000_000"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
 
             </LinearLayout>
 
@@ -366,7 +389,7 @@
                 </LinearLayout>
                 <TextView
                     android:id="@+id/email_donor"
-                    android:text="myname@gmail.com"
+                    android:text="@string/user_email_gmail_com"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="17sp"
@@ -388,22 +411,43 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="15dp"
             app:cardElevation="5dp"
-            app:cardUseCompatPadding="true">
-
+            app:cardUseCompatPadding="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
             <Button
                 android:id="@+id/updatedonorprofile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginStart="36dp"
-                android:layout_marginEnd="36dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
                 android:elevation="15dp"
                 android:gravity="center"
                 android:text="@string/update_profile"
-                android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17sp"
                 app:backgroundTint="#8BC34A" />
+
+                <Button
+                    android:id="@+id/Profile_logOut"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"
+                    app:backgroundTint="#8BC34A" />
+
+            </LinearLayout>
 
 
         </androidx.cardview.widget.CardView>

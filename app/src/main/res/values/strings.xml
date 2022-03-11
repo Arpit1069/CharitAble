@@ -42,4 +42,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="update">Update</string>
     <string name="update_profile">Update Profile</string>
+    <string name="_91">+91 -</string>
+    <string name="_000_0000_000">000 0000 000</string>
+    <string name="user_email_gmail_com">user_email@gmail.com</string>
+    <string name="your_status">Your Status</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="user_name">User name</string>
+    <string name="logout">LogOut</string>
 </resources>
