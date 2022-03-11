@@ -59,6 +59,9 @@ class donor_one :  BaseActivity() {
 
             if(mSelectedImageFileUri != null){
                 uploadUserImage()
+            }else{
+                showProgressDialog(resources.getString(R.string.please_wait))
+                updateUserProfileDataDonor()
             }
             val intent = Intent(this@donor_one,splash2::class.java)
             updateUserProfileDataDonor()
@@ -123,7 +126,7 @@ class donor_one :  BaseActivity() {
                     Log.i("Downloadable Image URl",uri.toString())
                     mProfileImageURL = uri.toString()
                     hideProgressDialog()
-                    //TODO update user profile data
+                    updateUserProfileDataDonor()
 
                 }
 
@@ -146,6 +149,9 @@ class donor_one :  BaseActivity() {
 //        val mobile: String = mobiledonor.text.toString().trim { it <= ' ' }
 //        val address: String = addressdonor.text.toString().trim { it <= ' ' }
 //        val city: String = citydonor.text.toString().trim{ it<= ' '}
+       if(mProfileImageURL.isNotEmpty() && mProfileImageURL != mUserDetails.image){
+           userHashMap[Constants.IMAGE] = mProfileImageURL
+       }
 
         if(namedonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.NAME] = namedonor.text.toString()
