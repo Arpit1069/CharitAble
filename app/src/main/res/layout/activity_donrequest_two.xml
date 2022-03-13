@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="408dp"
+    android:layout_height="728dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".login">
+    <TextView
+        android:text="CharitAble"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:background="#ABDAEF"
+        android:textColor="@color/black"
+        android:layout_width="414dp"
+        android:layout_height="50dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="580dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="38dp"
+        app:cardBackgroundColor="#F3D5F8"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="0dp"
+            app:cardBackgroundColor="#C7EFC9"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="38dp"
+            app:cardBackgroundColor="#C7EFC9"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/switch_tumbs"
+            android:layout_width="160dp"
+            android:text="aage badho"
+            android:textSize="17sp"
+            android:id="@+id/aage_badho_donreq_two"
+            android:layout_height="65dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

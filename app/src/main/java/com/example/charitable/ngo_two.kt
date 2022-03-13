@@ -9,18 +9,18 @@ import kotlinx.android.synthetic.main.activity_restaurant_two.*
 class ngo_two : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        addFragment(HomeFragment_res.newInstance())
+        addFragment(HomeFragment_ngo.newInstance())
         setContentView(R.layout.activity_ngo_two)
 
         ngo_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         ngo_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
-        ngo_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
-        ngo_bottom_nav.add(MeowBottomNavigation.Model(3,R.drawable.ic_person))
+        ngo_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_profile))
+        ngo_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_person))
 
         ngo_bottom_nav.setOnClickMenuListener {
             when(it.id){
                 0 -> {
-                    replaceFragment(HomeFragment_res.newInstance())
+                    replaceFragment(HomeFragment_ngo.newInstance())
                 }
                 1 -> {
                     replaceFragment(HistoryFragment_res.newInstance())

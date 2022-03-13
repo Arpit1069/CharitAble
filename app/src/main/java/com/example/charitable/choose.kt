@@ -21,7 +21,7 @@ class choose : BaseActivity() {
 //            finish()
 //        }
         imageButton7.setOnClickListener {
-            val intent = Intent(this@choose,ngo_one::class.java)
+            val intent = Intent(this@choose, ngo_one::class.java)
             startActivity(intent)
             finish()
         }
