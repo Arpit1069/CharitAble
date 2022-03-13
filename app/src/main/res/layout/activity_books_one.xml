@@ -23,7 +23,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="38dp"
-        app:cardBackgroundColor="#CCB8EF"
+        app:cardBackgroundColor="#EAE2F8"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -72,6 +72,7 @@
 
 
     </androidx.cardview.widget.CardView>
+
 
 
 

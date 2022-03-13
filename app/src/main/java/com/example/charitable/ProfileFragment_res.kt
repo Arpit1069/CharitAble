@@ -22,7 +22,7 @@ class ProfileFragment_res : Fragment() {
         val btnUpdateProfile = v.findViewById<Button>(R.id.updatedonorprofile)
         val btnlogOut = v.findViewById<Button>(R.id.Profile_logOut)
         btnUpdateProfile.setOnClickListener{
-            val intent = Intent(this@ProfileFragment_res.requireContext(),restaurant_one::class.java)
+            val intent = Intent(this@ProfileFragment_res.requireContext(),donor_one::class.java)
             startActivity(intent)
 
         }

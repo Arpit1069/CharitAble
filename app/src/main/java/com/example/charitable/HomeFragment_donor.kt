@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_selection.*
 import kotlinx.android.synthetic.main.fragment_home_donor.*
 
@@ -16,26 +18,40 @@ class HomeFragment_donor : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        books_button.setOnClickListener {
-////            val intent = Intent (getActivity(),books_one::class.java)
-////            getActivity().startActivity(intent)
-//            val intent = Intent (getActivity(), books_one::class.java)
-//            getActivity()?.startActivity(intent)
-//
-//        }
-//        clothes_button.setOnClickListener {
-//            val intent = Intent (donor_two(),clothes_one::class.java)
-//            donor_two().startActivity(intent)
-//        }
-        return inflater.inflate(R.layout.fragment_home_donor, container, false)
+        val v = inflater.inflate(R.layout.fragment_home_donor, container, false)
+        val btn_food = v.findViewById<ImageButton>(R.id.button_food)
+        val btn_books = v.findViewById<ImageButton>(R.id.button_books)
+        val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes)
+
+
+
+        btn_food.setOnClickListener {
+            val intent = Intent(this@HomeFragment_donor.requireContext(),food_one::class.java)
+            startActivity(intent)
+        }
+        btn_books.setOnClickListener {
+            val intent = Intent(this@HomeFragment_donor.requireContext(), books_one::class.java)
+            startActivity(intent)
+        }
+        btn_clothes.setOnClickListener {
+            val intent = Intent(this@HomeFragment_donor.requireContext(), clothes_one::class.java)
+            startActivity(intent)
+        }
+        return v
     }
+
+
+
 
     companion object {
         @JvmStatic
         fun newInstance() =
             HomeFragment_donor().apply {
                 arguments = Bundle().apply {}
-
-                }
             }
     }
+}
+
+
+
+

@@ -37,7 +37,7 @@ class donor_two : BaseActivity() {
                 }
                 2 -> {
 
-//                    updateNavigationUserDetails(user = com.example.charitable.models.User())
+//                updateNavigationUserDetails(user = com.example.charitable.models.User())
                     replaceFragment(ProfileFragment_donor.newInstance())
                 }
                 else -> {

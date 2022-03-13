@@ -15,11 +15,11 @@ class choose : BaseActivity() {
            startActivity(intent)
            finish()
         }
-        imageButton6.setOnClickListener {
-            val intent = Intent(this@choose,restaurant_one::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        imageButton6.setOnClickListener {
+//            val intent = Intent(this@choose,restaurant_one::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
         imageButton7.setOnClickListener {
             val intent = Intent(this@choose,ngo_one::class.java)
             startActivity(intent)

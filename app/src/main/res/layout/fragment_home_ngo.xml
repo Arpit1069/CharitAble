@@ -8,12 +8,20 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@color/white">
+    <TextView
+        android:text="CharitAble"
+        android:textSize="30dp"
+        android:background="@color/bluecolor"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
     <androidx.cardview.widget.CardView
         android:layout_width="330dp"
         android:layout_height="280dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="38dp"
         app:cardBackgroundColor="#CCB8EF"
         app:cardCornerRadius="25dp"
