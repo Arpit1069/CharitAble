@@ -10,7 +10,7 @@
     android:background="@color/white">
     <TextView
         android:text="CharitAble"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:background="@color/bluecolor"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -40,10 +40,5 @@
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
-
     </androidx.cardview.widget.CardView>
-
-
-
-
 </LinearLayout>

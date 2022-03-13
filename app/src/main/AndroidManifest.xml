@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.charitable">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
 
     <application
         android:allowBackup="true"
@@ -13,12 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
         tools:ignore="ExtraText">
-
         <activity
-            android:name=".ngo_two"
-            android:exported="false"
-            android:label="ngo_two" />
-
+            android:name=".food_zero"
+            android:exported="false" />
         <activity
             android:name=".splash1"
             android:exported="true">
@@ -35,39 +33,56 @@
             android:name=".choose"
             android:exported="true" />
         <activity
-            android:name=".splash2"
-            android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".splash3"-->
-<!--            android:exported="true" />-->
-        <activity
-            android:name=".ngo_one"
-            android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".restaurant_one"-->
-<!--            android:exported="true" />-->
-        <activity
             android:name=".donor_one"
+            android:exported="true" />
+        <activity
+            android:name=".splash2"
             android:exported="true" />
         <activity
             android:name=".donor_two"
             android:exported="true"
             android:label="donor_two" />
-<!--        <activity-->
-<!--            android:name=".books_one"-->
-<!--            android:exported="true"-->
-<!--            android:label="books_one" />-->
-<!--        <activity-->
-<!--            android:name=".clothes_one"-->
-<!--            android:exported="true"-->
-<!--            android:label="clothes_two" />-->
-<!--        <activity-->
-<!--            android:name=".restaurant_two"-->
-<!--            android:exported="true"-->
-<!--            android:label="restaurant_two" />-->
+        <activity
+            android:name=".books_one"
+            android:exported="true"
+            android:label="books_one" />
+        <activity
+            android:name=".clothes_one"
+            android:exported="true"
+            android:label="clothes_one" />
+        <activity
+            android:name=".food_one"
+            android:exported="true" />
+        <activity
+            android:name=".books_two"
+            android:exported="true" />
+        <activity
+            android:name=".clothes_two"
+            android:exported="true" />
+        <activity
+            android:name=".food_two"
+            android:exported="true" />
+        <activity
+            android:name=".food_three"
+            android:exported="true" />
+        <activity
+            android:name=".ngo_one"
+            android:exported="true" />
         <activity
             android:name=".splash4"
             android:exported="true" />
+        <activity
+            android:name=".ngo_two"
+            android:exported="true"
+            android:label="ngo_two" />
+        <activity
+            android:name=".donrequest_one"
+            android:exported="false"
+            android:label="ngo_two" />
+        <activity
+            android:name=".employee_one"
+            android:exported="true"
+            android:label="ngo_two" />
     </application>
 
 </manifest>

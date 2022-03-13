@@ -23,10 +23,8 @@ class HomeFragment_donor : Fragment() {
         val btn_books = v.findViewById<ImageButton>(R.id.button_books)
         val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes)
 
-
-
         btn_food.setOnClickListener {
-            val intent = Intent(this@HomeFragment_donor.requireContext(),food_one::class.java)
+            val intent = Intent(this@HomeFragment_donor.requireContext(),food_zero::class.java)
             startActivity(intent)
         }
         btn_books.setOnClickListener {
@@ -39,9 +37,6 @@ class HomeFragment_donor : Fragment() {
         }
         return v
     }
-
-
-
 
     companion object {
         @JvmStatic

@@ -3,18 +3,17 @@ package com.example.charitable
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_books_one.*
 import kotlinx.android.synthetic.main.activity_clothes_one.*
+import kotlinx.android.synthetic.main.activity_food_zero.*
 
-class clothes_one : BaseActivity() {
+class food_zero : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clothes_one)
-        proceedclothes.setOnClickListener {
-            val intent = Intent(this@clothes_one,clothes_two::class.java)
+        setContentView(R.layout.activity_food_zero)
+        resbtn.setOnClickListener {
+            val intent = Intent(this@food_zero,food_one::class.java)
             startActivity(intent)
             finish()
         }
     }
 }
-

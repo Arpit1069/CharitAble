@@ -61,7 +61,7 @@
             android:layout_width="220dp"
             android:layout_height="wrap_content"/>
         <Button
-            android:id="@+id/proceed"
+            android:id="@+id/proceedbooks"
             android:text="Proceed"
             android:layout_marginTop="90dp"
             android:textColor="@color/black"

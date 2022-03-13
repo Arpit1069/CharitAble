@@ -77,7 +77,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/proceed"
+            android:id="@+id/proceedfoods_two"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
