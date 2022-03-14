@@ -33,7 +33,7 @@ class donor_one :  BaseActivity() {
     private var mProfileImageURL : String = ""
 
     companion object{
-        private const val READ_STORAGE_PERMISSION_CODE = 11
+        const val READ_STORAGE_PERMISSION_CODE = 11
         private const val PICK_IMAGE_REQUEST_CODE = 12
     }
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -41,8 +41,8 @@ class FirestoreClass {
     }
 
 
-    fun updateUserProfileDataRestaurant(
-        activity: donor_one,
+    fun updateUserProfileDatango(
+        activity: ngo_one,
         userHashMapTwo: HashMap<String, Any>
     ) {
         mFireStore.collection(Constants.USERS)
@@ -51,7 +51,7 @@ class FirestoreClass {
             .addOnSuccessListener {
                 Log.i(activity.javaClass.simpleName, "Profile data updated successfully")
                 Toast.makeText(activity, "Profile updated successfully", Toast.LENGTH_SHORT).show()
-               // activity.profileUpdateSuccessRestaurant()
+                activity.profileUpdateSuccessngo()
 //                activity.profileUpdateSuccessDonor()
 //                activity.updateNavigationUserDetails(loadUserData())
             }.addOnFailureListener { e ->
@@ -81,10 +81,10 @@ class FirestoreClass {
                             activity.setUserDataInUIDonor(loggedInUser)
                         }
                     }
-                    is donor_one -> {
+                    is ngo_one -> {
 
                         if (loggedInUser != null) {
-                            //activity.setUserDataInUIRestaurant(loggedInUser)
+                            activity.setUserDataInUIngo(loggedInUser)
                         }
                     }
                 }

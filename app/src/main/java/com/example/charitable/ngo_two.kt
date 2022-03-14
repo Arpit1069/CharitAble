@@ -3,6 +3,8 @@ package com.example.charitable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
+import com.example.charitable.HomeFragment_ngo.Companion.newInstance
+import com.example.charitable.InfoFragment_res.Companion.newInstance
 import kotlinx.android.synthetic.main.activity_ngo_two.*
 import kotlinx.android.synthetic.main.activity_restaurant_two.*
 
@@ -37,7 +39,6 @@ class ngo_two : BaseActivity() {
 
                 else -> {
                     replaceFragment(HomeFragment_res.newInstance(),)
-
 
                 }
             }

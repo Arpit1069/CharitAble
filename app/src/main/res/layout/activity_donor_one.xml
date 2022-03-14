@@ -10,7 +10,6 @@
     android:background="@drawable/restrobg"
     tools:context=".login">
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
         android:layout_height="550dp"
@@ -27,6 +26,7 @@
             android:layout_height="538dp"
             android:background="#F4DAB2"
             android:orientation="vertical">
+
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/profileUpdateImageDonor"

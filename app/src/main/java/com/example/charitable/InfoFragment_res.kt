@@ -32,7 +32,7 @@ class InfoFragment_res : Fragment() {
         }
 
         return rootView
-        return inflater.inflate(R.layout.fragment_info, container, false)
+//        return inflater.inflate(R.layout.fragment_info, container, false)
 
     }
 
