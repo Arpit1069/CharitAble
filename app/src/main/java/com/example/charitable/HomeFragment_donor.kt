@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_selection.*
 import kotlinx.android.synthetic.main.fragment_home_donor.*
 
@@ -18,6 +19,7 @@ class HomeFragment_donor : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val v = inflater.inflate(R.layout.fragment_home_donor, container, false)
         val btn_food = v.findViewById<ImageButton>(R.id.button_food)
         val btn_books = v.findViewById<ImageButton>(R.id.button_books)
@@ -28,6 +30,7 @@ class HomeFragment_donor : Fragment() {
             startActivity(intent)
         }
         btn_books.setOnClickListener {
+
             val intent = Intent(this@HomeFragment_donor.requireContext(), books_one::class.java)
             startActivity(intent)
         }

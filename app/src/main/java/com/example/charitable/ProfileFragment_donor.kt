@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentManager
 import com.bumptech.glide.Glide
 import com.example.charitable.firebase.FirestoreClass
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_orderdetails_ngo.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment_donor : Fragment() {
@@ -29,13 +30,12 @@ class ProfileFragment_donor : Fragment() {
        btnUpdateProfile.setOnClickListener{
             val intent = Intent(this@ProfileFragment_donor.requireContext(),donor_one::class.java)
             startActivity(intent)
-
         }
+
         btnlogOut.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this@ProfileFragment_donor.requireContext(),login::class.java)
             startActivity(intent)
-
         }
 
         return v
