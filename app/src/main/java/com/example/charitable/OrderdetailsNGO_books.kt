@@ -15,6 +15,7 @@ class OrderdetailsNGO_books : BaseActivity() {
     private lateinit var dbref : DatabaseReference
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<OrderItems>
+    private lateinit var briefNews : ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -12,7 +12,6 @@ data class OrderDetails_books(
     val BooksOrderProgress: String = "",
     //done
     val NgosForBooks: String = "",
-    val NgosInCity: String = "",
-
+    val NgosInCity: String = ""
 ){
 }
