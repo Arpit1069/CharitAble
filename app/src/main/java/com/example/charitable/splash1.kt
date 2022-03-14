@@ -13,13 +13,13 @@ class splash1 : BaseActivity() {
        val time : Long = 2500
         Handler().postDelayed(Runnable {
 
-            var currentUserID = FirestoreClass().getCurrentUserId()
-            if(currentUserID.isNotEmpty()){
-                startActivity(Intent(this@splash1,donor_two::class.java))
-            }else{
-                startActivity(Intent(this@splash1,login::class.java))
-            }
-//            startActivity(Intent(this@splash1,login::class.java))
+//            var currentUserID = FirestoreClass().getCurrentUserId()
+//            if(currentUserID.isNotEmpty()){
+//                startActivity(Intent(this@splash1,donor_two::class.java))
+//            }else{
+//                startActivity(Intent(this@splash1,login::class.java))
+//            }
+            startActivity(Intent(this@splash1,login::class.java))
             finish()
         }, time)
 

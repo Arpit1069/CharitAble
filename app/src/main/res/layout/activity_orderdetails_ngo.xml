@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderdetailsNGO">
+    tools:context=".OrderdetailsNGO_books">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/orderdetails_NGO"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="420dp"
+        android:layout_height="880dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428"
-        tools:listitem="@layout/user_item" />
-
+        tools:listitem="@layout/user_item_books" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

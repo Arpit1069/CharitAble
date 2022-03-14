@@ -1,6 +1,6 @@
 package com.example.charitable.models
 
-data class OrderDetails(
+data class OrderDetails_books(
     val quantity: String = "",
     val stdClass: String = "",
     val userName: String = "",
@@ -15,5 +15,4 @@ data class OrderDetails(
     val NgosInCity: String = "",
 
 ){
-
 }

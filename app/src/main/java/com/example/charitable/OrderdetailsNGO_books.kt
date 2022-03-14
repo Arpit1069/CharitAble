@@ -10,7 +10,7 @@ import com.google.firebase.database.*
 import com.google.firebase.firestore.auth.User
 import com.google.firebase.ktx.Firebase
 
-class OrderdetailsNGO : BaseActivity() {
+class OrderdetailsNGO_books : BaseActivity() {
 
     private lateinit var dbref : DatabaseReference
     private lateinit var userRecyclerView: RecyclerView

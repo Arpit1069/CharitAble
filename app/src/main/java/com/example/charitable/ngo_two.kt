@@ -35,7 +35,6 @@ class ngo_two : BaseActivity() {
 
                 }
 
-
                 else -> {
                     replaceFragment(HomeFragment_res.newInstance(),)
 

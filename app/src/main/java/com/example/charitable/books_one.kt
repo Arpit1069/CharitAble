@@ -3,16 +3,11 @@ package com.example.charitable
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.example.charitable.databinding.ActivityBaseBinding
-import com.example.charitable.models.OrderDetails
+import com.example.charitable.models.OrderDetails_books
 import com.example.charitable.models.User
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ktx.database
 import kotlinx.android.synthetic.main.activity_books_one.*
-import kotlinx.android.synthetic.main.activity_donor_one.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 
 class books_one : BaseActivity() {
     private lateinit var mUserDetails: User
@@ -48,7 +43,7 @@ class books_one : BaseActivity() {
         val userAddress = "Vidhya vaibhav colony, Shegaon Naka, Amravati"
 
         if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty()){
-            val model = OrderDetails(quantityBooks,stdClass,BooksOrderProgress
+            val model = OrderDetails_books(quantityBooks,stdClass,BooksOrderProgress
             ,userName, userCity, userMobile, userAddress,userEmail, userImage )
 
             val id = reference.push().key
