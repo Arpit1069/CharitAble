@@ -87,6 +87,11 @@ class FirestoreClass {
                             activity.setUserDataInUIngo(loggedInUser)
                         }
                     }
+                    is books_one -> {
+                        if( loggedInUser != null){
+                            activity.sendData(loggedInUser)
+                        }
+                    }
                 }
 
 
