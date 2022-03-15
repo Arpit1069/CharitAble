@@ -15,6 +15,11 @@ class books_one : BaseActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
 
+//    lateinit var brief_details_books_email : Array<String>
+//    lateinit var brief_details_books_number : Array<String>
+//    lateinit var brief_details_books_address : Array<String>
+//    lateinit var brief_details_books_city: Array<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_books_one)

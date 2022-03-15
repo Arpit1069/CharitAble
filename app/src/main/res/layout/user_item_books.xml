@@ -108,7 +108,43 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/briefDetails_books"
+        android:id="@+id/briefDetails_books_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" user name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/briefDetails_books_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/briefDetails_books_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+    <TextView
+        android:id="@+id/briefDetails_books_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="email"
@@ -120,10 +156,10 @@
     </TextView>
 
     <TextView
-        android:id="@+id/b324s"
+        android:id="@+id/briefDetails_books_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
+        android:text="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -132,10 +168,10 @@
     </TextView>
 
     <TextView
-        android:id="@+id/fvb324s"
+        android:id="@+id/briefDetails_books_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
+        android:text="address"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -144,22 +180,10 @@
     </TextView>
 
     <TextView
-        android:id="@+id/bjjkn22"
+        android:id="@+id/briefDetails_books_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </TextView>
-
-    <TextView
-        android:id="@+id/b324534s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
+        android:text="city"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -168,29 +192,6 @@
     </TextView>
 
 
-    <TextView
-        android:id="@+id/bf32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </TextView>
-
-    <TextView
-        android:id="@+id/b3254s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AYush AYush AYush AYushAYush AYYussh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </TextView>
 
 </LinearLayout>
 
