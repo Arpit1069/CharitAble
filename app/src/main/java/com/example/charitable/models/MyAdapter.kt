@@ -11,7 +11,6 @@ import com.example.charitable.R
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyVeiwHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyVeiwHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.user_item_books, parent, false)
@@ -58,3 +57,5 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
 }
+
+
