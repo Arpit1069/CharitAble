@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CharitAble"
-        tools:ignore="ExtraText">
+        tools:ignore="ExtraText"
+        tools:replace="android:label">
 
         <activity
             android:name=".splash1"
@@ -79,6 +80,10 @@
             android:name=".ngo_two"
             android:exported="true"
             android:label="ngo_two" />
+        <activity
+            android:name=".MainActivity_Whatsapp"
+            android:exported="true"
+            android:label="WhatsApp" />
         <activity
             android:name=".donrequest_one"
             android:exported="false"

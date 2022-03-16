@@ -18,6 +18,8 @@ import com.bumptech.glide.Glide
 import com.example.charitable.firebase.FirestoreClass
 import com.example.charitable.models.User
 import com.example.charitable.utils.Constants
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_donor_one.*
@@ -28,23 +30,31 @@ import java.lang.Exception
 
 class donor_one :  BaseActivity() {
 
-    private lateinit var mUserDetails:User
+    private lateinit var database: FirebaseDatabase
+    private lateinit var reference: DatabaseReference
+    private lateinit var mUserDetails: User
     private var mSelectedImageFileUri: Uri? = null
     private var mProfileImageURL : String = ""
 
     companion object{
-        const val READ_STORAGE_PERMISSION_CODE = 11
-        private const val PICK_IMAGE_REQUEST_CODE = 12
+        const val READ_STORAGE_PERMISSION_CODE = 1
+        private const val PICK_IMAGE_REQUEST_CODE = 2
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_donor_one)
         FirestoreClass().loadUserData(this)
+        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = database.getReference("Users")
 
         profileUpdateImageDonor.setOnClickListener{
             if(ContextCompat.checkSelfPermission(
                     this, android.Manifest.permission.READ_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
-
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                    READ_STORAGE_PERMISSION_CODE
+                )
             }else{
                 ActivityCompat.requestPermissions(
                     this,
@@ -59,9 +69,6 @@ class donor_one :  BaseActivity() {
 
             if(mSelectedImageFileUri != null){
                 uploadUserImage()
-            }else{
-                showProgressDialog(resources.getString(R.string.please_wait))
-                updateUserProfileDataDonor()
             }
             val intent = Intent(this@donor_one,splash2::class.java)
             updateUserProfileDataDonor()
@@ -70,16 +77,14 @@ class donor_one :  BaseActivity() {
         }
     }
 
-
-
-
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if(requestCode== READ_STORAGE_PERMISSION_CODE){
+
+        if(requestCode == READ_STORAGE_PERMISSION_CODE){
             if (grantResults.isNotEmpty()&& grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 showImageChooser()
             }else{
@@ -91,15 +96,16 @@ class donor_one :  BaseActivity() {
         }
     }
         private fun showImageChooser(){
-        var galleryIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        val galleryIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         startActivityForResult(galleryIntent, PICK_IMAGE_REQUEST_CODE)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == Activity.RESULT_OK && requestCode== PICK_IMAGE_REQUEST_CODE && data!!.data !=null){
-            mSelectedImageFileUri = data.data
+        if(resultCode == Activity.RESULT_OK && requestCode== PICK_IMAGE_REQUEST_CODE){
+            mSelectedImageFileUri = data?.data
             try{
+
                 Glide
                     .with(this)
                     .load(mSelectedImageFileUri)
@@ -144,30 +150,34 @@ class donor_one :  BaseActivity() {
 
 
     private fun updateUserProfileDataDonor(){
+
         val userHashMap = HashMap<String,Any>()
-//        val name: String = namedonor.text.toString().trim { it <= ' ' }
-//        val mobile: String = mobiledonor.text.toString().trim { it <= ' ' }
-//        val address: String = addressdonor.text.toString().trim { it <= ' ' }
-//        val city: String = citydonor.text.toString().trim{ it<= ' '}
+        val currentUserID = FirestoreClass().getCurrentUserId()
+        reference.child("Users").child(currentUserID)
+
        if(mProfileImageURL.isNotEmpty() && mProfileImageURL != mUserDetails.image){
            userHashMap[Constants.IMAGE] = mProfileImageURL
+           reference.child(currentUserID).child("userProfileImage").setValue(userHashMap[Constants.IMAGE])
        }
 
         if(namedonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.NAME] = namedonor.text.toString()
-
+            reference.child(currentUserID).child("userName").setValue(userHashMap[Constants.NAME])
         }
         if(mobiledonor.text.toString()!= mUserDetails.name.toString()){
             userHashMap[Constants.MOBILE] = mobiledonor.text.toString().toLong()
+            reference.child(currentUserID).child("userMobile").setValue(userHashMap[Constants.MOBILE])
 
         }
         if(addressdonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.ADDRESS] = addressdonor.text.toString()
+            reference.child(currentUserID).child("userAddress").setValue(userHashMap[Constants.ADDRESS])
             userHashMap[Constants.ROLE] = "Donor"
 
         }
         if(citydonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.CITY] = citydonor.text.toString()
+            reference.child(currentUserID).child("userCity").setValue(userHashMap[Constants.CITY])
 
 
         }

@@ -18,7 +18,6 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment_donor : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

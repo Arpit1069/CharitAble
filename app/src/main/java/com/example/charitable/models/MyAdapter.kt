@@ -1,17 +1,21 @@
 package com.example.charitable.models
 
 import android.annotation.SuppressLint
-import android.util.Log
+import android.app.Activity
+import android.content.Intent
+import android.content.IntentSender
+import android.content.pm.PackageManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.charitable.R
+import com.example.charitable.*
+import com.example.charitable.databinding.ActivityMainWhatsappBinding
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
@@ -25,23 +29,29 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
 
-    fun deleteItem(i : Int){
+    fun deleteItem(){
 
-        userList.removeAt(i)
-        notifyItemChanged(i)
+
+
+
+//        userList.removeAt(position)
+//        notifyDataSetChanged()
+//        notifyItemChanged(position)
     }
 
 
-    fun addItem(i : Int, orders : OrderItems){
 
-        userList.add(i,orders)
-        notifyItemChanged(i)
+    fun addItem(position: Int, orders : OrderItems){
+
+        userList.add(position,orders)
+//        notifyDataSetChanged()
+        notifyItemChanged(position)
     }
 
 
     fun notifyItemRemoved(fromPos: Int, toPos: Int) {
 
-        notifyItemRemoved(fromPos,toPos)
+        notifyItemRemoved(fromPos, toPos)
     }
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
@@ -58,17 +68,23 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.brief_details_books_number.text = currentitem.userMobile
         holder.brief_details_books_address.text = currentitem.userAddress
         holder.brief_details_books_city.text = currentitem.userCity
-        var status = currentitem.BooksOrderProgress
-        holder.buttonmarkasdone.setOnClickListener{
-            if(status == "Started" ){
-                status = "Finished"
 
-            }else{
-                status = "was empty"
-            }
-            Log.d("sign in", "signInWithEmail:success")
+//        var status = currentitem.BooksOrderProgress
+
+        holder.buttonmarkasdone.setOnClickListener{
+
+//            if(status == "Started" ){
+//                status = "Finished"
+//            }else{
+//                status = "was empty"}
+
         }
 
+        holder.buttonWhatsApp.setOnClickListener{ v ->
+            val intent = Intent(v.context, MainActivity_Whatsapp::class.java)
+            v.context.startActivity(intent)
+
+        }
 
 
 
@@ -83,6 +99,7 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         }
 
     }
+
 
     override fun getItemCount(): Int {
         return userList.size
@@ -105,6 +122,7 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         val fullViewToExpand : CardView = itemView.findViewById(R.id.click_expand_books)
 
         val buttonmarkasdone : Button = itemView.findViewById(R.id.btnmarkasdone)
+        val buttonWhatsApp : Button = itemView.findViewById(R.id.btnWhatsApp)
 
     }
 

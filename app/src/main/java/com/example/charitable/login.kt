@@ -93,7 +93,6 @@ class login : BaseActivity() {
 
          googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-
         }
 
 

@@ -30,7 +30,7 @@ class ngo_one : BaseActivity() {
 
     companion object{
         private const val READ_STORAGE_PERMISSION_CODE = 1
-        private const val PICK_IMAGE_REQUEST_CODE = 1
+        private const val PICK_IMAGE_REQUEST_CODE = 2
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +41,11 @@ class ngo_one : BaseActivity() {
         profileUpdateImagengo.setOnClickListener{
             if(ContextCompat.checkSelfPermission(
                     this, android.Manifest.permission.READ_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
-
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                    ngo_one.READ_STORAGE_PERMISSION_CODE
+                )
             }else{
                 ActivityCompat.requestPermissions(
                     this,

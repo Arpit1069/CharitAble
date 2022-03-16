@@ -29,7 +29,6 @@ abstract class SwipeGesture(context: Context) : ItemTouchHelper.SimpleCallback(I
         actionState: Int,
         isCurrentlyActive: Boolean
     ) {
-
         RecyclerViewSwipeDecorator.Builder(
             c,
             recyclerView,

@@ -17,7 +17,6 @@ class OrderdetailsNGO_books : BaseActivity() {
     private lateinit var dbref : DatabaseReference
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<OrderItems>
-    private lateinit var briefNews : ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,7 +58,7 @@ class OrderdetailsNGO_books : BaseActivity() {
                             val to_pos =target.adapterPosition
 
                             Collections.swap(userArrayList,from_pos,to_pos)
-                            adapter.notifyItemRemoved(from_pos,to_pos)
+                            adapter.notifyItemMoved(from_pos,to_pos)
                             return false
 
                         }
@@ -71,18 +70,20 @@ class OrderdetailsNGO_books : BaseActivity() {
 
                                 ItemTouchHelper.LEFT ->{
 
-                                    adapter.deleteItem(viewHolder.adapterPosition)
+
+
+//                                    adapter.deleteItem(viewHolder.adapterPosition)
+//                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
 
                                 }
 
                                 ItemTouchHelper.RIGHT -> {
 
                                     val archiveItem = userArrayList[viewHolder.adapterPosition]
-                                    adapter.deleteItem(viewHolder.adapterPosition)
+                                    adapter.deleteItem()
                                     adapter.addItem(userArrayList.size,archiveItem)
 
                                 }
-
 
 
                             }
