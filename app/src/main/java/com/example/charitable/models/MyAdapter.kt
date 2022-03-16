@@ -1,5 +1,6 @@
 package com.example.charitable.models
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -20,6 +21,27 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
         return MyViewHolder(itemView)
 
+    }
+
+
+
+    fun deleteItem(i : Int){
+
+        userList.removeAt(i)
+        notifyItemChanged(i)
+    }
+
+
+    fun addItem(i : Int, orders : OrderItems){
+
+        userList.add(i,orders)
+        notifyItemChanged(i)
+    }
+
+
+    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
+
+        notifyItemRemoved(fromPos,toPos)
     }
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
@@ -65,6 +87,7 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
     override fun getItemCount(): Int {
         return userList.size
     }
+
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 

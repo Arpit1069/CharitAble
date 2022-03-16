@@ -1,14 +1,16 @@
 package com.example.charitable
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.models.MyAdapter
 import com.example.charitable.models.OrderItems
+import com.example.charitable.models.SwipeGesture
 import com.google.firebase.database.*
-import com.google.firebase.firestore.auth.User
-import com.google.firebase.ktx.Firebase
+import android.content.Context
+import java.util.*
+import kotlin.collections.ArrayList
 
 class OrderdetailsNGO_books : BaseActivity() {
 
@@ -44,6 +46,53 @@ class OrderdetailsNGO_books : BaseActivity() {
                         userArrayList.add(user!!)
 
                     }
+                    val adapter = MyAdapter(userArrayList)
+
+                    val swipegesture = object : SwipeGesture(this@OrderdetailsNGO_books){
+
+                        override fun onMove(
+                            recyclerView: RecyclerView,
+                            viewHolder: RecyclerView.ViewHolder,
+                            target: RecyclerView.ViewHolder
+                        ): Boolean {
+                            val from_pos = viewHolder.adapterPosition
+                            val to_pos =target.adapterPosition
+
+                            Collections.swap(userArrayList,from_pos,to_pos)
+                            adapter.notifyItemRemoved(from_pos,to_pos)
+                            return false
+
+                        }
+
+
+                        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+
+                            when(direction){
+
+                                ItemTouchHelper.LEFT ->{
+
+                                    adapter.deleteItem(viewHolder.adapterPosition)
+
+                                }
+
+                                ItemTouchHelper.RIGHT -> {
+
+                                    val archiveItem = userArrayList[viewHolder.adapterPosition]
+                                    adapter.deleteItem(viewHolder.adapterPosition)
+                                    adapter.addItem(userArrayList.size,archiveItem)
+
+                                }
+
+
+
+                            }
+
+
+                        }
+                    }
+
+                    val touchHelper = ItemTouchHelper(swipegesture)
+                    touchHelper.attachToRecyclerView(userRecyclerView)
 
                     userRecyclerView.adapter = MyAdapter(userArrayList)
 
@@ -59,4 +108,5 @@ class OrderdetailsNGO_books : BaseActivity() {
         })
     }
 }
+
 

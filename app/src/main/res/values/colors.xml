@@ -15,6 +15,8 @@
     <color name="lightPurple">#AD93DA</color>
     <color name="figmablue">#79CBF7</color>
     <color name="shadowcolor">#ff212121</color>
+    <color name="deletecolor">#D31E11</color>
+    <color name="archivecolor">#78D50D</color>
 
 
 </resources>
