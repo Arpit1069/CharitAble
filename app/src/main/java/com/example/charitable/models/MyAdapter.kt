@@ -16,9 +16,13 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.*
 import com.example.charitable.databinding.ActivityMainWhatsappBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
+    private lateinit var database: FirebaseDatabase
+    private lateinit var reference: DatabaseReference
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.user_item_books, parent, false)
@@ -29,9 +33,15 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
 
-    fun deleteItem(position: Int){
-// TODO : delete karo using current user id
-//        and first save current user id while donating
+    fun deleteItem(){
+        val currentUserIDOfBooksOrder = userList.toString()
+        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = database.getReference("Users")
+        if (currentUserIDOfBooksOrder.isNotEmpty()){
+            reference.child(currentUserIDOfBooksOrder).removeValue()
+        }
+
+// TODO : and first save current user id while donating
 
 
     }
@@ -45,11 +55,6 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 //        notifyDataSetChanged()
 //        notifyItemChanged(position)
     }
-
-
-//    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
-//        notifyItemRemoved(fromPos, toPos)
-//    }
 
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {

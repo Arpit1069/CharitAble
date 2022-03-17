@@ -14,7 +14,10 @@ import kotlin.collections.ArrayList
 
 class OrderdetailsNGO_books : BaseActivity() {
 
+    private lateinit var database: FirebaseDatabase
+    private lateinit var reference: DatabaseReference
     private lateinit var dbref : DatabaseReference
+    lateinit var currentUserIDOfBooksOrder: String
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<OrderItems>
 
@@ -41,6 +44,7 @@ class OrderdetailsNGO_books : BaseActivity() {
                 if (snapshot.exists()){
                     for(userSnapshot in snapshot.children) {
 
+//                        currentUserIDOfBooksOrder = snapshot.userName.toString()
                         val user = userSnapshot.getValue(OrderItems::class.java)
                         if (user != null) {
                             userArrayList.add(user)
@@ -72,13 +76,7 @@ class OrderdetailsNGO_books : BaseActivity() {
                             when(direction){
 
                                 ItemTouchHelper.LEFT ->{
-
-
-//                                    TODO : delete karo using current user id and first save current user id while donating
-//
-////                                    adapter.deleteItem(viewHolder.adapterPosition)
-//                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
-
+                                    adapter.deleteItem()
                                 }
 
                                 ItemTouchHelper.RIGHT -> {
@@ -114,6 +112,17 @@ class OrderdetailsNGO_books : BaseActivity() {
             
         })
     }
+
+//    private fun deleteItem() {
+//        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+//        reference = database.getReference("Users")
+//        if (currentUserIDOfBooksOrder.isNotEmpty()){
+//            reference.child(currentUserIDOfBooksOrder).removeValue()
+//        }
+//
+//    }
+
+
 }
 
 
