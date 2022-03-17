@@ -42,7 +42,9 @@ class OrderdetailsNGO_books : BaseActivity() {
                     for(userSnapshot in snapshot.children) {
 
                         val user = userSnapshot.getValue(OrderItems::class.java)
-                        userArrayList.add(user!!)
+                        if (user != null) {
+                            userArrayList.add(user)
+                        }
 
 
                     }
@@ -59,7 +61,7 @@ class OrderdetailsNGO_books : BaseActivity() {
                             val to_pos =target.adapterPosition
 
                             Collections.swap(userArrayList,from_pos,to_pos)
-                            adapter.notifyItemMoved(from_pos,to_pos)
+                            adapter.notifyItemRemoved(from_pos,to_pos)
                             return false
 
                         }
@@ -71,16 +73,21 @@ class OrderdetailsNGO_books : BaseActivity() {
 
                                 ItemTouchHelper.LEFT ->{
 
-                                    adapter.deleteItem(viewHolder.adapterPosition)
-                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
+
+//                                    TODO : delete karo using current user id and first save current user id while donating
+//
+////                                    adapter.deleteItem(viewHolder.adapterPosition)
+//                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
 
                                 }
 
                                 ItemTouchHelper.RIGHT -> {
 
-                                    val archiveItem = userArrayList[viewHolder.adapterPosition]
-                                    adapter.deleteItem(viewHolder.adapterPosition)
-                                    adapter.addItem(userArrayList.size,archiveItem)
+                                    //  TODO : mark as done karo
+
+//                                    val archiveItem = userArrayList[viewHolder.adapterPosition]
+//                                    adapter.deleteItem(viewHolder.adapterPosition)
+//                                    adapter.addItem(userArrayList.size,archiveItem)
 
                                 }
 

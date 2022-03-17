@@ -30,26 +30,27 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
     fun deleteItem(position: Int){
+// TODO : delete karo using current user id
+//        and first save current user id while donating
 
-        userList.removeAt(position)
-//        notifyDataSetChanged()
-        notifyItemChanged(position)
+
     }
+
 
 
 
     fun addItem(position: Int, orders : OrderItems){
 
-        userList.add(position,orders)
+//        userList.add(position,orders)
 //        notifyDataSetChanged()
-        notifyItemChanged(position)
+//        notifyItemChanged(position)
     }
 
 
-    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
+//    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
+//        notifyItemRemoved(fromPos, toPos)
+//    }
 
-        notifyItemRemoved(fromPos, toPos)
-    }
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
 
@@ -58,13 +59,13 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.name_booksdonate.text = currentitem.userName
         holder.quantity_booksdonate.text = currentitem.quantity
         holder.class_booksdonate.text = currentitem.stdClass
-        holder.brief_details_books_name.text = currentitem.userName
+//        holder.brief_details_books_name.text = currentitem.userName
         holder.brief_details_books_quantity.text = currentitem.quantity
         holder.brief_details_books_class.text = currentitem.stdClass
-        holder.brief_details_books_email.text = currentitem.userEmail
-        holder.brief_details_books_number.text = currentitem.userMobile
-        holder.brief_details_books_address.text = currentitem.userAddress
-        holder.brief_details_books_city.text = currentitem.userCity
+//        holder.brief_details_books_email.text = currentitem.userEmail
+//        holder.brief_details_books_number.text = currentitem.userMobile
+//        holder.brief_details_books_address.text = currentitem.userAddress
+//        holder.brief_details_books_city.text = currentitem.userCity
 
 //        var status = currentitem.BooksOrderProgress
 
@@ -91,6 +92,7 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.fullViewToExpand.setOnClickListener{
 
             currentitem.visibility = !currentitem.visibility
+//            notifyDataSetChanged()
             notifyItemChanged(position)
 
         }
@@ -100,6 +102,10 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
     override fun getItemCount(): Int {
         return userList.size
+    }
+
+    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
+        notifyItemRemoved(fromPos, toPos)
     }
 
 

@@ -29,18 +29,18 @@ class HomeFragment_ngo : Fragment() {
         val btn_books = v.findViewById<ImageButton>(R.id.button_book_order)
         val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes_order)
 
-//        btn_food.setOnClickListener {
-//            val intent = Intent(this@HomeFragment_ngo.requireContext(),food_zero_details::class.java)
-//            startActivity(intent)
-//        }
+        btn_food.setOnClickListener {
+            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_books::class.java)
+            startActivity(intent)
+        }
         btn_books.setOnClickListener {
             val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_books::class.java)
             startActivity(intent)
         }
-//        btn_clothes.setOnClickListener {
-//            val intent = Intent(this@HomeFragment_ngo.requireContext(), clothes_one_details::class.java)
-//            startActivity(intent)
-//        }
+        btn_clothes.setOnClickListener {
+            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_books::class.java)
+            startActivity(intent)
+        }
 
         return v
     }
