@@ -64,31 +64,29 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.name_booksdonate.text = currentitem.userName
         holder.quantity_booksdonate.text = currentitem.quantity
         holder.class_booksdonate.text = currentitem.stdClass
-//        holder.brief_details_books_name.text = currentitem.userName
+        holder.brief_details_books_name.text = currentitem.OrderBooksID
         holder.brief_details_books_quantity.text = currentitem.quantity
         holder.brief_details_books_class.text = currentitem.stdClass
-//        holder.brief_details_books_email.text = currentitem.userEmail
-//        holder.brief_details_books_number.text = currentitem.userMobile
-//        holder.brief_details_books_address.text = currentitem.userAddress
+        holder.brief_details_books_number.text = currentitem.userMobile
+        holder.brief_details_books_address.text = currentitem.NGOSelected
 //        holder.brief_details_books_city.text = currentitem.userCity
 
 //        var status = currentitem.BooksOrderProgress
-
-        holder.buttonmarkasdone.setOnClickListener{
-
-//            if(status == "Started" ){
+//
+//        holder.buttonmarkasdone.setOnClickListener{
+//
+//            if(status == "InProgress" ){
 //                status = "Finished"
 //            }else{
 //                status = "was empty"}
-
-        }
+//
+//        }
 
         holder.buttonWhatsApp.setOnClickListener{ v ->
             val intent = Intent(v.context, MainActivity_Whatsapp::class.java)
             v.context.startActivity(intent)
 
         }
-
 
 
         val isVisible : Boolean = currentitem.visibility
@@ -122,10 +120,8 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         val brief_details_books_name : TextView = itemView.findViewById(R.id.briefDetails_books_name)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_books_quantity)
         val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails_books_class)
-        val brief_details_books_email : TextView = itemView.findViewById(R.id.briefDetails_books_email)
         val brief_details_books_number : TextView = itemView.findViewById(R.id.briefDetails_books_number)
         val brief_details_books_address : TextView = itemView.findViewById(R.id.briefDetails_books_address)
-        val brief_details_books_city : TextView = itemView.findViewById(R.id.briefDetails_books_city)
         val contraintLayout : ConstraintLayout = itemView.findViewById(R.id.expandedLayout_books)
         val fullViewToExpand : CardView = itemView.findViewById(R.id.click_expand_books)
 

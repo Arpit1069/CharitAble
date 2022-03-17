@@ -36,7 +36,8 @@ class OrderdetailsNGO_books : BaseActivity() {
 
     private fun getUserData() {
 
-        dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users")
+        dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+            .getReference("BooksOrder")
 
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -44,7 +45,6 @@ class OrderdetailsNGO_books : BaseActivity() {
                 if (snapshot.exists()){
                     for(userSnapshot in snapshot.children) {
 
-//                        currentUserIDOfBooksOrder = snapshot.userName.toString()
                         val user = userSnapshot.getValue(OrderItems::class.java)
                         if (user != null) {
                             userArrayList.add(user)

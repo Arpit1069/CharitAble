@@ -3,6 +3,7 @@ package com.example.charitable
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import com.example.charitable.firebase.FirestoreClass
 import com.example.charitable.models.OrderDetails_books
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_donor_one.*
 class books_one : BaseActivity() {
 
 private var selectedItemIndex = 0
+    private var selectedNGO_books = ""
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
 
@@ -24,7 +26,7 @@ private var selectedItemIndex = 0
         setContentView(R.layout.activity_books_one)
         FirestoreClass().loadUserData(this)
         database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        reference = database.getReference("Users")
+        reference = database.getReference("BooksOrder")
 
         proceedbooks.setOnClickListener {
             sendData()
@@ -38,7 +40,7 @@ private var selectedItemIndex = 0
 
         val NGO_books = arrayOf("None","NGO ka kaam","Taki","Anime","Waifu","Link do re","Link provider","Dead")
 
-        var selectedNGO_books = NGO_books[selectedItemIndex]
+        selectedNGO_books = NGO_books[selectedItemIndex]
 
         MaterialAlertDialogBuilder(this)
             .setTitle("NGOs For Books")
@@ -50,6 +52,7 @@ private var selectedItemIndex = 0
             .setPositiveButton("OK") { dialog, which ->
 
                 Toast.makeText(applicationContext,"$selectedNGO_books Selected", Toast.LENGTH_LONG).show()
+                select_ngo.setText(selectedNGO_books)
 
             }
             .setNeutralButton("Cancel") { dialog, which ->
@@ -67,13 +70,13 @@ private var selectedItemIndex = 0
         val stdClass = standard_books.text.toString()
 
         if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty() && nameBooks.isNotEmpty() && addressBooks.isNotEmpty() &&
-                mobileBooks.isNotEmpty()){
+                mobileBooks.isNotEmpty() && selectedNGO_books.isNotEmpty()){
 
-            val model = OrderDetails_books(nameBooks,quantityBooks,stdClass, mobileBooks, addressBooks)
 
-            val currentUserID = FirestoreClass().getCurrentUserId()
+            val id = reference.push().key
+            val model = OrderDetails_books(id!!,nameBooks,quantityBooks,stdClass, mobileBooks, addressBooks, selectedNGO_books)
 
-            reference.child(currentUserID).setValue(model)
+            reference.child(id).setValue(model)
 
             quantity_books.setText(quantityBooks)
             standard_books.setText(stdClass)
