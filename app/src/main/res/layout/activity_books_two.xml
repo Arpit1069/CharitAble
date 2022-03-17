@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".login">
     <TextView
-        android:text="NGO DETAILS"
+        android:text="ORDER DETAILS"
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"

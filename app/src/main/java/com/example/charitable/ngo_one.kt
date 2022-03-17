@@ -27,7 +27,6 @@ class ngo_one : BaseActivity() {
     private var mSelectedImageFileUri: Uri? = null
     private var mProfileImageURL : String = ""
 
-
     companion object{
         private const val READ_STORAGE_PERMISSION_CODE = 1
         private const val PICK_IMAGE_REQUEST_CODE = 2
@@ -69,18 +68,7 @@ class ngo_one : BaseActivity() {
 
         }
 
-        btncancelsubmitngo.setOnClickListener {
-
-            val intent = Intent(this@ngo_one,splash4::class.java)
-            startActivity(intent)
-            finish()
-
-        }
-
     }
-
-
-
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -154,10 +142,7 @@ class ngo_one : BaseActivity() {
 
     private fun updateUserProfileDatango(){
         val userHashMapTwo = HashMap<String,Any>()
-//        val name: String = namedonor.text.toString().trim { it <= ' ' }
-//        val mobile: String = mobiledonor.text.toString().trim { it <= ' ' }
-//        val address: String = addressdonor.text.toString().trim { it <= ' ' }
-//        val city: String = citydonor.text.toString().trim{ it<= ' '}
+
 
         if(namengo.text.toString()!= mUserDetails.name){
             userHashMapTwo[Constants.NAME] = namengo.text.toString()

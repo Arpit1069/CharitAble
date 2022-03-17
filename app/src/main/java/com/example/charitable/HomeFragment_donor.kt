@@ -14,7 +14,6 @@ import kotlinx.android.synthetic.main.fragment_home_donor.*
 
 class HomeFragment_donor : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,7 +25,7 @@ class HomeFragment_donor : Fragment() {
         val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes)
 
         btn_food.setOnClickListener {
-            val intent = Intent(this@HomeFragment_donor.requireContext(),food_zero::class.java)
+            val intent = Intent(this@HomeFragment_donor.requireContext(),food_one::class.java)
             startActivity(intent)
         }
         btn_books.setOnClickListener {

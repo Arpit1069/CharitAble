@@ -12,13 +12,13 @@ class choose : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selection)
        imageButton.setOnClickListener {
-           val intent = Intent(this@choose,donor_one::class.java)
+           val intent = Intent(this@choose,splash2::class.java)
            startActivity(intent)
            finish()
         }
 
         imageButton7.setOnClickListener {
-            val intent = Intent(this@choose, ngo_one::class.java)
+            val intent = Intent(this@choose, splash4::class.java)
             startActivity(intent)
             finish()
         }

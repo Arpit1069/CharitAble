@@ -11,13 +11,13 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_books_one.*
+import kotlinx.android.synthetic.main.activity_donor_one.*
 
 class books_one : BaseActivity() {
 
 private var selectedItemIndex = 0
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +27,8 @@ private var selectedItemIndex = 0
         reference = database.getReference("Users")
 
         proceedbooks.setOnClickListener {
-            sendData(User())
-            val intent = Intent(this@books_one, books_two::class.java)
-            startActivity(intent)
-            finish()
+            sendData()
+
         }
 
     }
@@ -60,25 +58,30 @@ private var selectedItemIndex = 0
 
     }
 
-    fun sendData(user: User) {
+    fun sendData() {
 
-    val quantityBooks = quantity_books.text.toString().trim()
-        val stdClass = standard_books.text.toString().trim()
-        val BooksOrderProgress = "InProgress"
+        val nameBooks = name_books.text.toString()
+        val mobileBooks = mobile_no_books.text.toString().trim()
+        val addressBooks = address_books.text.toString()
+        val quantityBooks = quantity_books.text.toString().trim()
+        val stdClass = standard_books.text.toString()
 
-//       reference.child("Users").child(userId).child("username").setValue(name)
-        if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty()){
+        if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty() && nameBooks.isNotEmpty() && addressBooks.isNotEmpty() &&
+                mobileBooks.isNotEmpty()){
 
-            val model = OrderDetails_books(quantityBooks,stdClass,BooksOrderProgress)
+            val model = OrderDetails_books(nameBooks,quantityBooks,stdClass, mobileBooks, addressBooks)
 
             val currentUserID = FirestoreClass().getCurrentUserId()
-
 
             reference.child(currentUserID).setValue(model)
 
             quantity_books.setText(quantityBooks)
             standard_books.setText(stdClass)
             Toast.makeText(applicationContext,"Successfully send to NGO", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this@books_one, books_two::class.java)
+            startActivity(intent)
+            finish()
 
         }else{
             Toast.makeText(applicationContext,"All fields are Required", Toast.LENGTH_LONG).show()
