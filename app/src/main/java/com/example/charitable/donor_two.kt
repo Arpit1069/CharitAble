@@ -23,7 +23,6 @@ class donor_two : BaseActivity() {
 
         donor_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         donor_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
-      //  donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_info))
         donor_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_person))
 
         donor_bottom_nav.setOnClickMenuListener {
@@ -37,7 +36,6 @@ class donor_two : BaseActivity() {
                 }
                 2 -> {
 
-//                updateNavigationUserDetails(user = com.example.charitable.models.User())
                     replaceFragment(ProfileFragment_donor.newInstance())
                 }
                 else -> {

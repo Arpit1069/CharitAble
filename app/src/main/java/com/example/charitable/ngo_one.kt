@@ -61,9 +61,16 @@ class ngo_one : BaseActivity() {
                 uploadUserImage()
             }else{
                 showProgressDialog(resources.getString(R.string.please_wait))
-                updateUserProfileDatango()
             }
             updateUserProfileDatango()
+            val intent = Intent(this@ngo_one,splash4::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+
+        btncancelsubmitngo.setOnClickListener {
+
             val intent = Intent(this@ngo_one,splash4::class.java)
             startActivity(intent)
             finish()

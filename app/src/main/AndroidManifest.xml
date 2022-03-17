@@ -43,7 +43,7 @@
             android:label="donor_two" />
         <activity
             android:name=".food_zero"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".books_one"
             android:exported="true"
@@ -54,7 +54,7 @@
             android:label="clothes_one" />
         <activity
             android:name=".food_one"
-            android:exported="true" />
+                android:exported="true" />
         <activity
             android:name=".books_two"
             android:exported="true" />
@@ -86,7 +86,7 @@
             android:label="WhatsApp" />
         <activity
             android:name=".donrequest_one"
-            android:exported="false"
+            android:exported="true"
             android:label="ngo_two" />
         <activity
             android:name=".employee_one"

@@ -74,6 +74,15 @@ class donor_one :  BaseActivity() {
             updateUserProfileDataDonor()
             startActivity(intent)
             finish()
+
+        }
+
+        btncancelsubmitdonor.setOnClickListener{
+
+            val intent = Intent(this@donor_one,splash2::class.java)
+            startActivity(intent)
+            finish()
+
         }
     }
 

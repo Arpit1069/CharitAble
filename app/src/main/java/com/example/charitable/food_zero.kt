@@ -6,7 +6,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_clothes_one.*
 import kotlinx.android.synthetic.main.activity_food_zero.*
 
-class food_zero : AppCompatActivity() {
+class food_zero : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_zero)
