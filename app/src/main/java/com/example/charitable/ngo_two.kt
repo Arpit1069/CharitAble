@@ -17,7 +17,7 @@ class ngo_two : BaseActivity() {
         ngo_bottom_nav.add(MeowBottomNavigation.Model(0,R.drawable.ic_home_))
         ngo_bottom_nav.add(MeowBottomNavigation.Model(1,R.drawable.ic_history))
         ngo_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_profile))
-        ngo_bottom_nav.add(MeowBottomNavigation.Model(2,R.drawable.ic_person))
+
 
         ngo_bottom_nav.setOnClickMenuListener {
             when(it.id){
@@ -26,15 +26,9 @@ class ngo_two : BaseActivity() {
                 }
                 1 -> {
                     replaceFragment(HistoryFragment_res.newInstance())
-
                 }
                 2 -> {
-                    replaceFragment(InfoFragment_res.newInstance())
-
-                }
-                3 -> {
                     replaceFragment(ProfileFragment_res.newInstance())
-
                 }
 
                 else -> {

@@ -39,12 +39,11 @@ class OrderdetailsNGO_books : BaseActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()){
-                    for(userSnapshot in snapshot.children){
+                    for(userSnapshot in snapshot.children) {
 
                         val user = userSnapshot.getValue(OrderItems::class.java)
-                        if (user != null) {
-                            userArrayList.add(user)
-                        }
+                        userArrayList.add(user!!)
+
 
                     }
                     val adapter = MyAdapter(userArrayList)
@@ -72,17 +71,15 @@ class OrderdetailsNGO_books : BaseActivity() {
 
                                 ItemTouchHelper.LEFT ->{
 
-
-
-//                                    adapter.deleteItem(viewHolder.adapterPosition)
-//                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
+                                    adapter.deleteItem(viewHolder.adapterPosition)
+                                    adapter.notifyItemRemoved(viewHolder.adapterPosition)
 
                                 }
 
                                 ItemTouchHelper.RIGHT -> {
 
                                     val archiveItem = userArrayList[viewHolder.adapterPosition]
-                                    adapter.deleteItem()
+                                    adapter.deleteItem(viewHolder.adapterPosition)
                                     adapter.addItem(userArrayList.size,archiveItem)
 
                                 }

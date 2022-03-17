@@ -29,14 +29,11 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
 
-    fun deleteItem(){
+    fun deleteItem(position: Int){
 
-
-
-
-//        userList.removeAt(position)
+        userList.removeAt(position)
 //        notifyDataSetChanged()
-//        notifyItemChanged(position)
+        notifyItemChanged(position)
     }
 
 

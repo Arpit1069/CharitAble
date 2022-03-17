@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.hbb20.CountryCodePicker;
 
 
-public class MainActivity_Whatsapp extends BaseActivity {
+public class MainActivity_Whatsapp extends AppCompatActivity {
 
     CountryCodePicker countryCodePicker;
     EditText phone, message;

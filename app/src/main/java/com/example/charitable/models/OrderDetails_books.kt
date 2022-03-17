@@ -10,7 +10,6 @@ data class OrderDetails_books(
     val userCity: String = "",
     val userImage: String = "",
     val BooksOrderProgress: String = "",
-    //done
     val NgosForBooks: String = "",
     val NgosInCity: String = ""
 ){
