@@ -175,20 +175,6 @@
                 android:textSize="17sp"
                 app:backgroundTint="#5D91ED" />
 
-            <Button
-                android:id="@+id/btncancelsubmitdonor"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="36dp"
-                android:layout_marginEnd="36dp"
-                android:elevation="15dp"
-                android:gravity="center"
-                android:text="Skip Changes"
-                android:textAllCaps="false"
-                android:textColor="@color/textColor"
-                android:textSize="17sp"
-                app:backgroundTint="#8FB0EC" />
 
 
         </LinearLayout>

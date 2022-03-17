@@ -30,8 +30,6 @@ import java.lang.Exception
 
 class donor_one :  BaseActivity() {
 
-    private lateinit var database: FirebaseDatabase
-    private lateinit var reference: DatabaseReference
     private lateinit var mUserDetails: User
     private var mSelectedImageFileUri: Uri? = null
     private var mProfileImageURL : String = ""
@@ -44,9 +42,7 @@ class donor_one :  BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_donor_one)
         FirestoreClass().loadUserData(this)
-        val currentUserID = FirestoreClass().getCurrentUserId()
-        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        reference = database.getReference("Users").child(currentUserID)
+
 
         profileUpdateImageDonor.setOnClickListener{
             if(ContextCompat.checkSelfPermission(
@@ -84,13 +80,6 @@ class donor_one :  BaseActivity() {
 
         }
 
-        btncancelsubmitdonor.setOnClickListener{
-
-            val intent = Intent(this@donor_one,splash2::class.java)
-            startActivity(intent)
-            finish()
-
-        }
     }
 
     override fun onRequestPermissionsResult(
@@ -171,27 +160,25 @@ class donor_one :  BaseActivity() {
 
        if(mProfileImageURL.isNotEmpty() && mProfileImageURL != mUserDetails.image){
            userHashMap[Constants.IMAGE] = mProfileImageURL
-           reference.child(currentUserID).child("userProfileImage").setValue(userHashMap[Constants.IMAGE])
        }
 
         if(namedonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.NAME] = namedonor.text.toString()
-            reference.child(currentUserID).child("userName").setValue(userHashMap[Constants.NAME])
+
         }
         if(mobiledonor.text.toString()!= mUserDetails.name.toString()){
             userHashMap[Constants.MOBILE] = mobiledonor.text.toString().toLong()
-            reference.child(currentUserID).child("userMobile").setValue(userHashMap[Constants.MOBILE])
+
 
         }
         if(addressdonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.ADDRESS] = addressdonor.text.toString()
-            reference.child(currentUserID).child("userAddress").setValue(userHashMap[Constants.ADDRESS])
+
             userHashMap[Constants.ROLE] = "Donor"
 
         }
         if(citydonor.text.toString()!= mUserDetails.name){
             userHashMap[Constants.CITY] = citydonor.text.toString()
-            reference.child(currentUserID).child("userCity").setValue(userHashMap[Constants.CITY])
 
 
         }

@@ -32,6 +32,7 @@ private var selectedItemIndex = 0
             startActivity(intent)
             finish()
         }
+
     }
 
 
@@ -59,7 +60,6 @@ private var selectedItemIndex = 0
 
     }
 
-   // private
     fun sendData(user: User) {
 
     val quantityBooks = quantity_books.text.toString().trim()
