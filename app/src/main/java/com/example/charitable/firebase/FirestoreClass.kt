@@ -11,8 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 
-//import com.google.firebase.firestore.auth.User
-
 class FirestoreClass {
     private val mFireStore = FirebaseFirestore.getInstance()
     fun registerUser(activity: login, userInfo: com.example.charitable.models.User) {
@@ -31,7 +29,7 @@ class FirestoreClass {
                 Log.i(activity.javaClass.simpleName, "Profile data updated successfully")
                 Toast.makeText(activity, "Profile updated successfully", Toast.LENGTH_SHORT).show()
                 activity.profileUpdateSuccessDonor()
-//                activity.updateNavigationUserDetails(loadUserData())
+
             }.addOnFailureListener { e ->
                 activity.hideProgressDialog()
                 Log.e(activity.javaClass.simpleName, "Error while creating aboard", e)
@@ -52,8 +50,7 @@ class FirestoreClass {
                 Log.i(activity.javaClass.simpleName, "Profile data updated successfully")
                 Toast.makeText(activity, "Profile updated successfully", Toast.LENGTH_SHORT).show()
                 activity.profileUpdateSuccessngo()
-//                activity.profileUpdateSuccessDonor()
-//                activity.updateNavigationUserDetails(loadUserData())
+
             }.addOnFailureListener { e ->
                 activity.hideProgressDialog()
                 Log.e(activity.javaClass.simpleName, "Error while creating aboard", e)
@@ -103,9 +100,9 @@ class FirestoreClass {
                     is donor_one -> {
                         activity.hideProgressDialog()
                     }
-//                    is donor_two ->{
-//                        activity.hideProgressDialog()
-//                    }
+                    is donor_two ->{
+                        activity.hideProgressDialog()
+                    }
                 }
 
             }

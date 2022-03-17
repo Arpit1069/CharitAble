@@ -42,7 +42,9 @@ class OrderdetailsNGO_books : BaseActivity() {
                     for(userSnapshot in snapshot.children){
 
                         val user = userSnapshot.getValue(OrderItems::class.java)
-                        userArrayList.add(user!!)
+                        if (user != null) {
+                            userArrayList.add(user)
+                        }
 
                     }
                     val adapter = MyAdapter(userArrayList)

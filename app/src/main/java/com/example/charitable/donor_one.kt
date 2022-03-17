@@ -49,7 +49,7 @@ class donor_one :  BaseActivity() {
 
         profileUpdateImageDonor.setOnClickListener{
             if(ContextCompat.checkSelfPermission(
-                    this, android.Manifest.permission.READ_EXTERNAL_STORAGE)== PackageManager.PERMISSION_GRANTED){
+                    this, android.Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
                 ActivityCompat.requestPermissions(
                     this,
                     arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
@@ -105,7 +105,6 @@ class donor_one :  BaseActivity() {
         if(resultCode == Activity.RESULT_OK && requestCode== PICK_IMAGE_REQUEST_CODE){
             mSelectedImageFileUri = data?.data
             try{
-
                 Glide
                     .with(this)
                     .load(mSelectedImageFileUri)

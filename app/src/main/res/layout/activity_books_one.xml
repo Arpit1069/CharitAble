@@ -80,15 +80,16 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/select_ngo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:onClick="showConfirmationDialog"
             android:text="Select NGO"
             android:textAllCaps="false"
-            android:textSize="19sp"
-            android:layout_marginStart="40dp"
-            android:gravity="center"
-            android:background="@drawable/switch_tumbs"
-            android:layout_marginTop="210dp"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"/>
+            android:textSize="19sp" />
         <Button
             android:id="@+id/proceedbooks"
             android:text="Proceed"
