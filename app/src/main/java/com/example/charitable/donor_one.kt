@@ -44,8 +44,9 @@ class donor_one :  BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_donor_one)
         FirestoreClass().loadUserData(this)
+        val currentUserID = FirestoreClass().getCurrentUserId()
         database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        reference = database.getReference("Users")
+        reference = database.getReference("Users").child(currentUserID)
 
         profileUpdateImageDonor.setOnClickListener{
             if(ContextCompat.checkSelfPermission(
@@ -70,10 +71,16 @@ class donor_one :  BaseActivity() {
             if(mSelectedImageFileUri != null){
                 uploadUserImage()
             }
-            val intent = Intent(this@donor_one,splash2::class.java)
-            updateUserProfileDataDonor()
-            startActivity(intent)
-            finish()
+
+            try {
+                updateUserProfileDataDonor()
+            }finally{
+
+                val intent = Intent(this@donor_one,com.example.charitable.splash2::class.java)
+                startActivity(intent)
+                finish()
+
+            }
 
         }
 
@@ -160,8 +167,7 @@ class donor_one :  BaseActivity() {
     private fun updateUserProfileDataDonor(){
 
         val userHashMap = HashMap<String,Any>()
-        val currentUserID = FirestoreClass().getCurrentUserId()
-        reference.child("Users").child(currentUserID)
+        val currentUserID = FirestoreClass().getCurrentUserId().toString()
 
        if(mProfileImageURL.isNotEmpty() && mProfileImageURL != mUserDetails.image){
            userHashMap[Constants.IMAGE] = mProfileImageURL
@@ -209,7 +215,6 @@ class donor_one :  BaseActivity() {
         }
     }
     fun profileUpdateSuccessDonor(){
-        hideProgressDialog()
         startActivity(Intent(this@donor_one,splash2::class.java))
         finish()
     }
