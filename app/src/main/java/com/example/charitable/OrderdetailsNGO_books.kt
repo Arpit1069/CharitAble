@@ -9,6 +9,8 @@ import com.example.charitable.models.OrderItems
 import com.example.charitable.models.SwipeGesture
 import com.google.firebase.database.*
 import android.content.Context
+import android.widget.Toast
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -20,6 +22,10 @@ class OrderdetailsNGO_books : BaseActivity() {
     lateinit var currentUserIDOfBooksOrder: String
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<OrderItems>
+    private lateinit var swipeRefreshLayout: SwipeRefreshLayout
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,8 +36,20 @@ class OrderdetailsNGO_books : BaseActivity() {
         userRecyclerView.setHasFixedSize(true)
 
         userArrayList = arrayListOf<OrderItems>()
+
+       swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout)
+
+        refreshapp()
+
         getUserData()
 
+    }
+    private fun refreshapp()
+    {
+        swipeRefreshLayout.setOnRefreshListener {
+            Toast.makeText(this,"page refreshed",Toast.LENGTH_SHORT).show()
+            swipeRefreshLayout.isRefreshing = false
+        }
     }
 
     private fun getUserData() {
@@ -41,6 +59,10 @@ class OrderdetailsNGO_books : BaseActivity() {
 
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+
+//                if(swipeRefreshLayout.isRefreshing){
+//                    swipeRefreshLayout.isRefreshing = false
+//                }
 
                 if (snapshot.exists()){
                     for(userSnapshot in snapshot.children) {
@@ -61,12 +83,23 @@ class OrderdetailsNGO_books : BaseActivity() {
                             viewHolder: RecyclerView.ViewHolder,
                             target: RecyclerView.ViewHolder
                         ): Boolean {
+                            if(viewHolder.itemViewType != target.itemViewType)
+                                return false
+
                             val from_pos = viewHolder.adapterPosition
                             val to_pos =target.adapterPosition
 
-                            Collections.swap(userArrayList,from_pos,to_pos)
-                            adapter.notifyItemRemoved(from_pos,to_pos)
-                            return false
+                            val item = userArrayList.removeAt(from_pos)
+                            userArrayList.add(to_pos,item)
+
+                            //Collections.swap(userArrayList,from_pos,to_pos)
+                           // adapter.notifyItemMoved(from_pos,to_pos)
+
+                            recyclerView.adapter!!.notifyItemMoved(from_pos,to_pos)
+
+
+
+                            return true
 
                         }
 
@@ -94,7 +127,10 @@ class OrderdetailsNGO_books : BaseActivity() {
 
 
                         }
+
                     }
+
+
 
                     val touchHelper = ItemTouchHelper(swipegesture)
                     touchHelper.attachToRecyclerView(userRecyclerView)

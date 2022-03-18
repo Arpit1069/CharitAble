@@ -34,12 +34,12 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
     fun deleteItem(){
-//        val currentUserIDOfBooksOrder = "2RQPeMHSTITrkQRmCIZqiyH3f1o2"
+        val currentUserIDOfBooksOrder = "-MyMvk9HW38-wrfgdU3j"
         database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        reference = database.getReference("Users")
-//        if (currentUserIDOfBooksOrder.isNotEmpty()){
-//            reference.child(currentUserIDOfBooksOrder).removeValue()
-//        }
+        reference = database.getReference("BooksOrder")
+        if (currentUserIDOfBooksOrder.isNotEmpty()){
+            reference.child(currentUserIDOfBooksOrder).removeValue()
+        }
 
 // TODO : and first save current user id while donating and reload
 
@@ -107,9 +107,7 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         return userList.size
     }
 
-    fun notifyItemRemoved(fromPos: Int, toPos: Int) {
-        notifyItemRemoved(fromPos, toPos)
-    }
+
 
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
