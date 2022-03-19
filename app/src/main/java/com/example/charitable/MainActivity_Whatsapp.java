@@ -10,11 +10,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.PackageManagerCompat;
 
 import com.hbb20.CountryCodePicker;
 
 
-public class MainActivity_Whatsapp extends BaseActivity {
+public class MainActivity_Whatsapp extends AppCompatActivity {
 
     CountryCodePicker countryCodePicker;
     EditText phone, message;
@@ -32,6 +33,7 @@ public class MainActivity_Whatsapp extends BaseActivity {
         sendbtn = findViewById(R.id.sendbtn);
 
         sendbtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
@@ -74,17 +76,19 @@ public class MainActivity_Whatsapp extends BaseActivity {
         PackageManager packageManager = getPackageManager();
         boolean whatsappInstalled;
 
-        try {
-
-            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES);
-            whatsappInstalled = true;
-
-
-        }catch (PackageManager.NameNotFoundException e){
-
-            whatsappInstalled = false;
-
-        }
+//        try {
+//
+//            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES)
+//
+//            whatsappInstalled = true;
+//
+//
+//        }catch (PackageManager.NameNotFoundException e){
+//
+//            whatsappInstalled = false;
+//
+//        }
+        whatsappInstalled = true;
 
         return whatsappInstalled;
 

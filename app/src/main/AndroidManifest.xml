@@ -41,9 +41,7 @@
             android:name=".donor_two"
             android:exported="true"
             android:label="donor_two" />
-        <activity
-            android:name=".food_zero"
-            android:exported="true" />
+
         <activity
             android:name=".books_one"
             android:exported="true"
