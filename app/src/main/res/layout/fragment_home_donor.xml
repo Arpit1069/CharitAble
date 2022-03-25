@@ -1,78 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@drawable/chiku"
-    android:gravity="center"
-    tools:context=".HistoryFragment_res">
+    android:background="@drawable/homefragdonor"
+    android:orientation="horizontal"
+    tools:context=".dish_res">
+
     <androidx.cardview.widget.CardView
-        android:layout_width="360dp"
-        android:layout_height="620dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="30dp"
-        app:cardCornerRadius="30dp"
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        app:cardBackgroundColor="#D3D1D1"
+        app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="#D9C9F4"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="65dp"
-            app:cardCornerRadius="20dp"
-            android:layout_width="200dp"
-            android:layout_height="130dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/button_food"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="35dp"
                 android:src="@drawable/restaurant"
                 tools:ignore="SpeakableTextPresentCheck" />
+            <!--                tools:ignore="SpeakableTextPresentCheck" />-->
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="#D9C9F4"
-            android:layout_marginTop="225dp"
-            android:layout_marginStart="65dp"
-            app:cardCornerRadius="20dp"
-            android:layout_width="200dp"
-            android:layout_height="130dp">
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="120dp"
+        app:cardBackgroundColor="#D3D1D1"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/button_books"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:src="@drawable/books"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/image_book"
                 tools:ignore="SpeakableTextPresentCheck" />
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
 
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="#D9C9F4"
-            android:layout_marginTop="390dp"
-            android:layout_marginStart="65dp"
-            app:cardCornerRadius="20dp"
-            android:layout_width="200dp"
-            android:layout_height="130dp">
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="190dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="380dp"
+        app:cardBackgroundColor="#D3D1D1"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/button_clothes"
-                android:layout_width="170dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="35dp"
                 android:src="@drawable/clothes"
                 tools:ignore="SpeakableTextPresentCheck" />
 
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-        </androidx.cardview.widget.CardView>
 
+</RelativeLayout>
 
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background=""-->
+<!--    android:gravity="center"-->
+<!--    tools:context=".HistoryFragment_res">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/title_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginEnd="90dp"-->
+<!--        android:text="DONATE!!"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/title_view"-->
+<!--        android:columnCount="2"-->
+<!--        android:rowCount="2">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_gravity=""-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="40dp"-->
+<!--            app:cardElevation="20dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/button_food"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/restaurant"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_column="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="40dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/button_books"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/books"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_margin="8dp"-->
+<!--            app:cardCornerRadius="40dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|center_horizontal"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/button_clothes"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/clothes"-->
+<!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </GridLayout>-->
 
         <!--    <androidx.cardview.widget.CardView-->
 <!--        app:cardCornerRadius="50dp"-->
@@ -166,11 +308,9 @@
 <!--        </LinearLayout>-->
 <!--    </androidx.cardview.widget.CardView>-->
 
-    </androidx.cardview.widget.CardView>
 
 
 
 
 
-
-</FrameLayout>
+<!--</RelativeLayout>-->

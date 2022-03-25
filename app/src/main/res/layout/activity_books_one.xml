@@ -3,26 +3,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="416dp"
-    android:layout_height="735dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/white">
+    android:background="@drawable/books_one_img">
 
-    <TextView
-        android:text="CharitAble"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:background="#ABDAEF"
-        android:textColor="@color/black"
-        android:layout_width="414dp"
-        android:layout_height="50dp"/>
+<!--    <TextView-->
+<!--        android:text="CharitAble"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:background="#ABDAEF"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_width="414dp"-->
+<!--        android:layout_height="50dp"/>-->
     <androidx.cardview.widget.CardView
-        android:layout_width="330dp"
+        android:layout_width="360dp"
         android:layout_height="500dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="38dp"
         app:cardBackgroundColor="#EAE2F8"
         app:cardCornerRadius="25dp"
@@ -33,8 +33,9 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
+
             android:hint="Name"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -57,7 +58,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="80dp"
             android:hint="Mobile No."
             android:textColorHint="@color/black"
@@ -81,8 +82,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="140dp"
             android:hint="Address"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -105,8 +106,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="205dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="200dp"
             android:hint="Quantity"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -129,8 +130,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="255dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="260dp"
             android:hint="Standard"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -155,26 +156,27 @@
             android:id="@+id/select_ngo"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="330dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="360dp"
             android:background="@drawable/switch_tumbs"
             android:gravity="center"
             android:onClick="showConfirmationDialog"
             android:text="Select NGO"
             android:textAllCaps="false"
             android:textSize="19sp" />
-        <Button
-            android:id="@+id/proceedbooks"
-            android:text="Proceed"
-            android:layout_marginTop="180dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:backgroundTint="#DF9797"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"/>
 
 
     </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/proceedbooks"
+        android:text="Proceed"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:backgroundTint="#DF9797"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+
 
 
 

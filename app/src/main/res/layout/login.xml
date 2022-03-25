@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/pin_login_bg"
+    android:background="@drawable/backgroundlogin"
     tools:context=".login">
 
   <TextView
@@ -18,7 +18,7 @@
       android:layout_marginStart="50dp"
       android:layout_marginEnd="90dp"
       android:textStyle="bold|normal"
-      android:textColor="#F8F2F2"
+      android:textColor="#050505"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 

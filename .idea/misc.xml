@@ -195,7 +195,8 @@
         <entry key="app/src/main/res/drawable/switch_basic.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/switch_trcks.xml" value="0.117" />
         <entry key="app/src/main/res/drawable/switch_tumbs.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_books_one.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_base.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_books_one.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_books_two.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_clothes_one.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_clothes_two.xml" value="0.25" />
@@ -212,8 +213,10 @@
         <entry key="app/src/main/res/layout/activity_foodrequest_one.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_foodrequest_two.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main_whatsapp.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_ngo_one.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_ngo_two.xml" value="0.17844202898550723" />
+        <entry key="app/src/main/res/layout/activity_orderdetails_ngo.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_restaurant_one.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_restaurant_two.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_restaurantbottomnav.xml" value="0.2391304347826087" />
@@ -222,12 +225,13 @@
         <entry key="app/src/main/res/layout/activity_splash2.xml" value="0.1897644927536232" />
         <entry key="app/src/main/res/layout/activity_splash3.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_splash4.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/dialog_progress.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/donrequest_one.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_dish_res.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_employee_ngo.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/fragment_home_donor.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home_donor.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_home_ngo.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_info_donor.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/fragment_items.xml" value="0.3098958333333333" />
@@ -241,6 +245,7 @@
         <entry key="app/src/main/res/layout/ngo_details.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/ngo_two.xml" value="0.1" />
         <entry key="app/src/main/res/layout/resrequest_one.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/user_item_books.xml" value="0.335" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/icon.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.174" />

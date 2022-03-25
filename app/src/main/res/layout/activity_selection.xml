@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/chiku"
+    android:background="@drawable/selectionbackground"
     android:orientation="vertical"
     android:layout_gravity="center"
     tools:context=".donor_one">
@@ -15,7 +15,7 @@
         android:layout_marginTop="45dp"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold|italic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose your Role " />

@@ -3,19 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="416dp"
-    android:layout_height="735dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@color/white">
-    <TextView
-        android:text="CharitAble"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:background="#ABDAEF"
-        android:textColor="@color/black"
-        android:layout_width="414dp"
-        android:layout_height="50dp"/>
+    android:background="@drawable/clothes_one_img">
+<!--    <TextView-->
+<!--        android:text="CharitAble"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:background="#ABDAEF"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_width="414dp"-->
+<!--        android:layout_height="50dp"/>-->
     <androidx.cardview.widget.CardView
         android:layout_width="330dp"
         android:layout_height="500dp"
@@ -23,7 +23,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="38dp"
-        app:cardBackgroundColor="#D8CCEC"
+        app:cardBackgroundColor="#D9F1BE"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
@@ -31,8 +31,33 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="90dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Name"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_books"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="85dp"
             android:hint="Quantity"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -49,6 +74,54 @@
                 android:textSize="13sp"
                 android:textStyle="normal" />
         </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="150dp"
+            android:hint="Address"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address_books"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="20"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="220dp"
+            android:hint="Mobile No."
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile_no_books"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="20"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/select_ngo"
             android:text="Select NGO"
@@ -57,21 +130,20 @@
             android:layout_marginStart="40dp"
             android:gravity="center"
             android:background="@drawable/switch_tumbs"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="320dp"
             android:layout_width="220dp"
             android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/proceedclothes"
-            android:text="Proceed"
-            android:layout_marginTop="90dp"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:backgroundTint="#DF9797"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"/>
-
-
     </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/proceedclothes"
+        android:text="Proceed"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:backgroundTint="#B9F6BC"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+
 
 
 </LinearLayout>
