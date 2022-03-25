@@ -14,10 +14,12 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.*
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+
 
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
@@ -45,8 +47,6 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
     }
 
 
-
-
     fun addItem(position: Int, orders : OrderItems){
 
 //        userList.add(position,orders)
@@ -60,13 +60,12 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         val currentitem = userList[position]
 
         holder.name_booksdonate.text = currentitem.userName
-        holder.quantity_booksdonate.text = currentitem.quantity
-        holder.class_booksdonate.text = currentitem.stdClass
-        holder.brief_details_books_name.text = currentitem.OrderBooksID
+        holder.quantity_booksdonate.text = currentitem.userAddress
+        holder.brief_details_books_order_id.text = currentitem.OrderBooksID
         holder.brief_details_books_quantity.text = currentitem.quantity
         holder.brief_details_books_class.text = currentitem.stdClass
         holder.brief_details_books_number.text = currentitem.userMobile
-        holder.brief_details_books_address.text = currentitem.NGOSelected
+        holder.brief_details_books_address.text = currentitem.userAddress
 //        holder.brief_details_books_city.text = currentitem.userCity
 
         var status = currentitem.BooksOrderProgress
@@ -82,49 +81,30 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
         holder.buttonWhatsApp.setOnClickListener{
                 v ->
-//            val intent = Intent(v.context, MainActivity_Whatsapp::class.java)
 
-
-            fun onClick(v: View?) {
-
-//                messagestr = message.getText().toString()
-//                !messagestr.isEmpty() &&
-//                + messagestr
-
-
-
-                var phonestr = currentitem.userMobile.toString()
+                val phonestr = currentitem.userMobile
                 if (!phonestr.isEmpty()) {
 
-//                    countryCodePicker.registerCarrierNumberEditText(phone)
 
-//                    val countryCodePicker = 91
-//                    phonestr = countryCodePicker
-//                    if (isWhatappInstalled()) {
                         val i = Intent(
                             Intent.ACTION_VIEW, Uri.parse(
-                                "https://api.whatsapp.com/send?phone=" + 91 + phonestr +
+                                "https://api.whatsapp.com/send?phone=" + "91" + phonestr +
                                         "&text="
                             )
                         )
                         v?.context?.startActivity(i)
-//                        startActivity(i)
+
                     }
-//                    else {
-//                        Toast.makeText(
-//                            this@MyAdapter,
-//                            "Whatsapp is not installed",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                    }
-//                } else {
+
+//                else {
 //                    Toast.makeText(
 //                        this@MyAdapter,
 //                        "Please fill in the Phone no. and message it can't be empty",
 //                        Toast.LENGTH_LONG
 //                    ).show()
 //                }
-            }
+
+
 
 
         }
@@ -143,25 +123,25 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
     }
 
-    private fun isWhatappInstalled(): Boolean {
-        val packageManager: PackageManager
-        val whatsappInstalled: Boolean
-
-//        try {
+//    private fun isWhatappInstalled(): Boolean {
+//        val packageManager: PackageManager
+//        val whatsappInstalled: Boolean
 //
-//            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES)
-//
-//            whatsappInstalled = true;
-//
-//
-//        }catch (PackageManager.NameNotFoundException e){
-//
-//            whatsappInstalled = false;
-//
-//        }
-        whatsappInstalled = true
-        return whatsappInstalled
-    }
+////        try {
+////
+////            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES)
+////
+////            whatsappInstalled = true;
+////
+////
+////        }catch (PackageManager.NameNotFoundException e){
+////
+////            whatsappInstalled = false;
+////
+////        }
+//        whatsappInstalled = true
+//        return whatsappInstalled
+//    }
 
 
     override fun getItemCount(): Int {
@@ -174,9 +154,9 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         val name_booksdonate : TextView = itemView.findViewById(R.id.Username_order_details)
-        val quantity_booksdonate : TextView = itemView.findViewById(R.id.quantity_order_details)
-        val class_booksdonate : TextView = itemView.findViewById(R.id.standard_order_details)
-        val brief_details_books_name : TextView = itemView.findViewById(R.id.briefDetails_books_name)
+        val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details)
+//        val class_booksdonate : TextView = itemView.findViewById(R.id.standard_order_details)
+        val brief_details_books_order_id : TextView = itemView.findViewById(R.id.briefDetails_books_order_id)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_books_quantity)
         val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails_books_class)
         val brief_details_books_number : TextView = itemView.findViewById(R.id.briefDetails_books_number)
