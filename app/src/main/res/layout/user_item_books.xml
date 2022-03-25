@@ -13,16 +13,17 @@
     android:foreground="?android:attr/selectableItemBackground"
     android:layout_margin = "16dp">
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300dp"-->
-<!--        android:layout_gravity="fill"-->
-<!--        android:layout_rowWeight="1"-->
-<!--        android:layout_columnWeight="1"-->
-<!--        android:layout_margin="15dp"-->
-<!--        app:cardCornerRadius="30dp"-->
-<!--        app:cardElevation="8dp"-->
-<!--        tools:ignore="MissingConstraints">-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="fill"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,7 +155,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"/>
                     <TextView
-                        android:text="Class"
+                        android:text="Standard"
                         android:gravity="center"
                         android:layout_marginStart="10dp"
                         android:textSize="19sp"
@@ -178,7 +179,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-<!--    </androidx.cardview.widget.CardView>-->
+    </androidx.cardview.widget.CardView>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -194,12 +195,10 @@
             >
 
 
-
-
 <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="250dp"
+                android:paddingTop="300dp"
                 android:orientation="vertical">
 
 
@@ -287,7 +286,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
-                    android:text="Name"
+                    android:text="Quantity"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -302,7 +301,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="books Quantity"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
@@ -320,7 +319,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
-                    android:text="Name"
+                    android:text="Standard"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -335,7 +334,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="Standard"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
@@ -352,7 +351,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
-                    android:text="Name"
+                    android:text="Email"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -367,10 +366,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="Donor Email"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:padding="3dp"
@@ -384,7 +384,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
-                    android:text="Name"
+                    android:text="Mobile No."
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -399,7 +399,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="Donor Contact"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
@@ -417,7 +417,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
                 <TextView
-                    android:text="Name"
+                    android:text="Address"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -432,7 +432,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="Address"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
@@ -449,8 +449,9 @@
                     android:layout_marginStart="5dp"
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
+
                 <TextView
-                    android:text="Name"
+                    android:text="City"
                     android:gravity="center"
                     android:layout_marginStart="10dp"
                     android:textSize="19sp"
@@ -465,7 +466,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="47dp"
-                    android:text="User Name"
+                    android:text="City"
                     android:textColor="@color/black"
                     android:textSize="20sp"/>
             </LinearLayout>
@@ -485,6 +486,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="mark as done" />
+
                 <Button
                     android:id="@+id/btnWhatsApp"
                     android:layout_margin="5dp"

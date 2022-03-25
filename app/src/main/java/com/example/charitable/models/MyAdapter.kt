@@ -1,21 +1,19 @@
 package com.example.charitable.models
 
-import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
-import android.content.IntentSender
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.*
-import com.example.charitable.databinding.ActivityMainWhatsappBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -82,9 +80,52 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
         }
 
-        holder.buttonWhatsApp.setOnClickListener{ v ->
-            val intent = Intent(v.context, MainActivity_Whatsapp::class.java)
-            v.context.startActivity(intent)
+        holder.buttonWhatsApp.setOnClickListener{
+                v ->
+//            val intent = Intent(v.context, MainActivity_Whatsapp::class.java)
+
+
+            fun onClick(v: View?) {
+
+//                messagestr = message.getText().toString()
+//                !messagestr.isEmpty() &&
+//                + messagestr
+
+
+
+                var phonestr = currentitem.userMobile.toString()
+                if (!phonestr.isEmpty()) {
+
+//                    countryCodePicker.registerCarrierNumberEditText(phone)
+
+//                    val countryCodePicker = 91
+//                    phonestr = countryCodePicker
+//                    if (isWhatappInstalled()) {
+                        val i = Intent(
+                            Intent.ACTION_VIEW, Uri.parse(
+                                "https://api.whatsapp.com/send?phone=" + 91 + phonestr +
+                                        "&text="
+                            )
+                        )
+                        v?.context?.startActivity(i)
+//                        startActivity(i)
+                    }
+//                    else {
+//                        Toast.makeText(
+//                            this@MyAdapter,
+//                            "Whatsapp is not installed",
+//                            Toast.LENGTH_SHORT
+//                        ).show()
+//                    }
+//                } else {
+//                    Toast.makeText(
+//                        this@MyAdapter,
+//                        "Please fill in the Phone no. and message it can't be empty",
+//                        Toast.LENGTH_LONG
+//                    ).show()
+//                }
+            }
+
 
         }
 
@@ -100,6 +141,26 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
         }
 
+    }
+
+    private fun isWhatappInstalled(): Boolean {
+        val packageManager: PackageManager
+        val whatsappInstalled: Boolean
+
+//        try {
+//
+//            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES)
+//
+//            whatsappInstalled = true;
+//
+//
+//        }catch (PackageManager.NameNotFoundException e){
+//
+//            whatsappInstalled = false;
+//
+//        }
+        whatsappInstalled = true
+        return whatsappInstalled
     }
 
 
