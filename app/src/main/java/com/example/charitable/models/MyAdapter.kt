@@ -71,16 +71,16 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.brief_details_books_address.text = currentitem.NGOSelected
 //        holder.brief_details_books_city.text = currentitem.userCity
 
-//        var status = currentitem.BooksOrderProgress
-//
-//        holder.buttonmarkasdone.setOnClickListener{
-//
-//            if(status == "InProgress" ){
-//                status = "Finished"
-//            }else{
-//                status = "was empty"}
-//
-//        }
+        var status = currentitem.BooksOrderProgress
+
+        holder.buttonmarkasdone.setOnClickListener{
+
+            if(status == "InProgress" ){
+                status = "Finished"
+            }else{
+                status = "was empty"}
+
+        }
 
         holder.buttonWhatsApp.setOnClickListener{ v ->
             val intent = Intent(v.context, MainActivity_Whatsapp::class.java)

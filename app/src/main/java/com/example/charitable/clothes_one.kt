@@ -10,11 +10,13 @@ class clothes_one : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clothes_one)
+
         proceedclothes.setOnClickListener {
             val intent = Intent(this@clothes_one,clothes_two::class.java)
             startActivity(intent)
             finish()
         }
     }
+
 }
 
