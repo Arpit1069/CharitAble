@@ -59,6 +59,8 @@
         <activity
             android:name=".OrderdetailsNGO_books"
             android:exported="true" />
+
+
         <activity
             android:name=".clothes_two"
             android:exported="true" />

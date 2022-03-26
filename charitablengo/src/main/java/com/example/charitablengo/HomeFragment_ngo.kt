@@ -30,7 +30,7 @@ class HomeFragment_ngo : Fragment() {
         val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes_order)
 
         btn_food.setOnClickListener {
-            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_books::class.java)
+            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_food::class.java)
             startActivity(intent)
         }
         btn_books.setOnClickListener {
