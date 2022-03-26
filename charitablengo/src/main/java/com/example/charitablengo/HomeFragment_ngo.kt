@@ -38,7 +38,7 @@ class HomeFragment_ngo : Fragment() {
             startActivity(intent)
         }
         btn_clothes.setOnClickListener {
-            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_books::class.java)
+            val intent = Intent(this@HomeFragment_ngo.requireContext(), OrderdetailsNGO_clothes::class.java)
             startActivity(intent)
         }
 
