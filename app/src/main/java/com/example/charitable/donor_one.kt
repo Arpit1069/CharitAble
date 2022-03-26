@@ -202,9 +202,41 @@ class donor_one :  BaseActivity() {
         }
     }
 
+
     fun profileUpdateSuccessDonor(){
-        startActivity(Intent(this@donor_one,splash2::class.java))
-        finish()
+        val name: String = namedonor.text.toString().trim { it <= ' ' }
+        val mobile: String = mobiledonor.text.toString().trim { it <= ' ' }
+        val address: String = addressdonor.text.toString().trim { it <= ' ' }
+        val city: String = citydonor.text.toString().trim{ it<= ' '}
+        if (validateForm7(name, mobile, address, city)) {
+            startActivity(Intent(this@donor_one, splash2::class.java))
+            finish()
+        }
+    }
+
+    private fun validateForm7(name : String, mobile: String, address: String, city: String): Boolean {
+        return when {
+            TextUtils.isEmpty(name) -> {
+                showErrorSnackBar("Please enter name.")
+                false
+            }
+            TextUtils.isEmpty(mobile) -> {
+                showErrorSnackBar("Please enter mobile number.")
+                false
+            }
+            TextUtils.isEmpty(address) -> {
+                showErrorSnackBar("Please enter address.")
+                false
+            }
+            TextUtils.isEmpty(city) -> {
+                showErrorSnackBar("Please enter city.")
+                false
+            }
+            else -> {
+                true
+            }
+        }
+
     }
 
 }

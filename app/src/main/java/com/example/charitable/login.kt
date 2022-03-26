@@ -113,6 +113,9 @@ class login : BaseActivity() {
         val email: String = eMail2.text.toString().trim { it <= ' ' }
         val password: String = Passwords2.text.toString().trim { it <= ' ' }
         val password2: String = Passwords3.text.toString().trim{ it<= ' '}
+        if(password.length < 6){
+            Toast.makeText(this, "password is short", Toast.LENGTH_SHORT).show()
+        }
         if (Passwords2.text.toString() != Passwords3.text.toString()){
             Toast.makeText(this,"confirm password does not match with the password", Toast.LENGTH_SHORT).show()
         }else{
@@ -124,8 +127,11 @@ class login : BaseActivity() {
                     val firebaseUser: FirebaseUser = task.result!!.user!!
                     val registeredEmail = firebaseUser.email!!
                     val user= User(firebaseUser.uid, name,registeredEmail)
+
                     FirestoreClass().registerUser(this, user)
                     startActivity(Intent(this@login, login::class.java))
+
+
 
 //                    Toast.makeText(
 //                        this,
