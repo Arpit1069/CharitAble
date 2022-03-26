@@ -139,8 +139,8 @@ private  var color = "blue"
 
     class MyViewHolder_clothes(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-        val name_booksdonate : TextView = itemView.findViewById(R.id.Username_order_details)
-        val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details)
+        val name_booksdonate : TextView = itemView.findViewById(R.id.Username_order_details_clothes)
+        val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details_clothes)
         val brief_details_books_order_id : TextView = itemView.findViewById(R.id.briefDetails_clothes_order_id)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_clothes_quantity)
         //val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails_clothes_class)

@@ -66,7 +66,7 @@
 
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/Username_order_details"
+                        android:id="@+id/Username_order_details_clothes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="47dp"
@@ -151,7 +151,7 @@
 
 
             <TextView
-                android:id="@+id/address_order_details"
+                android:id="@+id/address_order_details_clothes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="47dp"
