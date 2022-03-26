@@ -2,6 +2,7 @@ package com.example.charitable.models
 
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
@@ -15,14 +16,15 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.*
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-
+private  var color = "blue"
     private lateinit var database: FirebaseDatabase
-    private lateinit var reference: DatabaseReference
+    private lateinit var dbref : DatabaseReference
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.user_item_books, parent, false)
@@ -33,26 +35,13 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
 
 
-    fun deleteItem(){
-        val currentUserIDOfBooksOrder = "-MyMvk9HW38-wrfgdU3j"
-        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        reference = database.getReference("BooksOrder")
-        if (currentUserIDOfBooksOrder.isNotEmpty()){
-            reference.child(currentUserIDOfBooksOrder).removeValue()
-        }
-
-// TODO : and first save current user id while donating and reload
-
-
-    }
-
-
-    fun addItem(position: Int, orders : OrderItems){
-
-//        userList.add(position,orders)
-//        notifyDataSetChanged()
-//        notifyItemChanged(position)
-    }
+//    fun addItem(position: Int, orders : OrderItems){
+//
+////        userList.add(position,orders)
+////        notifyDataSetChanged()
+////        notifyItemChanged(position)
+//
+//    }
 
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
@@ -66,7 +55,10 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
         holder.brief_details_books_class.text = currentitem.stdClass
         holder.brief_details_books_number.text = currentitem.userMobile
         holder.brief_details_books_address.text = currentitem.userAddress
-//        holder.brief_details_books_city.text = currentitem.userCity
+        holder.brief_details_OrderStatus_Books.text = currentitem.BooksOrderProgress
+        holder.brief_details_OrderStatus_Books.setBackgroundColor(Color.parseColor(color))
+        holder.brief_details_books_selectedNGO.text = currentitem.NGOSelected
+
 
         var status = currentitem.BooksOrderProgress
 
@@ -74,9 +66,15 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
             if(status == "InProgress" ){
                 status = "Finished"
-            }else{
-                status = "was empty"}
+                color = "grey"
+            }
 
+            currentitem.BooksOrderProgress = status
+            holder.brief_details_OrderStatus_Books.setBackgroundColor(Color.parseColor(color))
+            holder.brief_details_OrderStatus_Books.text = currentitem.BooksOrderProgress
+
+//            deleteItem(position)
+            return@setOnClickListener
         }
 
         holder.buttonWhatsApp.setOnClickListener{
@@ -123,44 +121,35 @@ class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Ad
 
     }
 
-//    private fun isWhatappInstalled(): Boolean {
-//        val packageManager: PackageManager
-//        val whatsappInstalled: Boolean
-//
-////        try {
-////
-////            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES)
-////
-////            whatsappInstalled = true;
-////
-////
-////        }catch (PackageManager.NameNotFoundException e){
-////
-////            whatsappInstalled = false;
-////
-////        }
-//        whatsappInstalled = true
-//        return whatsappInstalled
-//    }
 
 
     override fun getItemCount(): Int {
         return userList.size
     }
 
+    fun deleteItem(position: Int) {
+        val currentitem = userList[position]
+        dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BooksOrder")
+        dbref.child(currentitem.userMobile.toString()).removeValue()
 
+//        TODO("Not yet implemented")
+    }
 
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         val name_booksdonate : TextView = itemView.findViewById(R.id.Username_order_details)
         val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details)
-//        val class_booksdonate : TextView = itemView.findViewById(R.id.standard_order_details)
         val brief_details_books_order_id : TextView = itemView.findViewById(R.id.briefDetails_books_order_id)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_books_quantity)
         val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails_books_class)
         val brief_details_books_number : TextView = itemView.findViewById(R.id.briefDetails_books_number)
         val brief_details_books_address : TextView = itemView.findViewById(R.id.briefDetails_books_address)
+
+        val brief_details_OrderStatus_Books : TextView = itemView.findViewById(R.id.OrderStatus_Books)
+        val brief_details_books_selectedNGO : TextView = itemView.findViewById(R.id.briefDetails_books_selectedNGO)
+
+
         val contraintLayout : ConstraintLayout = itemView.findViewById(R.id.expandedLayout_books)
         val fullViewToExpand : CardView = itemView.findViewById(R.id.click_expand_books)
 

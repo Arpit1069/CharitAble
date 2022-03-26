@@ -201,6 +201,7 @@ class donor_one :  BaseActivity() {
             citydonor.setText(user.city.toString())
         }
     }
+
     fun profileUpdateSuccessDonor(){
         startActivity(Intent(this@donor_one,splash2::class.java))
         finish()

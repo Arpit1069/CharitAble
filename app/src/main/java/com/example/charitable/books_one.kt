@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_donor_one.*
 class books_one : BaseActivity() {
 
 private var selectedItemIndex = 0
-    private var selectedNGO_books = ""
+    private var selectedNGO_books = "Waifu Forever"
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
 
@@ -58,7 +58,6 @@ private var selectedItemIndex = 0
             .setNeutralButton("Cancel") { dialog, which ->
             }
             .show()
-
     }
 
     fun sendData() {
@@ -68,18 +67,21 @@ private var selectedItemIndex = 0
         val addressBooks = address_books.text.toString()
         val quantityBooks = quantity_books.text.toString().trim()
         val stdClass = standard_books.text.toString()
+        val selectedNGO_here = selectedNGO_books.trim()
 
         if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty() && nameBooks.isNotEmpty() && addressBooks.isNotEmpty() &&
-                mobileBooks.isNotEmpty() && selectedNGO_books.isNotEmpty()){
+                mobileBooks.isNotEmpty() && selectedNGO_here.isNotEmpty()){
 
 
-            val id = reference.push().key
-            val model = OrderDetails_books(id!!,nameBooks,quantityBooks,stdClass, mobileBooks, addressBooks, selectedNGO_books)
+//            val id = reference.push().key!!
+
+            val id = mobile_no_books.text.toString().trim()
+            val model = OrderDetails_books(id,nameBooks,quantityBooks,stdClass, mobileBooks, addressBooks, selectedNGO_here)
 
             reference.child(id).setValue(model)
 
-            quantity_books.setText(quantityBooks)
-            standard_books.setText(stdClass)
+            quantity_books.setText(id)
+            standard_books.setText(selectedNGO_here)
             Toast.makeText(applicationContext,"Successfully send to NGO", Toast.LENGTH_LONG).show()
 
             val intent = Intent(this@books_one, books_two::class.java)

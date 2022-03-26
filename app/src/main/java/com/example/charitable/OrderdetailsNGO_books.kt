@@ -8,7 +8,6 @@ import com.example.charitable.models.MyAdapter
 import com.example.charitable.models.OrderItems
 import com.example.charitable.models.SwipeGesture
 import com.google.firebase.database.*
-import android.content.Context
 import android.widget.Toast
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import java.util.*
@@ -19,7 +18,6 @@ class OrderdetailsNGO_books : BaseActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
     private lateinit var dbref : DatabaseReference
-    lateinit var currentUserIDOfBooksOrder: String
     private lateinit var userRecyclerView: RecyclerView
     private lateinit var userArrayList: ArrayList<OrderItems>
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
@@ -109,18 +107,18 @@ class OrderdetailsNGO_books : BaseActivity() {
                             when(direction){
 
                                 ItemTouchHelper.LEFT ->{
-                                    adapter.deleteItem()
+                                    adapter.deleteItem(viewHolder.adapterPosition)
                                 }
 
-                                ItemTouchHelper.RIGHT -> {
-
-                                    //  TODO : mark as done karo
-
-//                                    val archiveItem = userArrayList[viewHolder.adapterPosition]
-//                                    adapter.deleteItem(viewHolder.adapterPosition)
-//                                    adapter.addItem(userArrayList.size,archiveItem)
-
-                                }
+//                                ItemTouchHelper.RIGHT -> {
+//
+//                                    //  TODO : mark as done karo
+//
+////                                    val archiveItem = userArrayList[viewHolder.adapterPosition]
+////                                    adapter.deleteItem(viewHolder.adapterPosition)
+////                                    adapter.addItem(userArrayList.size,archiveItem)
+//
+//                                }
 
 
                             }
@@ -149,14 +147,6 @@ class OrderdetailsNGO_books : BaseActivity() {
         })
     }
 
-//    private fun deleteItem() {
-//        database = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
-//        reference = database.getReference("Users")
-//        if (currentUserIDOfBooksOrder.isNotEmpty()){
-//            reference.child(currentUserIDOfBooksOrder).removeValue()
-//        }
-//
-//    }
 
 
 }

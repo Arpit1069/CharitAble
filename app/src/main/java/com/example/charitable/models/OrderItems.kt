@@ -8,7 +8,7 @@ data class OrderItems(
     val userMobile: String = "",
     val userAddress: String = "",
     val NGOSelected: String = "",
-    val BooksOrderProgress: String = "InProgress",
+    var BooksOrderProgress: String = "InProgress",
     var visibility : Boolean = false
 ){
 
