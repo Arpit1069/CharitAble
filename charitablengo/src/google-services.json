@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "441966122514",
+    "firebase_url": "https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "charitable-48fd7",
+    "storage_bucket": "charitable-48fd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441966122514:android:4e2e1db2dfc6167310aacb",
+        "android_client_info": {
+          "package_name": "com.example.charitable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441966122514-oevtiqubuh771min427jqifvpdoih3fa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charitable",
+            "certificate_hash": "cf978032774e36a567fdd52a2407fba74523683c"
+          }
+        },
+        {
+          "client_id": "441966122514-i08lfca0pcjn71d06tu98ph5tmp9nisl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7G-hJb4r2bDo1yAbevzyehHQikLzW55U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441966122514-i08lfca0pcjn71d06tu98ph5tmp9nisl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441966122514:android:62d6263cd201da1110aacb",
+        "android_client_info": {
+          "package_name": "com.example.charitablengo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441966122514-56ifk0anko5shfdbls3e1j2ltm43mctb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charitablengo",
+            "certificate_hash": "94240940daf1f8a95674e03a64b074a9ca2bba95"
+          }
+        },
+        {
+          "client_id": "441966122514-i08lfca0pcjn71d06tu98ph5tmp9nisl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7G-hJb4r2bDo1yAbevzyehHQikLzW55U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441966122514-i08lfca0pcjn71d06tu98ph5tmp9nisl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
