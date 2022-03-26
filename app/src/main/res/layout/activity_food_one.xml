@@ -127,31 +127,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="243dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="260dp"
-            android:hint="Standard"
-            android:textColorHint="@color/black"
-            app:boxStrokeColor="#836767"
-            app:boxStrokeWidth="1dp"
-            app:shapeAppearanceOverlay="@style/Button4">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/standard_food"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:ems="20"
-                android:inputType="textPersonName|textEmailAddress"
-                android:textColor="@color/black"
-                android:textSize="13sp"
-                android:textStyle="normal" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/select_ngo_food"
