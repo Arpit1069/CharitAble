@@ -47,7 +47,10 @@ abstract class SwipeGesture(context: Context) : ItemTouchHelper.SimpleCallback(I
 
 
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+//        isCurrentlyActive = false
+
     }
+
 
 
 }

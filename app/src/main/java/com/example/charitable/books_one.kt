@@ -38,7 +38,9 @@ private var selectedItemIndex = 0
 
     fun showConfirmationDialog(view: View){
 
-        val NGO_books = arrayOf("None","NGO ka kaam","Taki","Anime","Waifu","Link do re","Link provider","Dead")
+        val NGO_books = arrayOf("None","SHREE BHAGAVAN MAHAVIR DIGAMBAR JAIN CHARITABLE TRUST","A S LOGICAL INDIA FOUNDATION",
+            "A BOOK OF CHILD'S DREAM FOUNDATION","AABAJI PATIL GRAMIN VIKAS PRATISHTHAN PIMPRI","NARAYANI EMPOWERING INDIA FOUNDATION",
+            "EDUCATE EMPOWER ENLIGHTEN FOUNDATION","A I I's A.D. BAWLA FEMALE ORPHANAGE")
 
         selectedNGO_books = NGO_books[selectedItemIndex]
 
