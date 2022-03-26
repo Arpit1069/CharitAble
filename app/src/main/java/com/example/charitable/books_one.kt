@@ -35,11 +35,11 @@ private var selectedItemIndex = 0
 
     fun showConfirmationDialog(view: View){
 
-        val NGO_books = arrayOf("None","SHREE BHAGAVAN MAHAVIR DIGAMBAR JAIN CHARITABLE TRUST","A S LOGICAL INDIA FOUNDATION",
-            "A BOOK OF CHILD'S DREAM FOUNDATION","AABAJI PATIL GRAMIN VIKAS PRATISHTHAN PIMPRI","NARAYANI EMPOWERING INDIA FOUNDATION",
-            "EDUCATE EMPOWER ENLIGHTEN FOUNDATION","A I I's A.D. BAWLA FEMALE ORPHANAGE",
-            "AADARSH EDUCATIONAL AND WELFARE SOCIETY MALEGAON NASHIK","AADARSH YOUTH FOUNDATION",
-        "AADHAR VYASANMUKTI SAMAJIK SEVABHAVI SANSTHA")
+        val NGO_books = arrayOf("NGO1","NGO2",
+            "NGO3","NGO4","NGO5",
+            "NGO6","NGO7",
+            "NGO8","NGO8",
+        "NGO9", "NGO10")
 
         selectedNGO_books = NGO_books[selectedItemIndex]
 

@@ -13,7 +13,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="Firebase Done MOSLTY">
+    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="Firebase Done">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/food_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/food_one.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -347,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648320905779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Firebase Done">
+      <created>1648321800077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648321800077</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +381,7 @@
     <MESSAGE value="fafafaaa" />
     <MESSAGE value="update 260" />
     <MESSAGE value="Firebase Done MOSLTY" />
-    <option name="LAST_COMMIT_MESSAGE" value="Firebase Done MOSLTY" />
+    <MESSAGE value="Firebase Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Firebase Done" />
   </component>
 </project>

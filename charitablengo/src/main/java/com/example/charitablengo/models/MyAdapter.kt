@@ -97,16 +97,6 @@ private  var color = "#FF23BF00"
                         v?.context?.startActivity(i)
 
                     }
-
-//                else {
-//                    Toast.makeText(
-//                        this@MyAdapter,
-//                        "Please fill in the Phone no. and message it can't be empty",
-//                        Toast.LENGTH_LONG
-//                    ).show()
-//                }
-
-
         }
 
 
