@@ -10,8 +10,8 @@ class food_one : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_one)
-        add_menu.setOnClickListener {
-            val intent = Intent(this@food_one,food_two::class.java)
+        proceed_food.setOnClickListener {
+            val intent = Intent(this@food_one,food_three::class.java)
             startActivity(intent)
             finish()
         }

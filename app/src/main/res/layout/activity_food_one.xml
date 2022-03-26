@@ -17,6 +17,7 @@
     <!--        android:textColor="@color/black"-->
     <!--        android:layout_width="414dp"-->
     <!--        android:layout_height="50dp"/>-->
+
     <androidx.cardview.widget.CardView
         android:layout_width="360dp"
         android:layout_height="500dp"
@@ -43,7 +44,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/name_books_food"
+                android:id="@+id/name_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="10"
@@ -67,7 +68,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mobile_no_books_food"
+                android:id="@+id/mobile_no_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -91,7 +92,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/address_books_food"
+                android:id="@+id/address_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -115,7 +116,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/quantity_books_food"
+                android:id="@+id/quantity_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -139,7 +140,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/standard_books_food"
+                android:id="@+id/standard_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -153,14 +154,14 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/select_ngo"
+            android:id="@+id/select_ngo_food"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="360dp"
             android:background="@drawable/switch_tumbs"
             android:gravity="center"
-            android:onClick="showConfirmationDialog"
+            android:onClick="showConfirmationDialog_food"
             android:text="Select NGO"
             android:textAllCaps="false"
             android:textSize="19sp" />
@@ -168,7 +169,7 @@
 
     </androidx.cardview.widget.CardView>
     <Button
-        android:id="@+id/proceedbooks"
+        android:id="@+id/proceed_food"
         android:text="Proceed"
         android:layout_marginTop="70dp"
         android:textColor="@color/black"
@@ -176,9 +177,6 @@
         android:backgroundTint="#DF9797"
         android:layout_width="130dp"
         android:layout_height="wrap_content"/>
-
-
-
 
 
 </LinearLayout>
