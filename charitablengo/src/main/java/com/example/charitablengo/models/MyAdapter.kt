@@ -12,9 +12,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.charitable.*
+import com.example.charitablengo.OrderdetailsNGO_books
 import com.example.charitablengo.R
 import com.example.charitablengo.models.OrderItems
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -24,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter(private val  userList : ArrayList<OrderItems>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-private  var color = "blue"
+private  var color = "#FF23BF00"
     private lateinit var database: FirebaseDatabase
     private lateinit var dbref : DatabaseReference
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -134,9 +136,10 @@ private  var color = "blue"
         dbref.child(currentitem.userMobile.toString()).removeValue()
         notifyItemChanged(position)
 
-//        TODO("Not yet implemented")
-    }
+//        val intent = Intent(this@MyAdapter.requireContext(), OrderdetailsNGO_books::class.java)
+//        startActivity(intent)
 
+    }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 

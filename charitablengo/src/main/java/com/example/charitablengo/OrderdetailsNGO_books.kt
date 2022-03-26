@@ -1,6 +1,7 @@
 package com.example.charitablengo
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,6 +11,7 @@ import com.example.charitablengo.models.OrderItems
 import com.example.charitablengo.models.SwipeGesture
 import com.google.firebase.database.*
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
 import java.util.*
@@ -99,8 +101,6 @@ class OrderdetailsNGO_books : BaseActivity() {
 
                             recyclerView.adapter!!.notifyItemMoved(from_pos,to_pos)
 
-
-
                             return true
 
                         }
@@ -114,6 +114,8 @@ class OrderdetailsNGO_books : BaseActivity() {
                                 ItemTouchHelper.LEFT ->{
                                     adapter.deleteItem(viewHolder.adapterPosition)
                                    adapter.notifyItemChanged(viewHolder.adapterPosition)
+
+
                                 }
 
 //                                ItemTouchHelper.RIGHT -> {

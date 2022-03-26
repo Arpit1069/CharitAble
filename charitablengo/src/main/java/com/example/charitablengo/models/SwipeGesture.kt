@@ -15,9 +15,9 @@ abstract class SwipeGesture(context: Context) : ItemTouchHelper.SimpleCallback(I
         or ItemTouchHelper.START or ItemTouchHelper.END ,ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
 
     val deletecolor = ContextCompat.getColor(context, R.color.deletecolor)
-    val archivecolor = ContextCompat.getColor(context, R.color.archivecolor)
+
     val deleteicon = R.drawable.ic_home
-    val archiveicon = R.drawable.ic_home
+
 
 
     override fun onChildDraw(
@@ -40,8 +40,6 @@ abstract class SwipeGesture(context: Context) : ItemTouchHelper.SimpleCallback(I
         )
             .addSwipeLeftBackgroundColor(deletecolor)
             .addSwipeLeftActionIcon(deleteicon)
-            .addSwipeRightBackgroundColor(archivecolor)
-            .addSwipeRightActionIcon(archiveicon)
             .create()
             .decorate()
 

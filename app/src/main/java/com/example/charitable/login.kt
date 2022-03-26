@@ -193,7 +193,7 @@ class login : BaseActivity() {
                          Log.d("sign in", "signInWithEmail:success")
                          val user = auth.currentUser
                         // startActivity(Intent(this, MainActivity::class.java))
-                         startActivity(Intent(this@login, choose::class.java))
+                         startActivity(Intent(this@login, donor_one::class.java))
                      } else {
                          // If sign in fails, display a message to the user.
                          Log.w("sign in", "signInWithEmail:failure", task.exception)
@@ -254,7 +254,7 @@ class login : BaseActivity() {
                     Log.d("error 90", "signInWithCredential:success")
                     val user = auth.currentUser
 
-                    startActivity(Intent(this, choose::class.java))
+                    startActivity(Intent(this, donor_one::class.java))
                     Log.d("error 90","firebaseAuthWithGoogle: ${user?.displayName}")
                 } else {
                     // If sign in fails, display a message to the user.

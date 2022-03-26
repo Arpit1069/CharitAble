@@ -24,7 +24,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class MyAdapter_clothes(private val  userList : ArrayList<OrderItems_clothes>) : RecyclerView.Adapter<MyAdapter_clothes.MyViewHolder_clothes>() {
 
-private  var color = "blue"
+private  var color = "#FF23BF00"
     private lateinit var database: FirebaseDatabase
     private lateinit var dbref : DatabaseReference
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder_clothes {

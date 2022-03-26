@@ -13,15 +13,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="update 2603 2253">
+    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="update 260">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_clothes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/choose.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/login.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_books.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_books.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_clothes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_clothes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_food.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_food.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/SwipeGesture.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/SwipeGesture.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_books.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_books.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_clothes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_food.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648313863652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update 260">
+      <created>1648318236841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648318236841</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,6 +371,7 @@
     <MESSAGE value="I watch Annime" />
     <MESSAGE value="semi final push" />
     <MESSAGE value="fafafaaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="fafafaaa" />
+    <MESSAGE value="update 260" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 260" />
   </component>
 </project>
