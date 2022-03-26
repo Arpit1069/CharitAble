@@ -114,7 +114,6 @@ private  var color = "blue"
         holder.fullViewToExpand.setOnClickListener{
 
             currentitem.visibility = !currentitem.visibility
-//            notifyDataSetChanged()
             notifyItemChanged(position)
 
         }
@@ -131,6 +130,7 @@ private  var color = "blue"
         val currentitem = userList[position]
         dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BooksOrder")
         dbref.child(currentitem.userMobile.toString()).removeValue()
+        notifyItemChanged(position)
 
 //        TODO("Not yet implemented")
     }

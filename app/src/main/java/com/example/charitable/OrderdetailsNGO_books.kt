@@ -1,5 +1,6 @@
 package com.example.charitable
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -39,6 +40,7 @@ class OrderdetailsNGO_books : BaseActivity() {
 
         refreshapp()
 
+
         getUserData()
 
     }
@@ -47,6 +49,7 @@ class OrderdetailsNGO_books : BaseActivity() {
         swipeRefreshLayout.setOnRefreshListener {
             Toast.makeText(this,"page refreshed",Toast.LENGTH_SHORT).show()
             swipeRefreshLayout.isRefreshing = false
+//            notifyItemChanged(viewHolder.adapterPosition)
         }
     }
 
@@ -58,9 +61,9 @@ class OrderdetailsNGO_books : BaseActivity() {
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
-//                if(swipeRefreshLayout.isRefreshing){
-//                    swipeRefreshLayout.isRefreshing = false
-//                }
+                if(swipeRefreshLayout.isRefreshing){
+                    swipeRefreshLayout.isRefreshing = false
+                }
 
                 if (snapshot.exists()){
                     for(userSnapshot in snapshot.children) {
@@ -102,12 +105,14 @@ class OrderdetailsNGO_books : BaseActivity() {
                         }
 
 
+                        @SuppressLint("NotifyDataSetChanged")
                         override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
 
                             when(direction){
 
                                 ItemTouchHelper.LEFT ->{
                                     adapter.deleteItem(viewHolder.adapterPosition)
+                                   adapter.notifyItemChanged(viewHolder.adapterPosition)
                                 }
 
 //                                ItemTouchHelper.RIGHT -> {
