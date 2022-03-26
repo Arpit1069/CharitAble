@@ -118,7 +118,7 @@
                     android:orientation="horizontal"
                     android:padding="3dp">
                     <TextView
-                        android:text="email id"
+                        android:text="City"
                         android:textSize="19sp"
                         android:gravity="center"
                         android:layout_width="match_parent"
