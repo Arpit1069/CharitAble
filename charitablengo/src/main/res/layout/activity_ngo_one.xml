@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/ngo_one_bg"
+    android:background="@drawable/ngoupdate"
     tools:context=".login">
 
 
@@ -25,7 +25,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EAB76C"
+            android:background="#70FAFE"
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -53,7 +53,7 @@
                 android:id="@+id/ngoinfolayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFEAB76C"
+                android:background="#FF70FAFE"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="25dp">
@@ -172,8 +172,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textColor"
                 android:textSize="17sp"
-                app:backgroundTint="#5D91ED" />
-
+                app:backgroundTint="#8E218AF3" />
 
 
         </LinearLayout>

@@ -13,20 +13,26 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/charitablengo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="I watch Annime">
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/drawable/ngoprofile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/drawable/ngoupdate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/drawable/splashngo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_books_two.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_books_two.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_food_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_food_one.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_ngo_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_ngo_one.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_splash4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_splash4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/fragment_profile.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-RZ8M30V7KLV-55fsyz._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[QGWG8HKJX4754XFY]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -87,11 +93,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/charitablengo" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/charitablengo/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/charitablengo/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rutuz\AndroidStudioProjects\CharitAbleinfinity\charitablengo\src\main\res\drawable" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\charitablengo" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\.idea\modules" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble25\charitablengo\src" />
@@ -103,7 +111,7 @@
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble25\app\src\main\java\com\example\charitable\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.CharitAbleok.CharitAble.charitablengo">
+  <component name="RunManager" selected="Android App.charitablengo">
     <configuration name="CharitAbleok.CharitAble.charitablengo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="CharitAbleok.CharitAble.charitablengo" />
       <option name="DEPLOY" value="true" />

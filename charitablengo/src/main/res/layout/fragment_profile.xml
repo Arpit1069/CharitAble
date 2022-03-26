@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/profilebg"
+    android:background="@drawable/ngoprofile"
     android:id="@+id/profile"
     android:orientation="vertical">
     <LinearLayout
@@ -108,11 +108,11 @@
                             android:id="@+id/profile_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textAllCaps="true"
                             android:layout_marginTop="15dp"
                             android:layout_marginBottom="10dp"
                             android:gravity="center"
                             android:text="@string/user_name"
+                            android:textAllCaps="true"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -145,8 +145,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:textAllCaps="true"
                                 android:text="@string/your_status"
+                                android:textAllCaps="true"
                                 android:textColor="@color/black"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -418,19 +418,20 @@
                 android:orientation="horizontal"
                 android:layout_gravity="center"
                 >
-            <Button
-                android:id="@+id/updatedonorprofile"
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:elevation="15dp"
-                android:gravity="center"
-                android:text="@string/update_profile"
-                android:textColor="@color/textColor"
-                android:textSize="17sp"
-                app:backgroundTint="#8BC34A" />
+
+                <Button
+                    android:id="@+id/updatedonorprofile"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:elevation="15dp"
+                    android:gravity="center"
+                    android:text="@string/update_profile"
+                    android:textColor="@color/textColor"
+                    android:textSize="17sp"
+                    app:backgroundTint="#2196F3" />
 
                 <Button
                     android:id="@+id/Profile_logOut"
@@ -444,7 +445,7 @@
                     android:text="@string/logout"
                     android:textColor="@color/textColor"
                     android:textSize="17sp"
-                    app:backgroundTint="#8BC34A" />
+                    app:backgroundTint="#2196F3" />
 
             </LinearLayout>
 
