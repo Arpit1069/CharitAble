@@ -20,9 +20,9 @@ class HomeFragment_donor : Fragment() {
     ): View? {
 
         val v = inflater.inflate(R.layout.fragment_home_donor, container, false)
-        val btn_food = v.findViewById<ImageButton>(R.id.button_food)
-        val btn_books = v.findViewById<ImageButton>(R.id.button_books)
-        val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes)
+        val btn_food = v.findViewById<ImageButton>(R.id.button_food_order)
+        val btn_books = v.findViewById<ImageButton>(R.id.button_book_order)
+        val btn_clothes = v.findViewById<ImageButton>(R.id.button_clothes_order)
 
         btn_food.setOnClickListener {
             val intent = Intent(this@HomeFragment_donor.requireContext(),food_one::class.java)
