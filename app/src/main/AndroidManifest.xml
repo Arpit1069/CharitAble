@@ -78,10 +78,7 @@
             android:name=".ngo_two"
             android:exported="true"
             android:label="ngo_two" />
-        <activity
-            android:name=".MainActivity_Whatsapp"
-            android:exported="true"
-            android:label="WhatsApp" />
+
         <activity
             android:name=".donrequest_one"
             android:exported="true"

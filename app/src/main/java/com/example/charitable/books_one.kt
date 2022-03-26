@@ -3,21 +3,18 @@ package com.example.charitable
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
 import com.example.charitable.firebase.FirestoreClass
 import com.example.charitable.models.OrderDetails_books
-import com.example.charitable.models.User
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_books_one.*
-import kotlinx.android.synthetic.main.activity_donor_one.*
 
 class books_one : BaseActivity() {
 
 private var selectedItemIndex = 0
-    private var selectedNGO_books = "Waifu Forever"
+    private var selectedNGO_books = ""
     private lateinit var database: FirebaseDatabase
     private lateinit var reference: DatabaseReference
 
@@ -56,7 +53,7 @@ private var selectedItemIndex = 0
             .setPositiveButton("OK") { dialog, which ->
 
                 Toast.makeText(applicationContext,"$selectedNGO_books Selected", Toast.LENGTH_LONG).show()
-                select_ngo.setText(selectedNGO_books)
+                select_ngo.setText("NGO Selected")
 
             }
             .setNeutralButton("Cancel") { dialog, which ->

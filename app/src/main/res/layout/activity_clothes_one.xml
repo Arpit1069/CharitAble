@@ -17,6 +17,7 @@
 <!--        android:layout_width="414dp"-->
 <!--        android:layout_height="50dp"/>-->
     <androidx.cardview.widget.CardView
+        android:id="@+id/select_ngo_clothes"
         android:layout_width="330dp"
         android:layout_height="500dp"
         android:layout_gravity="center"
@@ -27,6 +28,7 @@
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
@@ -41,7 +43,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/name_books"
+                android:id="@+id/name_clothes"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="10"
@@ -74,6 +76,7 @@
                 android:textSize="13sp"
                 android:textStyle="normal" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
@@ -87,7 +90,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/address_books"
+                android:id="@+id/address_clothes"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -97,6 +100,7 @@
                 android:textStyle="normal" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
@@ -110,7 +114,7 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mobile_no_books"
+                android:id="@+id/mobile_no_clothes"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="20"
@@ -123,16 +127,17 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/select_ngo"
+            android:id="@+id/select_ngo_orderclothes"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:onClick="showConfirmationDialog_clothes"
             android:text="Select NGO"
             android:textAllCaps="false"
-            android:textSize="19sp"
-            android:layout_marginStart="40dp"
-            android:gravity="center"
-            android:background="@drawable/switch_tumbs"
-            android:layout_marginTop="320dp"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"/>
+            android:textSize="19sp" />
     </androidx.cardview.widget.CardView>
     <Button
         android:id="@+id/proceedclothes"

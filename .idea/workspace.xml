@@ -14,12 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/charitablengo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/models/OrderDetails_clothes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo_clothes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_items_clothes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_one.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,23 +92,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/charitablengo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/charitablengo/src/main/res/layout" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble99\charitablengo\src\main\res\layout" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\charitablengo" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\.idea\modules" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble25\charitablengo\src" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble25\charitablengo\src\main\res\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble99\charitablengo\src\main\java\com\example\charitablengo\models" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\app\src" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAbleok\charitablengo" />
       <recent name="C:\Users\Ayush Vidhale\StudioProjects\CharitAble25\app\src\main\java\com\example\charitable\utils" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.charitablengo.models" />
+      <recent name="com.example.charitable.models" />
+    </key>
   </component>
-  <component name="RunManager" selected="Android App.CharitAbleok.CharitAble.charitablengo">
+  <component name="RunManager" selected="Android App.charitablengo">
     <configuration name="CharitAbleok.CharitAble.charitablengo" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="CharitAbleok.CharitAble.charitablengo" />
       <option name="DEPLOY" value="true" />
