@@ -15,7 +15,7 @@ class splash1 : BaseActivity() {
 
             val currentUserID = FirestoreClass().getCurrentUserId()
             if(currentUserID.isNotEmpty()){
-                startActivity(Intent(this@splash1,choose::class.java))
+                startActivity(Intent(this@splash1,splash2::class.java))
             }else{
                 startActivity(Intent(this@splash1,login::class.java))
             }

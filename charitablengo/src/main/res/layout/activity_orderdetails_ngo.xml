@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".OrderdetailsNGO_books">
 
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/orderdetails_NGO"

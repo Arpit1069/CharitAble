@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/books_two_img"
+    android:background="@drawable/books_one_img"
     android:orientation="vertical"
     tools:context=".login">
     <TextView
@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="40dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="0dp"
         android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="40dp"/>
@@ -51,12 +51,13 @@
                     android:layout_gravity="center"
                     android:orientation="horizontal"
                     android:padding="3dp">
+
                     <TextView
-                        android:text="name"
-                        android:textSize="19sp"
-                        android:gravity="center"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"/>
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textSize="19sp" />
 
 
                 </LinearLayout>
