@@ -46,19 +46,19 @@ private  var color = "blue"
 //    }
 
 
-    override fun onBindViewHolder(holder: MyAdapter_clothes.MyViewHolder_clothes, position: Int) {
+    override fun onBindViewHolder(holder: MyAdapter_clothes.MyViewHolder_clothes, position_clothes: Int) {
 
-        val currentitem = userList[position]
+        val currentitem = userList[position_clothes]
 
-        holder.name_booksdonate.text = currentitem.userName
-        holder.quantity_booksdonate.text = currentitem.userAddress
+        holder.name_booksdonate.text = currentitem.userName_Clothes
+        holder.quantity_booksdonate.text = currentitem.quantity_Clothes
         holder.brief_details_books_order_id.text = currentitem.OrderClothesID
-        holder.brief_details_books_quantity.text = currentitem.quantity
-        holder.brief_details_books_number.text = currentitem.userMobile
-        holder.brief_details_books_address.text = currentitem.userAddress
+        holder.brief_details_books_quantity.text = currentitem.quantity_Clothes
+        holder.brief_details_books_number.text = currentitem.userMobile_Clothes
+        holder.brief_details_books_address.text = currentitem.userAddress_Clothes
         holder.brief_details_OrderStatus_Books.text = currentitem.ClothesOrderProgress
         holder.brief_details_OrderStatus_Books.setBackgroundColor(Color.parseColor(color))
-        holder.brief_details_books_selectedNGO.text = currentitem.NGOSelected
+        holder.brief_details_books_selectedNGO.text = currentitem.NGOSelected_Clothes
 
 
         var status = currentitem.ClothesOrderProgress
@@ -81,7 +81,7 @@ private  var color = "blue"
         holder.buttonWhatsApp.setOnClickListener{
                 v ->
 
-                val phonestr = currentitem.userMobile
+                val phonestr = currentitem.userMobile_Clothes
                 if (!phonestr.isEmpty()) {
 
 
@@ -115,7 +115,7 @@ private  var color = "blue"
         holder.fullViewToExpand.setOnClickListener{
 
             currentitem.visibility = !currentitem.visibility
-            notifyItemChanged(position)
+            notifyItemChanged(position_clothes)
 
         }
 
@@ -129,8 +129,8 @@ private  var color = "blue"
 
     fun deleteItem(position: Int) {
         val currentitem = userList[position]
-        dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("BooksOrder")
-        dbref.child(currentitem.userMobile.toString()).removeValue()
+        dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("ClothesOrder")
+        dbref.child(currentitem.userMobile_Clothes.toString()).removeValue()
         notifyItemChanged(position)
 
 //        TODO("Not yet implemented")
@@ -143,7 +143,6 @@ private  var color = "blue"
         val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details_clothes)
         val brief_details_books_order_id : TextView = itemView.findViewById(R.id.briefDetails_clothes_order_id)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_clothes_quantity)
-        //val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails_clothes_class)
         val brief_details_books_number : TextView = itemView.findViewById(R.id.briefDetails_clothes_number)
         val brief_details_books_address : TextView = itemView.findViewById(R.id.briefDetails_clothes_address)
 

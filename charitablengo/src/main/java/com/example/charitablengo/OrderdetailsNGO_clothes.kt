@@ -40,7 +40,7 @@ class OrderdetailsNGO_clothes : BaseActivity() {
         refreshapp()
 
 
-        getUserData()
+        getUserData_clothes()
 
     }
     private fun refreshapp()
@@ -52,7 +52,7 @@ class OrderdetailsNGO_clothes : BaseActivity() {
         }
     }
 
-    private fun getUserData() {
+    private fun getUserData_clothes() {
 
         dbref = FirebaseDatabase.getInstance("https://charitable-48fd7-default-rtdb.asia-southeast1.firebasedatabase.app/")
             .getReference("ClothesOrder")

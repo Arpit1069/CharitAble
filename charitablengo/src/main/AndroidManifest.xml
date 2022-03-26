@@ -31,6 +31,9 @@
         <activity
             android:name=".OrderdetailsNGO_books"
             android:exported="true" />
+        <activity
+            android:name=".OrderdetailsNGO_clothes"
+            android:exported="true" />
 
         <activity
             android:name=".ngo_one"

@@ -14,16 +14,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="update 2603 2253">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/OrderdetailsNGO_clothes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/MyAdapter_clothes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_item_clothes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_clothes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RZ8N92WEA5T]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-RZ8M30V7KLV-55fsyz._adb-tls-connect._tcp]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

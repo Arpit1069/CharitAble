@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".OrderdetailsNGO_books">
 
-
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
         android:id="@+id/swipeRefreshLayout"
