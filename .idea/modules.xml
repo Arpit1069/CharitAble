@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CharitAble.iml" filepath="$PROJECT_DIR$/.idea/modules/CharitAble.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CharitAble.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CharitAble.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/charitablengo/CharitAble.charitablengo.iml" filepath="$PROJECT_DIR$/.idea/modules/charitablengo/CharitAble.charitablengo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/charitablengo/CharitAbleok.CharitAble.charitablengo.iml" filepath="$PROJECT_DIR$/.idea/modules/charitablengo/CharitAbleok.CharitAble.charitablengo.iml" />
     </modules>
   </component>
 </project>
