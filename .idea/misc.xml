@@ -77,6 +77,11 @@
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1503/app/src/main/res/drawable/ic_profiled.xml" value="0.145" />
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1503/app/src/main/res/layout/login.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble1503/app/src/main/res/layout/user_item_books.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble2503/app/src/main/res/layout/activity_books_one.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble2503/app/src/main/res/layout/activity_donor_one.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble2503/app/src/main/res/layout/activity_orderdetails_ngo.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble2503/app/src/main/res/layout/activity_splash2.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/91705/AndroidStudioProjects/CharitAble2503/app/src/main/res/layout/user_item_books.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble16thMarch/app/src/main/res/drawable/ic_person.xml" value="0.214" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble16thMarch/app/src/main/res/layout/activity_books_one.xml" value="0.14114583333333333" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble16thMarch/app/src/main/res/layout/activity_donor_one.xml" value="0.17074275362318841" />
@@ -168,10 +173,8 @@
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble17thMarch/app/src/main/res/layout/item_info.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble17thMarch/app/src/main/res/layout/login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble17thMarch/app/src/main/res/layout/user_item_books.xml" value="0.33" />
-        <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_books_one.xml" value="0.22" />
+        <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_books_one.xml" value="0.15128205128205127" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_donor_one.xml" value="0.15128205128205127" />
-        <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_food_one.xml" value="0.14145299145299145" />
-        <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_main_whatsapp.xml" value="0.1641025641025641" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/activity_orderdetails_ngo.xml" value="0.16" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/fragment_profile_donor.xml" value="0.1641025641025641" />
         <entry key="..\:/Users/Ayush Vidhale/StudioProjects/CharitAble25meow/app/src/main/res/layout/item_info.xml" value="0.15128205128205127" />

@@ -75,7 +75,9 @@ private var selectedItemIndex = 0
 
         if (quantityBooks.isNotEmpty() && stdClass.isNotEmpty() && nameBooks.isNotEmpty() && addressBooks.isNotEmpty() &&
                 mobileBooks.isNotEmpty() && selectedNGO_here.isNotEmpty()){
-
+            if(mobileBooks.length != 10){
+                Toast.makeText(this, "INVALID MOBILE NUMBER", Toast.LENGTH_SHORT).show()
+            }else{
 
 //            val id = reference.push().key!!
 
@@ -90,7 +92,7 @@ private var selectedItemIndex = 0
 
             val intent = Intent(this@books_one, books_two::class.java)
             startActivity(intent)
-            finish()
+            finish()}
 
         }else{
             Toast.makeText(applicationContext,"All fields are Required", Toast.LENGTH_LONG).show()
