@@ -13,25 +13,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/models/OrderDetails_clothes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/java/com/example/charitablengo/models/OrderItems_clothes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/activity_orderdetails_ngo_clothes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/charitablengo/src/main/res/layout/user_items_clothes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/books_one.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/charitable/clothes_one.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_one.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2823262-3e3a-47b5-b6f0-b141107d2a2a" name="Default Changelist" comment="jai maheshmati" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-RZ8M30V7KLV-55fsyz._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[QGWG8HKJX4754XFY]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -328,6 +316,14 @@
       <option name="presentableId" value="Default" />
       <updated>1648280071487</updated>
     </task>
+    <task id="LOCAL-00001" summary="jai maheshmati">
+      <created>1648311900564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648311900564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,6 +341,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I watch Annime" />
-    <option name="LAST_COMMIT_MESSAGE" value="I watch Annime" />
+    <MESSAGE value="jai maheshmati" />
+    <option name="LAST_COMMIT_MESSAGE" value="jai maheshmati" />
   </component>
 </project>
