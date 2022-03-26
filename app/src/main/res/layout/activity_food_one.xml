@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,41 +10,41 @@
     android:layout_gravity="center"
     android:background="@color/white">
 
-    <TextView
-        android:layout_width="414dp"
-        android:layout_height="50dp"
-        android:background="#ABDAEF"
-        android:text="CharitAble"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="26sp"
-        android:textStyle="bold" />
-
+    <!--    <TextView-->
+    <!--        android:text="CharitAble"-->
+    <!--        android:textSize="26sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:background="#ABDAEF"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_width="414dp"-->
+    <!--        android:layout_height="50dp"/>-->
     <androidx.cardview.widget.CardView
-        android:layout_width="330dp"
-        android:layout_height="280dp"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
         android:layout_gravity="center"
         android:layout_marginStart="38dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="38dp"
-        app:cardBackgroundColor="#DDF8BE"
+        app:cardBackgroundColor="#EAE2F8"
         app:cardCornerRadius="25dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="50dp"
-            android:hint=" Dishes"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Name"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
             app:boxStrokeWidth="1dp"
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/add_dishes"
+                android:id="@+id/name_books_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="10"
@@ -51,14 +52,63 @@
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:textStyle="normal" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="243dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:hint="Mobile No."
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile_no_books_food"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="20"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="140dp"
+            android:hint="Address"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address_books_food"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="20"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="200dp"
             android:hint="Quantity"
             android:textColorHint="@color/black"
             app:boxStrokeColor="#836767"
@@ -66,47 +116,70 @@
             app:shapeAppearanceOverlay="@style/Button4">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/quantity_clothes"
+                android:id="@+id/quantity_books_food"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:ems="10"
+                android:ems="20"
                 android:inputType="textPersonName|textEmailAddress"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:textStyle="normal" />
+
         </com.google.android.material.textfield.TextInputLayout>
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:id="@+id/select_ngo"-->
-<!--            android:text="Select NGO"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textSize="19sp"-->
-<!--            android:layout_marginStart="40dp"-->
-<!--            android:gravity="center"-->
-<!--            android:background="@drawable/switch_tumbs"-->
-<!--            android:layout_marginTop="210dp"-->
-<!--            android:layout_width="220dp"-->
-<!--            android:layout_height="wrap_content"/>-->
-<!--        <Button-->
-<!--            android:id="@+id/proceed"-->
-<!--            android:text="Proceed"-->
-<!--            android:layout_marginTop="100dp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:backgroundTint="#D1B9B9"-->
-<!--            android:layout_width="130dp"-->
-<!--            android:layout_height="wrap_content"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="260dp"
+            android:hint="Standard"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#836767"
+            app:boxStrokeWidth="1dp"
+            app:shapeAppearanceOverlay="@style/Button4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/standard_books_food"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:ems="20"
+                android:inputType="textPersonName|textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_ngo"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:onClick="showConfirmationDialog"
+            android:text="Select NGO"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
 
 
     </androidx.cardview.widget.CardView>
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="ADD"
-        android:textSize="17sp"
-        android:background="@drawable/switch_tumbs"
-        android:id="@+id/add_menu"
+    <Button
+        android:id="@+id/proceedbooks"
+        android:text="Proceed"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_width="120dp"
+        android:backgroundTint="#DF9797"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"/>
+
+
+
 
 
 </LinearLayout>

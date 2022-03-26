@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/threeimage"
+    android:background="@drawable/twoimage"
     android:orientation="vertical"
     tools:context=".splash2">
     <ImageView
@@ -28,13 +28,6 @@
         android:textSize="35sp"
         android:textColor="@color/black"
         android:text="Welcome !" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="185dp"
-        android:src="@drawable/logo" />
 
 
 </LinearLayout>
