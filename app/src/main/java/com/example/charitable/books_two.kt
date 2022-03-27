@@ -27,9 +27,9 @@ class books_two : BaseActivity() {
         }
 
         if (selectedNGO_books_inlast == "NGO1" ){
-            NGO_location_details_books.setText("good")
+            NGO_location_details_books.setText("vidhya vaibhav colony")
             NGO_city_details_books.setText("Pune")
-            NGO_mobile_details_books.setText("9872625347")
+            NGO_mobile_details_books.setText("9421934321")
         }else if (selectedNGO_books_inlast == "NGO2" ){
             NGO_location_details_books.setText("NGO1")
             NGO_city_details_books.setText("Pune")
@@ -37,33 +37,33 @@ class books_two : BaseActivity() {
 
 
         }else if (selectedNGO_books_inlast == "NGO3" ){
-            NGO_location_details_books.setText("noice")
+            NGO_location_details_books.setText("sheagaon naka")
             NGO_city_details_books.setText("Mumbai")
             NGO_mobile_details_books.setText("2478964258")
 
 
         }else if (selectedNGO_books_inlast == "NGO4" ){
 
-            NGO_location_details_books.setText("watch")
-            NGO_city_details_books.setText("New York")
+            NGO_location_details_books.setText("prabhat colony")
+            NGO_city_details_books.setText("Delhi")
             NGO_mobile_details_books.setText("6535792457")
 
         }else if (selectedNGO_books_inlast == "NGO5" ){
 
-            NGO_location_details_books.setText("cat")
+            NGO_location_details_books.setText("varsha colony")
             NGO_city_details_books.setText("Amravati")
             NGO_mobile_details_books.setText("9085435689")
 
         }else if (selectedNGO_books_inlast == "NGO6" ){
 
-            NGO_location_details_books.setText("ok ok thike")
-            NGO_city_details_books.setText("Wakanda")
+            NGO_location_details_books.setText("pimpri chinchawad")
+            NGO_city_details_books.setText("Mumbai")
             NGO_mobile_details_books.setText("4345673262")
 
         }else if (selectedNGO_books_inlast == "NGO7" ){
 
-            NGO_location_details_books.setText("Link do re")
-            NGO_city_details_books.setText("shiganshina")
+            NGO_location_details_books.setText("tukaram naka")
+            NGO_city_details_books.setText("Akola")
             NGO_mobile_details_books.setText("5742467357")
 
         }else{
