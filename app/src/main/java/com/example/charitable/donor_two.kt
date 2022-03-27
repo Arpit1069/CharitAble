@@ -50,6 +50,7 @@ class donor_two : BaseActivity() {
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.replace(R.id.FragmentContainer,fragment).addToBackStack(Fragment::class.java.simpleName).commit()
     }
+
     private fun addFragment(fragment: Fragment) {
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.add(R.id.FragmentContainer,fragment).addToBackStack(Fragment::class.java.simpleName).commit()

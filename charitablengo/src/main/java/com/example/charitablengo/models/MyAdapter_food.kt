@@ -52,13 +52,12 @@ private  var color = "#FF23BF00"
 
         holder.name_booksdonate.text = currentitem.userName_Food
         holder.quantity_booksdonate.text = currentitem.userAddress_Food
-        holder.brief_details_books_order_id.text = currentitem.OrderFoodID
         holder.brief_details_books_quantity.text = currentitem.quantity_Food
         holder.brief_details_books_number.text = currentitem.userMobile_Food
         holder.brief_details_books_address.text = currentitem.userAddress_Food
         holder.brief_details_OrderStatus_Books.text = currentitem.ClothesOrderProgress
         holder.brief_details_OrderStatus_Books.setBackgroundColor(Color.parseColor(color))
-        holder.brief_details_books_selectedNGO.text = currentitem.NGOSelected_Food
+
 
 
         var status = currentitem.ClothesOrderProgress
@@ -141,15 +140,12 @@ private  var color = "#FF23BF00"
 
         val name_booksdonate : TextView = itemView.findViewById(R.id.Username_order_details_food)
         val quantity_booksdonate : TextView = itemView.findViewById(R.id.address_order_details_food)
-        val brief_details_books_order_id : TextView = itemView.findViewById(R.id.briefDetails_food_order_id)
         val brief_details_books_quantity : TextView = itemView.findViewById(R.id.briefDetails_food_quantity)
         //val brief_details_books_class : TextView = itemView.findViewById(R.id.briefDetails__class)
         val brief_details_books_number : TextView = itemView.findViewById(R.id.briefDetails_food_number)
         val brief_details_books_address : TextView = itemView.findViewById(R.id.briefDetails_food_address)
 
         val brief_details_OrderStatus_Books : TextView = itemView.findViewById(R.id.OrderStatus_food)
-        val brief_details_books_selectedNGO : TextView = itemView.findViewById(R.id.briefDetails_food_selectedNGO)
-
 
         val contraintLayout : ConstraintLayout = itemView.findViewById(R.id.expandedLayout_food)
         val fullViewToExpand : CardView = itemView.findViewById(R.id.click_expand_food)

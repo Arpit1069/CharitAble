@@ -39,9 +39,7 @@ class clothes_one : BaseActivity() {
 
         val NGO_clothes = arrayOf("NGO1","NGO2",
             "NGO3","NGO4","NGO5",
-            "NGO6","NGO7",
-            "NGO8","NGO8",
-            "NGO9", "NGO10")
+            "NGO6","NGO7")
 
         selectedNGO_clothes = NGO_clothes[selectedItemIndex]
 
@@ -89,7 +87,9 @@ class clothes_one : BaseActivity() {
 //                standard_books.setText(selectedNGO_clothes)
                 Toast.makeText(applicationContext,"Successfully send to NGO", Toast.LENGTH_LONG).show()
 
-                val intent = Intent(this@clothes_one, splash2::class.java)
+                val intent = Intent(this@clothes_one, splash2::class.java).also {
+                    it.putExtra("NGO details Clothes", selectedNGO_clothes)
+                    startActivity(it)}
                 startActivity(intent)
                 finish()}
 

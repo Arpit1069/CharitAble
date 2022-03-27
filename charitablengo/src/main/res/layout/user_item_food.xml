@@ -299,41 +299,6 @@
                                 android:layout_gravity="center"
                                 android:layout_marginStart="10dp"
                                 android:gravity="center"
-                                android:text="Order ID"
-                                android:textColor="#605E5E"
-                                android:textSize="19sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_marginStart="47dp"
-                                android:id="@+id/briefDetails_food_order_id"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Order ID"
-                                android:textColor="@color/black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal"
-                            android:padding="3dp">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginStart="5dp"
-                                android:padding="2dp"
-                                android:src="@drawable/ic_email" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="10dp"
-                                android:gravity="center"
                                 android:text="Quantity"
                                 android:textColor="#605E5E"
                                 android:textSize="19sp"
@@ -350,41 +315,6 @@
                         </LinearLayout>
 
 
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal"
-                            android:padding="3dp">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginStart="5dp"
-                                android:padding="2dp"
-                                android:src="@drawable/ic_email" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="10dp"
-                                android:gravity="center"
-                                android:text="Email"
-                                android:textColor="#605E5E"
-                                android:textSize="19sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/briefDetails_food_email"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="47dp"
-                                android:text="Donor Email"
-                                android:textColor="@color/black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -456,40 +386,6 @@
                                 android:textSize="20sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:orientation="horizontal"
-                            android:padding="3dp">
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginStart="5dp"
-                                android:padding="2dp"
-                                android:src="@drawable/ic_email" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="10dp"
-                                android:gravity="center"
-                                android:text="NGO"
-                                android:textColor="#605E5E"
-                                android:textSize="19sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/briefDetails_food_selectedNGO"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="47dp"
-                                android:text="Selected NGO"
-                                android:textColor="@color/black"
-                                android:textSize="20sp" />
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"

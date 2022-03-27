@@ -37,9 +37,7 @@ class food_one : BaseActivity() {
 
         val NGO_food = arrayOf("NGO1","NGO2",
             "NGO3","NGO4","NGO5",
-            "NGO6","NGO7",
-            "NGO8","NGO8",
-            "NGO9", "NGO10")
+            "NGO6","NGO7")
 
         selectedNGO_food = NGO_food[selectedItemIndex]
 

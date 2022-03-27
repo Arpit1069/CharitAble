@@ -32,14 +32,11 @@ private var selectedItemIndex = 0
 
     }
 
-
     fun showConfirmationDialog(view: View){
 
         val NGO_books = arrayOf("NGO1","NGO2",
             "NGO3","NGO4","NGO5",
-            "NGO6","NGO7",
-            "NGO8","NGO8",
-        "NGO9", "NGO10")
+            "NGO6","NGO7")
 
         selectedNGO_books = NGO_books[selectedItemIndex]
 
@@ -52,8 +49,8 @@ private var selectedItemIndex = 0
             }
             .setPositiveButton("OK") { dialog, which ->
 
-                Toast.makeText(applicationContext,"$selectedNGO_books Selected", Toast.LENGTH_LONG).show()
-                select_ngo.setText("NGO Selected")
+                Toast.makeText(applicationContext,"NGO Selected", Toast.LENGTH_LONG).show()
+                select_ngo.setText("$selectedNGO_books Selected")
 
             }
             .setNeutralButton("Cancel") { dialog, which ->
@@ -83,13 +80,17 @@ private var selectedItemIndex = 0
 
             reference.child(id).setValue(model)
 
-            quantity_books.setText(id)
-            standard_books.setText(selectedNGO_here)
-            Toast.makeText(applicationContext,"Successfully send to NGO", Toast.LENGTH_LONG).show()
+//            quantity_books.setText(id)
+//            standard_books.setText(selectedNGO_here)
+            Toast.makeText(applicationContext,"Books Details sent successfully to NGO", Toast.LENGTH_LONG).show()
 
-            val intent = Intent(this@books_one, books_two::class.java)
+            val intent = Intent(this@books_one, books_two::class.java).also {
+                it.putExtra("NGO details", selectedNGO_here)
+                startActivity(it)
+            }
             startActivity(intent)
-            finish()}
+            finish()
+            }
 
         }else{
             Toast.makeText(applicationContext,"All fields are Required", Toast.LENGTH_LONG).show()

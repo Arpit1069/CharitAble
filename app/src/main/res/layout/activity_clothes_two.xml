@@ -52,6 +52,7 @@
                     android:orientation="horizontal"
                     android:padding="3dp">
                     <TextView
+                        android:id="@+id/orderdetails_clothes"
                         android:text="name"
                         android:textSize="19sp"
                         android:gravity="center"

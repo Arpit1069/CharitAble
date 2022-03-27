@@ -68,15 +68,15 @@ class donor_one :  BaseActivity() {
                 uploadUserImage()
             }
 
-            try {
-                updateUserProfileDataDonor()
-            }finally{
+//            try {
+//                updateUserProfileDataDonor()
+//            }finally{
 
                 val intent = Intent(this@donor_one,com.example.charitable.splash2::class.java)
                 startActivity(intent)
                 finish()
 
-            }
+//            }
 
         }
 
